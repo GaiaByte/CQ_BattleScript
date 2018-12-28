@@ -2674,6 +2674,60 @@ var HERO = [
             value: 2
         }
     },
+    // 140,141,142,143: DESTRUCTOR HEROES
+    {
+        name:"RAZE",
+        type:3,
+        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "kdvz",
+        hp: 18,
+        atk: 26,
+        skill: {
+            type: "rico",
+            target: 1,
+            value: 0.7
+        }
+    },
+    {
+        name:"RUIN",
+        type:0,
+        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "i9tb",
+        hp: 44,
+        atk: 48,
+        skill: {
+            type: "boom",
+            target: -1,
+            value: 0.1
+        }
+    },
+    {
+        name:"SEETHE",
+        type:1,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "d3c6",
+        hp: 48,
+        atk: 54,
+        skill: {
+            type: "posbonus",
+            target: -1,
+            value: 15
+        },
+        super: 143,
+    },{
+        name:"ASCENDED SEETHE",
+        type:1,
+        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "d3c6",
+        hp: 117,
+        atk: 131,
+        skill: {
+            type: "posbonus",
+            target: -1,
+            value: 35
+        },
+        pve: true,
+    },
 ];
 
 var promoData = [
@@ -2752,8 +2806,8 @@ var promoData = [
     {
       "hp": 115,
       "atk": 37,
-      "both": 25,
-      "skill": 1,
+      "both": 25*3,
+      "skill": 1+3,
       "quest": 73,
       "name": "ALPHA"
     },
@@ -2776,8 +2830,8 @@ var promoData = [
     {
       "hp": 70,
       "atk": 32,
-      "both": 32,
-      "skill": 2,
+      "both": 32*3,
+      "skill": 2+4,
       "quest": 76,
       "name": "ATHOS"
     },
@@ -2801,7 +2855,7 @@ var promoData = [
       "hp": 79,
       "atk": 67,
       "both": 52,
-      "skill": 2,
+      "skill": 2+6,
       "quest": 96,
       "name": "REI"
     },
@@ -2855,8 +2909,8 @@ var promoData = [
     },
     {
       "hp": 28,
-      "atk": 5,
-      "both": 10,
+      "atk": 5*4,
+      "both": 10*3,
       "skill": 1,
       "quest": 36,
       "name": "T4URUS"
@@ -2871,8 +2925,8 @@ var promoData = [
     },
     {
       "hp": 28,
-      "atk": 6,
-      "both": 6,
+      "atk": 6*3,
+      "both": 6*3,
       "skill": 3,
       "quest": 1,
       "name": "AQUORTIS"
@@ -3038,9 +3092,9 @@ var promoData = [
       "name": "GAIABYTE"
     },
     {
-      "hp": 12,
-      "atk": 3,
-      "both": 7,
+      "hp": 12*2,
+      "atk": 3*5,
+      "both": 7*3,
       "skill": 4,
       "quest": 9,
       "name": "OYMOS"
@@ -3167,8 +3221,8 @@ var promoData = [
     },
     {
       "hp": 152,
-      "atk": 20,
-      "both": 14,
+      "atk": 20+30,
+      "both": 14*4,
       "skill": 0.05,
       "quest": 69,
       "name": "ALVITR"
@@ -3303,7 +3357,7 @@ var promoData = [
     {
       "hp": 29,
       "atk": 26,
-      "both": 26,
+      "both": 26+17,
       "skill": 2,
       "quest": 47,
       "name": "GANAH"
@@ -3439,7 +3493,7 @@ var promoData = [
       "hp": 84,
       "atk": 92,
       "both": 43,
-      "skill": 2,
+      "skill": 2+3,
       "quest": 94,
       "name": "BAVAH"
     },
@@ -3605,7 +3659,7 @@ var promoData = [
     {
       "hp": 91,
       "atk": 46,
-      "both": 22,
+      "both": 22*3,
       "skill": 0.07500000000000001,
       "quest": 86,
       "name": "EDANA"
@@ -3723,8 +3777,8 @@ var promoData = [
     },
     {
       "hp": 126,
-      "atk": 2,
-      "both": 38,
+      "atk": 2+100,
+      "both": 38*3,
       "skill": 150,
       "quest": 141,
       "name": "ASCENDED DEFILE"
@@ -3792,8 +3846,39 @@ var promoData = [
       "skill": 0.2,
       "quest": 70,
       "name": "KEDARI"
+    },{
+        "skill": 0.05,
+        "hp": 8,
+        "atk": 3,
+        "both": 14,
+        "quest": 5,
+        "name": "RAZE"
+        },
+    {
+        "skill": 0.05,
+        "hp": 23,
+        "atk": 61,
+        "both": 23,
+        "quest": 56,
+        "name": "RUIN"
+    },
+    {
+        "skill": 15,
+        "hp": 57,
+        "atk": 178,
+        "both": 53,
+        "quest": 86,
+        "name": "SEETHE"
+    },
+    {
+        "skill": 35,
+        "hp": 90,
+        "atk": 117,
+        "both": 124,
+        "quest": 146,
+        "name": "ASCENDED SEETHE"
     }
-  ]
+]
 
 
 /*var A = [-6,4,0,0,-1,-1];
@@ -3818,6 +3903,7 @@ function calcSeed(A,times) {
 
 var gBattle = undefined;
 function setupCost (setup,hero,prom) {
+    if (prom === undefined) prom = Array(hero.length).fill(0);
     var cost=0;
     for (var i=0; i<setup.length; ++i) {
         if (setup[i]>=0) cost+=MONSTERS[setup[i]].cost;
@@ -4018,13 +4104,20 @@ function createUnits (userData,hero,prom,battleData,seed) {
         } else if (userData[i]<-1) {
             var hpos = -2*1-userData[i];
             var promoValue = 0;
-            if (prom===5) promoValue = promoData[hpos].skill;
+            if (prom[hpos]===5) promoValue = promoData[hpos].skill;
             var skillVal = HERO[hpos].skill.value + promoValue;
             var stats = level2stats(hpos,hero[hpos],prom[hpos],HERO[hpos].skill.type=="evo"?skillVal:1);
             if (HERO[hpos].skill.type=="ratk") {
                 var promoValue = 0;
                 if (prom[hpos]===5) promoValue = promoData[hpos].skill;
                 var val = seed%((skillVal+promoValue)+1);
+                stats.atk+=val;
+                stats.hp+=val;
+            }
+            if (HERO[hpos].skill.type=="posbonus") {
+                var behind = 0;
+                for (var j=i-1; j>=0; --j) if (userData[j]!=-1) ++behind;
+                var val = skillVal*behind;
                 stats.atk+=val;
                 stats.hp+=val;
             }
@@ -4108,12 +4201,12 @@ function calcTurn0 (A,B,seed,side) {
         if (A.setup[i].skill!==undefined) {
             var promoValue = 0;
             var skill = A.setup[i].skill;
-            var lvl = A.setup[i].lvl;
+            var lvlVal = Math.min(99,A.setup[i].lvl);
             var promoValue = 0;
             if (A.setup[i].prom===5) promoValue = promoData[-2*1-A.setup[i].id].skill;
             var skillVal = skill.value + promoValue;
             if (skill.type=="paoe") {
-                turn.atk.flatAoe.fill(Math.round(skillVal*lvl));
+                turn.atk.flatAoe.fill(Math.round(skillVal*lvlVal));
             } else if (skill.type=="ratio") {
                 if (B.setup.length==1&&B.setup[0].id<-1&&HERO[-(2+B.setup[0].id)].rarity==5) {}
                 else turn.atk.percAoe.fill(Math.min(1,A.setup.length/(B.setup.length+skillVal)));
@@ -4144,7 +4237,7 @@ function calcTurn0 (A,B,seed,side) {
                     gBattle.steps.push({
                         action:"DMG2",
                         target:side?"other":"you",
-                        value: A.setup[i].atk-oldatk,
+                        value: Math.round(A.setup[i].atk-oldatk),
                         pos: i,
                     });
                 }
@@ -4172,30 +4265,30 @@ function calcTurn0 (A,B,seed,side) {
                     action:"DMG",
                     target:side?"other":"you",
                     origin: i,
-                    val: doMask(skill.target,Math.floor(A.setup[i].lvl*skillVal),A.setup),
+                    val: doMask(skill.target,Math.floor(lvlVal*skillVal),A.setup),
                 });
             } else if (skill.type=="buffdef") {
                 gBattle.steps.push({
                     action:"DEF",
                     target:side?"other":"you",
                     origin: i,
-                    val: doMask(skill.target,Math.floor(A.setup[i].lvl*skillVal),A.setup),
+                    val: doMask(skill.target,Math.floor(lvlVal*skillVal),A.setup),
                 });
             } else if (skill.type=="buffboth") {
                 gBattle.steps.push({
                     action:"DMG",
                     target:side?"other":"you",
                     origin: i,
-                    val: doMask(skill.target,Math.floor(A.setup[i].lvl*skillVal),A.setup),
+                    val: doMask(skill.target,Math.floor(lvlVal*skillVal),A.setup),
                 });
                 gBattle.steps.push({
                     action:"DEF",
                     target:side?"other":"you",
                     origin: i,
-                    val: doMask(skill.target,Math.floor(A.setup[i].lvl*skillVal),A.setup),
+                    val: doMask(skill.target,Math.floor(lvlVal*skillVal),A.setup),
                 });
             } else if (skill.type=="debuff") {
-                var _val = skillVal*A.setup[i].lvl;
+                var _val = skillVal*lvlVal;
                 if (skillVal == 0.5) _val = 0.5;
                 gBattle.steps.push({
                     action:"DEBUFF",
@@ -4237,7 +4330,7 @@ function calcTurn0 (A,B,seed,side) {
     return turn;
 }
 
-function shuffleBySeed(arr,seed) {
+function shuffleBySeed(arr,seed,start) {
     var size = arr.length;
     var mapa = new Array(size);
     for (var x = 0; x < size; x++) {
@@ -4246,6 +4339,10 @@ function shuffleBySeed(arr,seed) {
     for (var i = size - 1; i > 0; i--) {
         arr[i] = arr.splice(mapa[size-1-i],1,arr[i])[0];
     }
+    if (start && arr[0]!=0 && arr.length>1) {
+        arr[1]=arr[0];
+        arr[0]=0;
+    } 
 }
 
 function calcTurn (A,B,seed) {
@@ -4262,10 +4359,11 @@ function calcTurn (A,B,seed) {
             var promoValue = 0;
             if (A.setup[i].prom===5) promoValue = promoData[-2*1-A.setup[i].id].skill;
             var skillVal = skill.value + promoValue;
+            var lvlVal = Math.min(99,A.setup[i].lvl);
             // fist unit
             if (i==0) {
                 if (skill.type=="buff") turn.buff.iAtkPerc[i]*=skillVal;
-                else if (skill.type=="ban") turn.buff.masochism[i]*=1/skillVal;
+                else if (skill.type=="ban") turn.buff.masochism[i]*=(1-1/skillVal);
                 else if (skill.type=="purity") {
                     for (var j=0; j<B.setup.length;++j) {
                         turn.atk.typeMul[j] *= (A.setup[i].type == B.setup[j].type)?skillVal:1;
@@ -4288,11 +4386,11 @@ function calcTurn (A,B,seed) {
                 } else if (skill.type=="rcrit") {
                     turn.atk.typeMul[0] *= (seed%skill.target)==0?skillVal:1;
                 } else if (skill.type=="rtrg") {
-                    shuffleBySeed(turn.atk.damageFactor,seed);
+                    shuffleBySeed(turn.atk.damageFactor,seed,skillVal);
                 } else if (skill.type=="counter") {
                     turn.buff.counter=skillVal;
                 } else if (skill.type=="reflect") {
-                    turn.buff.counterAoe=skillVal*A.setup[i].lvl/skill.target;
+                    turn.buff.counterAoe=skillVal*lvlVal/skill.target;
                 } else if (skill.type=="moob") {
                     turn.onkill.moob=skillVal;
                 } else if (skill.type=="leech") {
@@ -4304,7 +4402,7 @@ function calcTurn (A,B,seed) {
                 } else if (skill.type=="otk") {
                     turn.atk.killIfUnder=skillVal;
                 } else if (skill.type=="amplify") {
-                    turn.atk.damagePerc=skillVal*A.setup[i].lvl/skill.target;
+                    turn.atk.damagePerc=skillVal*lvlVal/skill.target;
                 }
             } else {
                 if (skill.type=="tank") {
@@ -4316,14 +4414,14 @@ function calcTurn (A,B,seed) {
             if (skill.type=="turna") {
                 turn.buff.iAtk[i]+=skillVal;
             } else if (skill.type=="debuff") {
-                turn.buff.ratio*=1-(skillVal*A.setup[i].lvl);
-                turn.atk.ratio*=1-(skillVal*A.setup[i].lvl);
+                turn.buff.ratio*=1-(skillVal*lvlVal);
+                turn.atk.ratio*=1-(skillVal*lvlVal);
             } else if (skill.type=="dampen") {
                 turn.buff.dampen[i]=skillVal;
             } else if (skill.type=="guardian") {
-                turn.buff.fmasochism[i]=Math.floor(skillVal*A.setup[i].lvl/skill.target*1.5);
+                turn.buff.fmasochism[i]=Math.floor(skillVal*lvlVal/skill.target*1.5);
             } else if (skill.type=="armor") {
-                turn.buff.defPerc[i]+=skillVal*A.setup[i].lvl/skill.target;
+                turn.buff.defPerc[i]+=skillVal*lvlVal/skill.target;
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
@@ -4331,25 +4429,25 @@ function calcTurn (A,B,seed) {
                 if (typeMatches) {
                     if (skill.type=="def" || skill.type=="extra") turn.buff.def[j]+=skillVal;
                     if (skill.type=="dmg" || skill.type=="extra") A.setup[j].tatk+=skillVal;
-                    if (skill.type=="buffatk" || skill.type=="buffboth") A.setup[j].tatk+=Math.floor(A.setup[i].lvl*skillVal);
-                    if (skill.type=="buffdef" || skill.type=="buffboth") turn.buff.def[j]+=Math.floor(A.setup[i].lvl*skillVal);
+                    if (skill.type=="buffatk" || skill.type=="buffboth") A.setup[j].tatk+=Math.floor(lvlVal*skillVal);
+                    if (skill.type=="buffdef" || skill.type=="buffboth") turn.buff.def[j]+=Math.floor(lvlVal*skillVal);
                     else if (skill.type=="heal") turn.buff.heal[j]+=skillVal;
-                    else if (skill.type=="buffheal") turn.buff.heal[j]+=Math.floor(A.setup[i].lvl*skillVal);
-                    else if (skill.type=="buffahe") turn.buff.heal[j]+=Math.floor(A.setup[i].lvl*skillVal);
+                    else if (skill.type=="buffheal") turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
+                    else if (skill.type=="buffahe") turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
                 }
-                if (skill.type=="guardian" && j!=i) turn.buff.heal[j]+=Math.floor(skillVal*A.setup[i].lvl/skill.target);
+                if (skill.type=="guardian" && j!=i) turn.buff.heal[j]+=Math.floor(skillVal*lvlVal/skill.target);
             }
             // all other units 
             for (var j=0; j<B.setup.length;++j) {
                 var typeMatches = skill.target==-1 || skill.target==B.setup[j].type;
                 if (typeMatches) {
                     if (skill.type=="aoe") turn.atk.flatAoe[j]+=skillVal;
-                    if (skill.type=="buffaoe") turn.atk.flatAoe[j]+=Math.floor(A.setup[i].lvl*skillVal);
+                    if (skill.type=="buffaoe") turn.atk.flatAoe[j]+=Math.floor(lvlVal*skillVal);
                     if (skill.type=="buffahe") {
-                        turn.atk.flatAoe[j]+=Math.floor(A.setup[i].lvl*skillVal);
+                        turn.atk.flatAoe[j]+=Math.floor(lvlVal*skillVal);
                     }
                 }
-                if (skill.type=="guardian") turn.atk.flatAoe[j]+=Math.floor(skillVal*A.setup[i].lvl/skill.target*1.5);
+                if (skill.type=="guardian") turn.atk.flatAoe[j]+=Math.floor(skillVal*lvlVal/skill.target*1.5);
             }
         }
     }
@@ -4374,7 +4472,7 @@ function doTurn (A,D,turnA,turnD,side) {
         if (maxhp==i&&atk.anarchy2>0) atk.flatAoe[i]+=atk.anarchy2;
         // Damage
         var attackDamage = atk.damageFactor[i]*Math.pow(buff.ratio,i)*atk.typeMul[i]*atk.damage
-        if (D.setup[i].id<-1&&HERO[-(2+D.setup[i].id)].rarity!==5) attackDamage+=atk.damagePerc*D.setup[i].mhp;
+        if (D.setup[i].id>=0||(D.setup[i].id<-1&&HERO[-(2+D.setup[i].id)].rarity!==5)) attackDamage+=atk.damagePerc*D.setup[i].mhp*atk.damageFactor[i];
         var dmgAfterDefense = Math.max((attackDamage*(1-buff.defPerc[i]))-buff.def[i],0);
         if (i==0 && buff.tank[i]!=1) {
             for (var j=i+1; j<D.setup.length; ++j) {
@@ -4418,7 +4516,7 @@ function doTurn (A,D,turnA,turnD,side) {
         var percAoe = Math.round(D.setup[i].hp*(1-atk.percAoe[i])*buff.ratio);
         var flatAoe = Math.round(atk.flatAoe[i]*buff.ratio);
         aoeArr[i]=percAoe+flatAoe+buff.fmasochism[i];
-        var totalDamage = finalDamage+percAoe+flatAoe;
+        var totalDamage = finalDamage+percAoe+flatAoe+buff.fmasochism[i];
         var initHp = D.setup[i].hp;
         D.setup[i].hp -= totalDamage;
         turndmg += totalDamage;
