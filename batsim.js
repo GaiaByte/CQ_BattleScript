@@ -4499,6 +4499,8 @@ function doTurn (A,D,turnA,turnD,side) {
             finalDamage=(D.setup[i].hp+1);
             forcesuper=true;
         }
+        if (buff.dampen[i]!=0 && finalDamage>buff.dampen[i]) finalDamage=0;
+        
         if (atk.damage>0&&atk.damageFactor[i]>0) {
             gBattle.steps.push({
                 action:"HIT",
@@ -4512,7 +4514,6 @@ function doTurn (A,D,turnA,turnD,side) {
             });
         }
         
-        if (buff.dampen[i]!=0 && finalDamage>buff.dampen[i]) finalDamage=0;
         var percAoe = Math.round(D.setup[i].hp*(1-atk.percAoe[i])*buff.ratio);
         var flatAoe = Math.round(atk.flatAoe[i]*buff.ratio);
         aoeArr[i]=percAoe+flatAoe+buff.fmasochism[i];
