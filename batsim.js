@@ -4472,7 +4472,7 @@ function doTurn (A,D,turnA,turnD,side) {
         if (maxhp==i&&atk.anarchy2>0) atk.flatAoe[i]+=atk.anarchy2;
         // Damage
         var attackDamage = atk.damageFactor[i]*Math.pow(buff.ratio,i)*atk.typeMul[i]*atk.damage
-        if (D.setup[i].id>=0||(D.setup[i].id<-1&&HERO[-(2+D.setup[i].id)].rarity!==5)) attackDamage+=atk.damagePerc*D.setup[i].mhp*atk.damageFactor[i];
+        if (D.setup[i].id>=0||(D.setup[i].id<-1&&HERO[-(2+D.setup[i].id)].rarity!==5)) attackDamage+=atk.damagePerc*D.setup[i].mhp*atk.damageFactor[i]*atk.typeMul[i];
         var dmgAfterDefense = Math.max((attackDamage*(1-buff.defPerc[i]))-buff.def[i],0);
         if (i==0 && buff.tank[i]!=1) {
             for (var j=i+1; j<D.setup.length; ++j) {
