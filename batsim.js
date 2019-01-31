@@ -4290,6 +4290,8 @@ function calcTurn0 (A,B,seed,side) {
             } else if (skill.type=="debuff") {
                 var _val = skillVal*lvlVal;
                 if (skillVal == 0.5) _val = 0.5;
+                turn.buff.ratio*=1-(_val);
+                turn.atk.ratio*=1-(_val);
                 gBattle.steps.push({
                     action:"DEBUFF",
                     target:side?"you":"other",
