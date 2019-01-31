@@ -4579,7 +4579,7 @@ function doTurn (A,D,turnA,turnD,side) {
         
         // new turns
         if (D.setup[i].hp<=0 && initHp>0) {
-            if (turnA.onkill.moob!==0) {
+            if (turnA.onkill.moob!==0&&i==0) {
                 if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
                 for (var j=0; j<retturn.self.atk.flatAoe.length; ++j) {
                     retturn.self.atk.flatAoe[j]+=turnA.onkill.moob;
