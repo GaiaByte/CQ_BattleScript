@@ -4108,9 +4108,7 @@ function createUnits (userData,hero,prom,battleData,seed) {
             var skillVal = HERO[hpos].skill.value + promoValue;
             var stats = level2stats(hpos,hero[hpos],prom[hpos],HERO[hpos].skill.type=="evo"?skillVal:1);
             if (HERO[hpos].skill.type=="ratk") {
-                var promoValue = 0;
-                if (prom[hpos]===5) promoValue = promoData[hpos].skill;
-                var val = seed%((skillVal+promoValue)+1);
+                var val = seed%((skillVal)+1);
                 stats.atk+=val;
                 stats.hp+=val;
             }
