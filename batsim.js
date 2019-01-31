@@ -4521,7 +4521,7 @@ function doTurn (A,D,turnA,turnD,side) {
         var initHp = D.setup[i].hp;
         D.setup[i].hp -= totalDamage;
         turndmg += totalDamage;
-        if (atk.leech>0 && totalDamage>0) {
+        if (atk.leech>0 && totalDamage>0 && D.setup[i].hp>0) {
             if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
             retturn.self.buff.heal[0]+=Math.round(finalDamage*atk.leech);
         }
