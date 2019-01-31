@@ -4496,7 +4496,7 @@ function doTurn (A,D,turnA,turnD,side) {
         var finalDamage = Math.round(dmgAfterDefense);
         var forcesuper=false;
         if (i==0 && (D.setup[i].hp - finalDamage) / D.setup[i].mhp <= atk.killIfUnder && atk.killIfUnder!==0) {
-            finalDamage=(D.setup[i].hp+1);
+            finalDamage=Math.max(finalDamage,D.setup[i].hp+1);
             forcesuper=true;
         }
         if (buff.dampen[i]!=0 && finalDamage>buff.dampen[i]) finalDamage=0;
