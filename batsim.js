@@ -2562,9 +2562,9 @@ var HERO = [
         hp: 126,
         atk: 114,
         skill: {
-            type: "moob",
+            type: "amoob",
             target: -1,
-            value: 150
+            value: 7
         },
         pve: true
     },
@@ -2722,11 +2722,67 @@ var HERO = [
         hp: 117,
         atk: 131,
         skill: {
-            type: "posbonus",
+            type: "aposbonus",
             target: -1,
-            value: 35
+            value: 0.45
         },
         pve: true,
+    },
+    // 144, 145, 146: Season VII Heroes
+    {
+        name:"BLOSSOM",
+        type:1,
+        rarity:2, // 0 common, 1 rare, 2 legendary
+        img: "tc3q",
+        hp: 54,
+        atk: 54,
+        skill: {
+            type: "friend",
+            target: -1,
+            value: 0.10,
+            hid: 144
+        }
+    },{
+        name:"FLINT",
+        type:2,
+        rarity:2, // 0 common, 1 rare, 2 legendary
+        img: "6bid",
+        hp: 56,
+        atk: 56,
+        skill: {
+            type: "friend",
+            target: -1,
+            value: 0.11,
+            hid: 145
+        }
+    },{
+        name:"ORIN",
+        type:0,
+        rarity:2, // 0 common, 1 rare, 2 legendary
+        img: "iu25",
+        hp: 58,
+        atk: 58,
+        skill: {
+            type: "friend",
+            target: -1,
+            value: 0.12,
+            hid: 146
+        }
+    },
+    // 147: ASCENDED SEASON PASS 03
+    {
+        name:"AURORA",
+        type:3,
+        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "122p",
+        hp: 130,
+        atk: 130,
+        skill: {
+            type: "friend",
+            target: -1,
+            value: 0.15,
+            hid: 147
+        },
     },
 ];
 
@@ -2743,13 +2799,13 @@ var promoData = [
       "hp": 40,
       "atk": 28,
       "both": 17,
-      "skill": 0.011,
+      "skill": 0.0404,
       "quest": 52,
       "name": "TINY"
     },
     {
-      "hp": 44,
-      "atk": 60,
+      "hp": 140,
+      "atk": 100,
       "both": 20,
       "skill": 20,
       "quest": 81,
@@ -2781,7 +2837,7 @@ var promoData = [
     },
     {
       "hp": 31,
-      "atk": 4,
+      "atk": 10,
       "both": 8,
       "skill": 1,
       "quest": 0,
@@ -2869,8 +2925,8 @@ var promoData = [
     },
     {
       "hp": 53,
-      "atk": 7,
-      "both": 9,
+      "atk": 17,
+      "both": 19,
       "skill": 2,
       "quest": 33,
       "name": "FAEFYR"
@@ -2893,9 +2949,9 @@ var promoData = [
     },
     {
       "hp": 89,
-      "atk": 19,
+      "atk": 39,
       "both": 29,
-      "skill": 0.05,
+      "skill": 0.1,
       "quest": 68,
       "name": "JAMES"
     },
@@ -3045,8 +3101,8 @@ var promoData = [
     },
     {
       "hp": 23,
-      "atk": 9,
-      "both": 11,
+      "atk": 15,
+      "both": 15,
       "skill": 4,
       "quest": 32,
       "name": "CHROMA"
@@ -3087,7 +3143,7 @@ var promoData = [
       "hp": 113,
       "atk": 31,
       "both": 52,
-      "skill": 0.2,
+      "skill": 2,
       "quest": 113,
       "name": "GAIABYTE"
     },
@@ -3125,7 +3181,7 @@ var promoData = [
     },
     {
       "hp": 99,
-      "atk": 19,
+      "atk": 39,
       "both": 70,
       "skill": 0.05,
       "quest": 106,
@@ -3134,7 +3190,7 @@ var promoData = [
     {
       "hp": 108,
       "atk": 43,
-      "both": 43,
+      "both": 68,
       "skill": 0.05,
       "quest": 109,
       "name": "GURTH"
@@ -3159,7 +3215,7 @@ var promoData = [
       "hp": 114,
       "atk": 11,
       "both": 48,
-      "skill": 0.01112,
+      "skill": 0.0404,
       "quest": 110,
       "name": "DULLAHAN"
     },
@@ -3207,7 +3263,7 @@ var promoData = [
       "hp": 132,
       "atk": 29,
       "both": 45,
-      "skill": 0.05,
+      "skill": 0.15,
       "quest": 67,
       "name": "SIGRÚN"
     },
@@ -3215,7 +3271,7 @@ var promoData = [
       "hp": 173,
       "atk": 18,
       "both": 26,
-      "skill": 0.05,
+      "skill": 0.15,
       "quest": 71,
       "name": "KOLDÍS"
     },
@@ -3223,7 +3279,7 @@ var promoData = [
       "hp": 152,
       "atk": 20+30,
       "both": 14*4,
-      "skill": 0.05,
+      "skill": 0.15,
       "quest": 69,
       "name": "ALVITR"
     },
@@ -3271,14 +3327,14 @@ var promoData = [
       "hp": 127,
       "atk": 46,
       "both": 176,
-      "skill": 0.0304,
+      "skill": 0.1414,
       "quest": 149,
       "name": "ASCENDED REI"
     },
     {
       "hp": 81,
       "atk": 221,
-      "both": 29,
+      "both": 59,
       "skill": 0.0152,
       "quest": 138,
       "name": "ASCENDED AURI"
@@ -3333,8 +3389,8 @@ var promoData = [
     {
       "hp": 107,
       "atk": 96,
-      "both": 48,
-      "skill": 0.01112,
+      "both": 78,
+      "skill": 0.0404,
       "quest": 107,
       "name": "SANTA CLAUS"
     },
@@ -3372,7 +3428,7 @@ var promoData = [
     },
     {
       "hp": 291,
-      "atk": 20,
+      "atk": 120,
       "both": 58,
       "skill": 0.0005,
       "quest": 147,
@@ -3403,7 +3459,7 @@ var promoData = [
       "name": "ARSHEN"
     },
     {
-      "hp": 108,
+      "hp": 88,
       "atk": 44,
       "both": 37,
       "skill": 0.05,
@@ -3413,7 +3469,7 @@ var promoData = [
     {
       "hp": 90,
       "atk": 38,
-      "both": 17,
+      "both": 40,
       "skill": 0.05,
       "quest": 90,
       "name": "DORTH"
@@ -3506,9 +3562,9 @@ var promoData = [
       "name": "LEPRECHAUN"
     },
     {
-      "hp": 69,
-      "atk": 1,
-      "both": 9,
+      "hp": 29,
+      "atk": 29,
+      "both": 15,
       "skill": 0.2,
       "quest": 23,
       "name": "SPARKS"
@@ -3541,7 +3597,7 @@ var promoData = [
       "hp": 94,
       "atk": 136,
       "both": 70,
-      "skill": 0.1,
+      "skill": 0.3,
       "quest": 115,
       "name": "DR.HAWKING"
     },
@@ -3747,7 +3803,7 @@ var promoData = [
       "hp": 43,
       "atk": 30,
       "both": 24,
-      "skill": 100,
+      "skill": 25,
       "quest": 22,
       "name": "BILLY"
     },
@@ -3770,16 +3826,16 @@ var promoData = [
     {
       "hp": 160,
       "atk": 51,
-      "both": 15,
+      "both": 115,
       "skill": 0.1,
       "quest": 159,
       "name": "GUY"
     },
     {
       "hp": 126,
-      "atk": 2+100,
-      "both": 38*3,
-      "skill": 150,
+      "atk": 102,
+      "both": 114,
+      "skill": 2,
       "quest": 141,
       "name": "ASCENDED DEFILE"
     },
@@ -3871,13 +3927,44 @@ var promoData = [
         "name": "SEETHE"
     },
     {
-        "skill": 35,
+        "skill": 0.11,
         "hp": 90,
         "atk": 117,
         "both": 124,
         "quest": 146,
         "name": "ASCENDED SEETHE"
-    }
+    },{
+        "skill": 0.01,
+        "hp": 99,
+        "atk": 99,
+        "both": 144,
+        "quest": 91,
+        "name": "BLOSSOM"
+      },
+      {
+        "skill": 0.01,
+        "hp": 100,
+        "atk": 100,
+        "both": 150,
+        "quest": 98,
+        "name": "FLINT"
+      },
+      {
+        "skill": 0.01,
+        "hp": 101,
+        "atk": 101,
+        "both": 156,
+        "quest": 104,
+        "name": "ORIN"
+      },
+      {
+        "skill": 0.01,
+        "hp": 221,
+        "atk": 221,
+        "both": 344,
+        "quest": 142,
+        "name": "AURORA"
+      }
 ]
 
 
@@ -4116,6 +4203,13 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 var behind = 0;
                 for (var j=i-1; j>=0; --j) if (userData[j]!=-1) ++behind;
                 var val = skillVal*behind;
+                stats.atk+=val;
+                stats.hp+=val;
+            }
+			if (HERO[hpos].skill.type=="aposbonus") {
+                var behind = 0;
+                for (var j=i-1; j>=0; --j) if (userData[j]!=-1) ++behind;
+                var val = Math.round(skillVal*hero[hpos]*behind);
                 stats.atk+=val;
                 stats.hp+=val;
             }
@@ -4393,7 +4487,9 @@ function calcTurn (A,B,seed) {
                     turn.buff.counterAoe=skillVal*lvlVal/skill.target;
                 } else if (skill.type=="moob") {
                     turn.onkill.moob=skillVal;
-                } else if (skill.type=="leech") {
+				} else if (skill.type=="amoob") {
+                    turn.onkill.moob=skillVal*Math.floor(lvlVal/3);
+				} else if (skill.type=="leech") {
                     turn.atk.leech=skillVal;
                 } else if (skill.type=="evolve") {
                     turn.buff.evolve=skillVal;
@@ -4600,6 +4696,17 @@ function doTurn (A,D,turnA,turnD,side) {
                     for (var j=0; j<retturn.other.atk.flatAoe.length; ++j) {
                         retturn.other.atk.flatAoe[j]+=Math.round(skillVal*D.setup[i].atk);
                     }
+                } else if (D.setup[i].skill.type=="friend") {
+                    var hpval = Math.round(D.setup[i].mhp*D.setup[i].skill.value);
+                    var atkval = Math.round(D.setup[i].matk*D.setup[i].skill.value);
+                    for (var j=0; j<D.setup.length; ++j) {
+                        if (j!=i && D.setup[j].hp>0) {
+                            D.setup[j].mhp+=hpval;
+                            D.setup[j].hp+=hpval;
+                            D.setup[j].atk+=atkval;
+                            D.setup[j].matk+=atkval;
+                        }
+                    }
                 }
             }
         } else {
@@ -4683,9 +4790,9 @@ function level2stats (hero,level,promotion,ratio) {
     } else {
         var _hp = hp + Math.round(points*hp/(hp+atk));
         var _atk = atk + Math.round(points*atk/(hp+atk));
-        if (promotion>=1 && level==99) _hp+=promoData[hero].hp;
-        if (promotion>=2 && level==99) _atk+=promoData[hero].atk;
-        if (promotion>=4 && level==99) {
+        if (promotion>=1) _hp+=promoData[hero].hp;
+        if (promotion>=2) _atk+=promoData[hero].atk;
+        if (promotion>=4) {
             _hp+=promoData[hero].both;
             _atk+=promoData[hero].both;
         }
