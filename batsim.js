@@ -2784,6 +2784,60 @@ var HERO = [
             hid: 147
         },
     },
+    // 148: ST.VALENTINE LTO
+    {
+        name:"CUPID",
+        type:0,
+        rarity:2, // 0 common, 1 rare, 2 legendary
+        img: "siua",
+        hp: 220,
+        atk: 20,
+        skill: {
+            type: "rico",
+            target: 1,
+            value: 3.0,
+        },
+    },
+    // 149, 150, 151: DRIFTER HEROES
+    {
+        name:"TRANSIENT",
+        type:4,
+        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "2aoh",
+        hp: 22,
+        atk: 22,
+        skill: {
+            type: "void",
+            target: -1,
+            value: 0.5
+        }
+    },
+    {
+        name:"MAUNDER",
+        type:4,
+        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "91jo",
+        hp: 34,
+        atk: 34,
+        skill: {
+            type: "void",
+            target: -1,
+            value: 0.5
+        }
+    },
+    {
+        name:"THE WANDERER",
+        type:4,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "wy4e",
+        hp: 50,
+        atk: 50,
+        skill: {
+            type: "void",
+            target: -1,
+            value: 0.5
+        },
+    },
 ];
 
 var promoData = [
@@ -3902,14 +3956,15 @@ var promoData = [
       "skill": 0.2,
       "quest": 70,
       "name": "KEDARI"
-    },{
+    },
+    {
         "skill": 0.05,
         "hp": 8,
         "atk": 3,
         "both": 14,
         "quest": 5,
         "name": "RAZE"
-        },
+    },
     {
         "skill": 0.05,
         "hp": 23,
@@ -3933,38 +3988,70 @@ var promoData = [
         "both": 124,
         "quest": 146,
         "name": "ASCENDED SEETHE"
-    },{
+    },
+    {
         "skill": 0.01,
         "hp": 99,
         "atk": 99,
         "both": 144,
         "quest": 91,
         "name": "BLOSSOM"
-      },
-      {
+    },
+    {
         "skill": 0.01,
         "hp": 100,
         "atk": 100,
         "both": 150,
         "quest": 98,
         "name": "FLINT"
-      },
-      {
+    },
+    {
         "skill": 0.01,
         "hp": 101,
         "atk": 101,
         "both": 156,
         "quest": 104,
         "name": "ORIN"
-      },
-      {
+    },
+    {
         "skill": 0.01,
         "hp": 221,
         "atk": 221,
         "both": 344,
         "quest": 142,
         "name": "AURORA"
-      }
+    },
+    {
+        "skill": 1.0,
+        "hp": 150,
+        "atk": 50,
+        "both": 110,
+        "quest": 118,
+        "name": "CUPID" 
+    },{
+        "skill": 0.1,
+        "hp": 11,
+        "atk": 11,
+        "both": 20,
+        "quest": 24,
+        "name": "TRANSIENT"
+    },
+    {
+        "skill": 0.1,
+        "hp": 22,
+        "atk": 22,
+        "both": 32,
+        "quest": 57,
+        "name": "MAUNDER"
+    },
+    {
+        "skill": 0.1,
+        "hp": 80,
+        "atk": 80,
+        "both": 120,
+        "quest": 126,
+        "name": "THE WANDERER"
+    }
 ]
 
 
@@ -4441,7 +4528,7 @@ function shuffleBySeed(arr,seed,start) {
 
 function calcTurn (A,B,seed) {
     turn = getTurnData(A.setup.length,B.setup.length);
-    var TYPES = [3,0,1,2];
+    var TYPES = [3,0,1,2,-1];
     for (var i=0;i<B.setup.length;++i) {
         if (TYPES[A.setup[0].type]==B.setup[i].type) {
             turn.atk.typeMul[i]=1.5;
@@ -4461,6 +4548,10 @@ function calcTurn (A,B,seed) {
                 else if (skill.type=="purity") {
                     for (var j=0; j<B.setup.length;++j) {
                         turn.atk.typeMul[j] *= (A.setup[i].type == B.setup[j].type)?skillVal:1;
+                    }
+                } else if (skill.type=="void") {
+                    for (var j=0; j<B.setup.length;++j) {
+                        turn.atk.typeMul[j] += (A.setup[i].type !== B.setup[j].type)?skillVal:1;
                     }
                 } else if (skill.type=="elem") {
                     for (var j=0; j<B.setup.length;++j) {
