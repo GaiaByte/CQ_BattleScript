@@ -2837,7 +2837,70 @@ var HERO = [
             target: -1,
             value: 0.5
         },
-    },
+    },// 152 BDAY
+    {
+        name:"B-DAY",
+        type:0,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "jz8c",
+        hp: 100,
+        atk: 40,
+        skill: {
+            type: "bday",
+            target: -1,
+            value: 0.1,
+            hid: 152
+        },
+    }, // 153,154,155,156 DRAGONS
+    {
+        name:"CLOUD",
+        type:0,
+        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "62s2",
+        hp: 44,
+        atk: 22,
+        skill: {
+            type: "infiltred",
+            target: -1,
+            value: 0.95
+        },
+    },{
+        name:"EMBER",
+        type:2,
+        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "v82q",
+        hp: 64,
+        atk: 32,
+        skill: {
+            type: "infiltred",
+            target: -1,
+            value: 0.95
+        },
+    },{
+        name:"RIPTIDE",
+        type:3,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "n9na",
+        hp: 84,
+        atk: 42,
+        skill: {
+            type: "infiltred",
+            target: -1,
+            value: 0.95
+        },
+    },{
+        name:"SPIKE",
+        type:1,
+        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "adkj",
+        hp: 180,
+        atk: 90,
+        skill: {
+            type: "infiltred",
+            target: -1,
+            value: 0.95
+        },
+    }
 ];
 
 var promoData = [
@@ -4051,6 +4114,45 @@ var promoData = [
         "both": 120,
         "quest": 126,
         "name": "THE WANDERER"
+    },{
+        "skill": 0.05,
+        "hp": 61,
+        "atk": 51,
+        "both": 23,
+        "quest": 91,
+        "name": "B-DAY"
+    },
+    {
+        "skill": 0.05,
+        "hp": 36,
+        "atk": 32,
+        "both": 11,
+        "quest": 18,
+        "name": "CLOUD"
+    },
+    {
+        "skill": 0.05,
+        "hp": 34,
+        "atk": 14,
+        "both": 19,
+        "quest": 52,
+        "name": "EMBER"
+    },
+    {
+        "skill": 0.05,
+        "hp": 89,
+        "atk": 34,
+        "both": 22,
+        "quest": 87,
+        "name": "RIPTIDE"
+    },
+    {
+        "skill": 0.05,
+        "hp": 234,
+        "atk": 103,
+        "both": 136,
+        "quest": 143,
+        "name": "SPIKE"
     }
 ]
 
@@ -4339,7 +4441,8 @@ function getTurnData (AL,BL) {
             ratio: 1,
             leech: 0,
             killIfUnder: 0,
-            anarchy2: 0
+            anarchy2: 0,
+            moab: 0,
         },
         buff: {
             def: Array(AL).fill(0),
@@ -4551,7 +4654,7 @@ function calcTurn (A,B,seed) {
                     }
                 } else if (skill.type=="void") {
                     for (var j=0; j<B.setup.length;++j) {
-                        turn.atk.typeMul[j] += (A.setup[i].type !== B.setup[j].type)?skillVal:1;
+                        turn.atk.typeMul[j] += (A.setup[i].type !== B.setup[j].type)?skillVal:0;
                     }
                 } else if (skill.type=="elem") {
                     for (var j=0; j<B.setup.length;++j) {
@@ -4590,6 +4693,14 @@ function calcTurn (A,B,seed) {
                     turn.atk.killIfUnder=skillVal;
                 } else if (skill.type=="amplify") {
                     turn.atk.damagePerc=skillVal*lvlVal/skill.target;
+                } else if (skill.type=="infiltred") {
+                    turn.atk.moab=skillVal;
+                    for (var j=0; j<B.setup.length;++j) {
+                        turn.atk.flatAoe[j] += Math.round(skillVal*A.setup[i].matk);
+                    }
+                    for (var j=0; j<A.setup.length;++j) {
+                        if (j!=i) turn.buff.fmasochism[j] += Math.round(skillVal*A.setup[i].matk);
+                    }
                 }
             } else {
                 if (skill.type=="tank") {
@@ -4606,9 +4717,11 @@ function calcTurn (A,B,seed) {
             } else if (skill.type=="dampen") {
                 turn.buff.dampen[i]=skillVal;
             } else if (skill.type=="guardian") {
-                turn.buff.fmasochism[i]=Math.floor(skillVal*lvlVal/skill.target*1.5);
+                turn.buff.fmasochism[i]+=Math.floor(skillVal*lvlVal/skill.target*1.5);
             } else if (skill.type=="armor") {
                 turn.buff.defPerc[i]+=skillVal*lvlVal/skill.target;
+            } else if (skill.type=="bday") {
+                turn.atk.flatAoe[B.setup.length-1]+=skillVal*A.setup[i].matk;
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
@@ -4636,6 +4749,7 @@ function calcTurn (A,B,seed) {
                 }
                 if (skill.type=="guardian") turn.atk.flatAoe[j]+=Math.floor(skillVal*lvlVal/skill.target*1.5);
             }
+
         }
     }
     turn.atk.damage = A.setup[0].atk + A.setup[0].tatk;
@@ -4708,7 +4822,7 @@ function doTurn (A,D,turnA,turnD,side) {
         var initHp = D.setup[i].hp;
         D.setup[i].hp -= totalDamage;
         turndmg += totalDamage;
-        if (atk.leech>0 && totalDamage>0 && D.setup[i].hp>0) {
+        if (atk.leech>0 && totalDamage>0 && A.setup[0].hp>0) {
             if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
             retturn.self.buff.heal[0]+=Math.round(finalDamage*atk.leech);
         }
@@ -4788,8 +4902,8 @@ function doTurn (A,D,turnA,turnD,side) {
                         retturn.other.atk.flatAoe[j]+=Math.round(skillVal*D.setup[i].atk);
                     }
                 } else if (D.setup[i].skill.type=="friend") {
-                    var hpval = Math.round(D.setup[i].mhp*D.setup[i].skill.value);
-                    var atkval = Math.round(D.setup[i].matk*D.setup[i].skill.value);
+                    var hpval = Math.round(D.setup[i].mhp*skillVal);
+                    var atkval = Math.round(D.setup[i].matk*skillVal);
                     for (var j=0; j<D.setup.length; ++j) {
                         if (j!=i && D.setup[j].hp>0) {
                             D.setup[j].mhp+=hpval;
