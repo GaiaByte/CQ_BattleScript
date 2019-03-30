@@ -4828,7 +4828,7 @@ function doTurn (A,D,turnA,turnD,side) {
         }
         // Buffs
         var tmpatk = D.setup[i].atk;
-        D.setup[i].atk+=buff.iAtk[i]*buff.ratio;
+        D.setup[i].atk+=buff.iAtk[i];
         D.setup[i].atk*=buff.iAtkPerc[i];
         D.setup[i].atk=Math.round(D.setup[i].atk);
         if (D.setup[i].atk!=tmpatk) {
