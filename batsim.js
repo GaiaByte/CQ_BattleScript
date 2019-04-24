@@ -2345,6 +2345,7 @@ var HERO = [
             value: 0.75,
         }
     },
+    
     {
         name:"JADE",
         type:1,
@@ -2900,7 +2901,154 @@ var HERO = [
             target: -1,
             value: 0.95
         },
-    }
+    },
+    // 157, 158, 159, 160: PVE DJINN 
+    {
+        name:"ASCENDED MAHATMA",
+        type:0,
+        rarity:3, // 0 common, 1 rare, 2 legendary
+        img: "wpph",
+        hp: 180,
+        atk: 60,
+        skill: {
+            type: "elem",
+            target: 3,
+            value: 1.7
+        },
+        pve: true,
+    },{
+        name:"ASCENDED JADE",
+        type:1,
+        rarity:3, // 0 common, 1 rare, 2 legendary
+        img: "jc5b",
+        hp: 172,
+        atk: 68,
+        skill: {
+            type: "elem",
+            target: 0,
+            value: 1.7
+        },
+        pve: true,
+    },{
+        name:"ASCENDED EDANA",
+        type:2,
+        rarity:3, // 0 common, 1 rare, 2 legendary
+        img: "gids",
+        hp: 160,
+        atk: 80,
+        skill: {
+            type: "elem",
+            target: 1,
+            value: 1.7
+        },
+        pve: true,
+    },{
+        name:"ASCENDED DYBBUK",
+        type:3,
+        rarity:3, // 0 common, 1 rare, 2 legendary
+        img: "98p6",
+        hp: 176,
+        atk: 66,
+        skill: {
+            type: "elem",
+            target: 2,
+            value: 1.7
+        },
+        pve: true,
+    },
+    // 161, 162 ,163 ,164: EASTER HEROES 2019
+    {
+        name:"WILLOW",
+        type:0,
+        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "jqr2",
+        hp: 30,
+        atk: 38,
+        skill: {
+            type: "backlash",
+            target: -1,
+            value: 0.2,
+        }
+    },
+    {
+        name:"GIZMO",
+        type:2,
+        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "6oe8",
+        hp: 70,
+        atk: 40,
+        skill: {
+            type: "mbonus",
+            target: -1,
+            value: 3
+        }
+    },
+    {
+        name:"DAISY",
+        type:3,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "7itt",
+        hp: 84,
+        atk: 50,
+        skill: {
+            type: "easter",
+            target: -1,
+            value: 2.5
+        },
+    },
+    {
+        name:"THUMPER",
+        type:1,
+        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "2fyz",
+        hp: 120,
+        atk: 200,
+        skill: {
+            type: "mshield",
+            target: -1,
+            value: 0.6
+        },
+    },
+    // 165, 166 ,167 AQUATIC HEROES
+    {
+        name:"BORTLES",
+        type:0,
+        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "tx6e",
+        hp: 40,
+        atk: 24,
+        skill: {
+            type: "mon2",
+            target: -1,
+            value: 3
+        }
+    },
+    {
+        name:"MURPHY",
+        type:1,
+        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "i8gx",
+        hp: 40,
+        atk: 28,
+        skill: {
+            type: "fixreflect",
+            target: -1,
+            value: 60
+        }
+    },
+    {
+        name:"NERISSA",
+        type:3,
+        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
+        img: "ckwv",
+        hp: 24,
+        atk: 82,
+        skill: {
+            type: "fixarmor",
+            target: -1,
+            value: 0.45
+        },
+    },
 ];
 
 var promoData = [
@@ -4153,7 +4301,94 @@ var promoData = [
         "both": 136,
         "quest": 143,
         "name": "SPIKE"
-    }
+    },{
+        "skill": 0.3,
+        "hp": 241,
+        "atk": 50,
+        "both": 45,
+        "quest": 138,
+        "name": "ASCENDED MAHATMA"
+      },
+      {
+        "skill": 0.3,
+        "hp": 288,
+        "atk": 41,
+        "both": 33,
+        "quest": 146,
+        "name": "ASCENDED JADE"
+      },
+      {
+        "skill": 0.3,
+        "hp": 191,
+        "atk": 180,
+        "both": 74,
+        "quest": 145,
+        "name": "ASCENDED EDANA"
+      },
+      {
+        "skill": 0.3,
+        "hp": 272,
+        "atk": 55,
+        "both": 29,
+        "quest": 147,
+        "name": "ASCENDED DYBBUK"
+      },
+      {
+        "skill": 0.2,
+        "hp": 22,
+        "atk": 19,
+        "both": 24,
+        "quest": 19,
+        "name": "WILLOW"
+      },
+      {
+        "skill": 1,
+        "hp": 43,
+        "atk": 26,
+        "both": 52,
+        "quest": 58,
+        "name": "GIZMO"
+      },
+      {
+        "skill": 0.5,
+        "hp": 50,
+        "atk": 84,
+        "both": 70,
+        "quest": 88,
+        "name": "DAISY"
+      },
+      {
+        "skill": 0.1,
+        "hp": 230,
+        "atk": 320,
+        "both": 360,
+        "quest": 156,
+        "name": "THUMPER"
+      },
+      {
+        "skill": 3,
+        "hp": 10,
+        "atk": 13,
+        "both": 14,
+        "quest": 21,
+        "name": "BORTLES"
+      },
+      {
+        "skill": 30,
+        "hp": 24,
+        "atk": 18,
+        "both": 28,
+        "quest": 60,
+        "name": "MURPHY"
+      },
+      {
+        "skill": 0.05,
+        "hp": 22,
+        "atk": 45,
+        "both": 52,
+        "quest": 123,
+        "name": "NERISSA"
+      }
 ]
 
 
@@ -4276,7 +4511,7 @@ function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,pro
             action:"RESULT",
             target:"loss",
         });
-    } else if (right.setup==0 && left.setup.length>0) {
+    } else if (right.setup.length==0 && left.setup.length>0) {
         res.result = 1;
         gBattle.steps.push({
             action:"RESULT",
@@ -4365,6 +4600,11 @@ function WBatk (lvl) {
 
 function createUnits (userData,hero,prom,battleData,seed) {
     battleData.setup=[];
+    var easter = false;
+    for (var i=userData.length-1; i>=0; --i) {
+        var hpos = -2*1-userData[i];
+        if ([97,98,99,161,162,164].indexOf(hpos)!==-1) easter=true;
+    }
     for (var i=userData.length-1; i>=0; --i) {
         if (userData[i]>=0) {
             var unitData = {
@@ -4382,7 +4622,7 @@ function createUnits (userData,hero,prom,battleData,seed) {
             var promoValue = 0;
             if (prom[hpos]===5) promoValue = promoData[hpos].skill;
             var skillVal = HERO[hpos].skill.value + promoValue;
-            var stats = level2stats(hpos,hero[hpos],prom[hpos],HERO[hpos].skill.type=="evo"?skillVal:1);
+            var stats = level2stats(hpos,hero[hpos],prom[hpos],HERO[hpos].skill.type=="evo"?skillVal:((HERO[hpos].skill.type=="easter"&&easter)?skillVal:1));
             if (HERO[hpos].skill.type=="ratk") {
                 var val = seed%((skillVal)+1);
                 stats.atk+=val;
@@ -4446,18 +4686,22 @@ function getTurnData (AL,BL) {
         },
         buff: {
             def: Array(AL).fill(0),
+            sdefPerc: Array(AL).fill(1),
             defPerc: Array(AL).fill(0),
             heal: Array(AL).fill(0),
             healLost: Array(AL).fill(0),
             iAtk: Array(AL).fill(0),
             iAtkPerc: Array(AL).fill(1),
+            tAtkMul: Array(AL).fill(1),
             masochism: Array(AL).fill(1),
             fmasochism: Array(AL).fill(0),
             tank: tank,
             ratio: 1,
+            rleech: 0,
             dampen: Array(AL).fill(0),
             counter: 0,
             counterAoe: 0,
+            counterFlat: 0,
             evolve: 0,
             anarchy: 0,
         },
@@ -4580,6 +4824,16 @@ function calcTurn0 (A,B,seed,side) {
                     origin: i,
                     val: doMask(skill.target,_val,B.setup),
                 });
+            } else if (skill.type=="mshield") {
+                turn.buff.sdefPerc[i]=1-skillVal;
+                var mask = Array(B.setup.length);
+                mask[i]=skillVal;
+                gBattle.steps.push({
+                    action:"DEBUFF",
+                    target:side?"you":"other",
+                    origin: i,
+                    val: mask,
+                });
             } else if (skill.type=="evo") {
                 gBattle.steps.push({
                     action:"EVO",
@@ -4608,7 +4862,7 @@ function calcTurn0 (A,B,seed,side) {
                     origin: i,
                     val: doMask(skill.target,skillVal,B.setup),
                 });
-            }
+            } 
         } 
     }
     return turn;
@@ -4665,12 +4919,12 @@ function calcTurn (A,B,seed) {
                         turn.atk.damageFactor[j]=turn.atk.damageFactor[j-1]*skillVal;
                         turn.atk.typeMul[j]=turn.atk.typeMul[j-1];
                     }
-                } else if (skill.type=="mon") {
-                    /*for (var j=i+1; j<A.setup.length; ++j) {
-                        if (A.setup[j].lvl==undefined) {
-                            A.setup[i].tatk+=(A.setup[i].atk+A.setup[i].tatk)*(skillVal-1);
-                        }
-                    }*/
+                } else if (skill.type=="mon2") {
+                    var monCount = 0;
+                    for (var j=i+1; j<A.setup.length; ++j) {
+                        ++monCount;
+                    }
+                    turn.buff.def[i]+=monCount*skillVal
                 } else if (skill.type=="rcrit") {
                     turn.atk.typeMul[0] *= (seed%skill.target)==0?skillVal:1;
                 } else if (skill.type=="rtrg") {
@@ -4679,12 +4933,16 @@ function calcTurn (A,B,seed) {
                     turn.buff.counter=skillVal;
                 } else if (skill.type=="reflect") {
                     turn.buff.counterAoe=skillVal*lvlVal/skill.target;
+                } else if (skill.type=="fixreflect") {
+                    turn.buff.counterFlat+=skillVal;
                 } else if (skill.type=="moob") {
                     turn.onkill.moob=skillVal;
 				} else if (skill.type=="amoob") {
                     turn.onkill.moob=skillVal*Math.floor(lvlVal/3);
 				} else if (skill.type=="leech") {
                     turn.atk.leech=skillVal;
+                } else if (skill.type=="backlash") {
+                    turn.buff.rleech=skillVal;
                 } else if (skill.type=="evolve") {
                     turn.buff.evolve=skillVal;
                 } else if (skill.type=="anarchy") {
@@ -4701,6 +4959,8 @@ function calcTurn (A,B,seed) {
                     for (var j=0; j<A.setup.length;++j) {
                         if (j!=i) turn.buff.fmasochism[j] += Math.round(skillVal*A.setup[i].matk);
                     }
+                } else if (skill.type=="mbonus") {
+                    turn.buff.tAtkMul[i]*=skillVal;
                 }
             } else {
                 if (skill.type=="tank") {
@@ -4714,12 +4974,16 @@ function calcTurn (A,B,seed) {
             } else if (skill.type=="debuff") {
                 turn.buff.ratio*=1-(skillVal*lvlVal);
                 turn.atk.ratio*=1-(skillVal*lvlVal);
+            } else if (skill.type=="mshield") {
+                turn.buff.sdefPerc[i]=1-skillVal;
             } else if (skill.type=="dampen") {
                 turn.buff.dampen[i]=skillVal;
             } else if (skill.type=="guardian") {
                 turn.buff.fmasochism[i]+=Math.floor(skillVal*lvlVal/skill.target*1.5);
             } else if (skill.type=="armor") {
                 turn.buff.defPerc[i]+=skillVal*lvlVal/skill.target;
+            } else if (skill.type=="fixarmor") {
+                turn.buff.defPerc[i]+=skillVal;
             } else if (skill.type=="bday") {
                 turn.atk.flatAoe[B.setup.length-1]+=skillVal*A.setup[i].matk;
             }
@@ -4752,10 +5016,10 @@ function calcTurn (A,B,seed) {
 
         }
     }
-    turn.atk.damage = A.setup[0].atk + A.setup[0].tatk;
+    turn.atk.damage = A.setup[0].atk + A.setup[0].tatk*turn.buff.tAtkMul[0];
     return turn;
 }
-// A = Attacker, B = Defender
+// A = Attacker, D = Defender
 function doTurn (A,D,turnA,turnD,side) {
     var atk = turnA.atk;
     var buff = turnD.buff;
@@ -4796,7 +5060,7 @@ function doTurn (A,D,turnA,turnD,side) {
         }
         var finalDamage = Math.round(dmgAfterDefense);
         var forcesuper=false;
-        if (i==0 && (D.setup[i].hp - finalDamage) / D.setup[i].mhp <= atk.killIfUnder && atk.killIfUnder!==0) {
+        if (i==0 && (D.setup[i].hp - finalDamage) / D.setup[i].mhp <= atk.killIfUnder*buff.sdefPerc[i] && atk.killIfUnder!==0) {
             finalDamage=Math.max(finalDamage,D.setup[i].hp+1);
             forcesuper=true;
         }
@@ -4815,8 +5079,8 @@ function doTurn (A,D,turnA,turnD,side) {
             });
         }
         
-        var percAoe = Math.round(D.setup[i].hp*(1-atk.percAoe[i])*buff.ratio);
-        var flatAoe = Math.round(atk.flatAoe[i]*buff.ratio);
+        var percAoe = Math.round(D.setup[i].hp*(1-atk.percAoe[i])*buff.ratio*buff.sdefPerc[i]);
+        var flatAoe = Math.round(atk.flatAoe[i]*buff.ratio*buff.sdefPerc[i]);
         aoeArr[i]=percAoe+flatAoe+buff.fmasochism[i];
         var totalDamage = finalDamage+percAoe+flatAoe+buff.fmasochism[i];
         var initHp = D.setup[i].hp;
@@ -4825,6 +5089,10 @@ function doTurn (A,D,turnA,turnD,side) {
         if (atk.leech>0 && totalDamage>0 && A.setup[0].hp>0) {
             if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
             retturn.self.buff.heal[0]+=Math.round(finalDamage*atk.leech);
+        }
+        if (buff.rleech>0 && totalDamage>0 && D.setup[0].hp>0) {
+            if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
+            retturn.other.buff.heal[0]+=Math.round(finalDamage*buff.rleech);
         }
         // Buffs
         var tmpatk = D.setup[i].atk;
@@ -4863,6 +5131,10 @@ function doTurn (A,D,turnA,turnD,side) {
         if (buff.counter>0&&i==0&&finalDamage>0) {
             if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
             retturn.other.atk.flatAoe[0]+=Math.round(finalDamage*buff.counter);
+        }
+        if (buff.counterFlat>0&&i==0&&finalDamage>0) {
+            if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
+            retturn.other.atk.flatAoe[0]+=Math.round(buff.counterFlat);
         }
 
         if (buff.counterAoe>0&&i==0&&finalDamage>0) {
@@ -4939,6 +5211,14 @@ function doTurn (A,D,turnA,turnD,side) {
         });
     }
     A.dmg += turndmg;
+    if (retturn.other!==undefined) {
+        retturn.other.buff.sdefPerc = turnD.buff.sdefPerc;
+        retturn.other.buff.ratio = turnD.buff.ratio;
+    }
+    if (retturn.self!==undefined) {
+        retturn.self.buff.sdefPerc = turnA.buff.sdefPerc;
+        retturn.self.buff.ratio = turnA.buff.ratio;
+    }
     return retturn;
 }
 
