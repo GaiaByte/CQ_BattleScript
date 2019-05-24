@@ -843,3553 +843,4938 @@ var MONSTERS = [
 ];
 
 var HERO = [
-    // One Time Purchase x3
-    {
-        name:"LADY OF TWILIGHT",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0fmg",
-        hp: 45,
-        atk: 20,
-        skill: {
-            type: "extra",
-            target: -1,
-            value: 3
-        }
-    },{
-        name:"TINY",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0kbl",
-        hp: 70,
-        atk: 30,
-        skill: {
-            type: "buffahe",
-            target: -1,
-            value: 1/24
-        }
-    },{
-        name:"NEBRA",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0bhl",
-        hp: 110,
-        atk: 40,
-        skill: {
-            type: "dmg",
-            target: -1,
-            value: 20
-        }
-    },
-    // PVE Heroes x4
-    {
-        name:"VALOR",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0ctf",
-        hp: 20,
-        atk: 10,
-        skill: {
-            type: "def",
-            target: 0,
-            value: 1
-        }
-    },{
-        name:"ROKKA",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "06ny",
-        hp: 30,
-        atk: 8,
-        skill: {
-            type: "def",
-            target: 1,
-            value: 1
-        }
-    },{
-        name:"PYROMANCER",
-        type:2,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "09nf",
-        hp: 24,
-        atk: 12,
-        skill: {
-            type: "def",
-            target: 2,
-            value: 1
-        }
-    },{
-        name:"BEWAT",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "02hk",
-        hp: 50,
-        atk: 6,
-        skill: {
-            type: "def",
-            target: 3,
-            value: 1
-        }
-    },
-    // CAVEMAN Heroes
-    {
-        name:"HUNTER",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0ek2",
-        hp: 22,
-        atk: 14,
-        skill: {
-            type: "dmg",
-            target: 0,
-            value: 2
-        }
-    },{
-        name:"SHAMAN",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0kid",
-        hp: 40,
-        atk: 20,
-        skill: {
-            type: "def",
-            target: 1,
-            value: 2
-        }
-    },{
-        name:"ALPHA",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ezu",
-        hp: 82,
-        atk: 22,
-        skill: {
-            type: "aoe",
-            target: -1,
-            value: 1
-        },
-        super: 65,
-    },
-    // HUMAN Heroes
-    {
-        name:"CARL",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0fy3",
-        hp: 28,
-        atk: 12,
-        skill: {
-            type: "dmg",
-            target: 3,
-            value: 2
-        }
-    },{
-        name:"NIMUE",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0egn",
-        hp: 38,
-        atk: 22,
-        skill: {
-            type: "def",
-            target: 0,
-            value: 2
-        }
-    },{
-        name:"ATHOS",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "03nd",
-        hp: 70,
-        atk: 26,
-        skill: {
-            type: "def",
-            target: -1,
-            value: 2
-        },
-        super: 66,
-    },
-    // PROSTHETICMAN Heroes
-    {
-        name:"JET",
-        type:2,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0oai",
-        hp: 24,
-        atk: 16,
-        skill: {
-            type: "dmg",
-            target: 2,
-            value: 2
-        }
-    },{
-        name:"GERON",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0c53",
-        hp: 36,
-        atk: 24,
-        skill: {
-            type: "def",
-            target: 3,
-            value: 2
-        }
-    },{
-        name:"REI",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0mq1",
-        hp: 46,
-        atk: 40,
-        skill: {
-            type: "dmg",
-            target: -1,
-            value: 2
-        },
-        super: 67,
-    },
-    // GENETICMAN Heroes
-    {
-        name:"AILEN",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0cku",
-        hp: 19,
-        atk: 22,
-        skill: {
-            type: "dmg",
-            target: 1,
-            value: 2
-        }
-    },{
-        name:"FAEFYR",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0cav",
-        hp: 50,
-        atk: 18,
-        skill: {
-            type: "def",
-            target: 2,
-            value: 2
-        }
-    },{
-        name:"AURI",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0agh",
-        hp: 60,
-        atk: 32,
-        skill: {
-            type: "heal",
-            target: -1,
-            value: 2
-        },
-        super: 68,
-    },
-    // PVE 5 (pos 19)
-    {
-        name:"NICTE",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0aar",
-        hp: 22,
-        atk: 32,
-        skill: {
-            type: "dmg",
-            target: 0,
-            value: 4
-        }
-    },{
-        name:"JAMES",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ef9",
-        hp: 50,
-        atk: 12,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.75
-        }
-    },
-    // ROBOT - CONTINUE SPECIES (pos 21)
-    {
-        name:"K41RY",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0m4j",
-        hp: 28,
-        atk: 16,
-        skill: {
-            type: "dmg",
-            target: 0,
-            value: 3
-        }
-    },{
-        name:"T4URUS",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0klv",
-        hp: 46,
-        atk: 20,
-        skill: {
-            type: "dmg",
-            target: -1,
-            value: 1
-        }
-    },{
-        name:"TR0N1X",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ji6",
-        hp: 100,
-        atk: 20,
-        skill: {
-            type: "aoe",
-            target: -1,
-            value: 3
-        },
-        super: 69,
-    },
-    // POSTHUMAN
-    {
-        name:"AQUORTIS",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0k2w",
-        hp: 58,
-        atk: 8,
-        skill: {
-            type: "dmg",
-            target: 3,
-            value: 3
-        }
-    },{
-        name:"AERIS",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0lbm",
-        hp: 30,
-        atk: 32,
-        skill: {
-            type: "heal",
-            target: -1,
-            value: 1
-        }
-    },{
-        name:"GEUM",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0k28",
-        hp: 75,
-        atk: 2,
-        skill: {
-            type: "buff",
-            target: 0,
-            value: 2
-        },
-        super: 70,
-    },
-    // 27 28 29 - PVE MAPA 6,7,8
-    {
-        name:"FOREST DRUID",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0etn",
-        hp: 46,
-        atk: 16,
-        skill: {
-            type: "dmg",
-            target: 1,
-            value: 4
-        }
-    },{
-        name:"IGNITOR",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0awm",
-        hp: 32,
-        atk: 24,
-        skill: {
-            type: "dmg",
-            target: 2,
-            value: 4
-        }
-    },{
-        name:"UNDINE",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "026t",
-        hp: 58,
-        atk: 14,
-        skill: {
-            type: "dmg",
-            target: 3,
-            value: 4
-        }
-    },
-    // ENTITY HEROES - 30 31 32
-    {
-        name:"RUDEAN",
-        type:2,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "0ffu",
-        hp: 38,
-        atk: 12,
-        skill: {
-            type: "dmg",
-            target: 2,
-            value: 3
-        }
-    },{
-        name:"AURAL",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0lr6",
-        hp: 18,
-        atk: 50,
-        skill: {
-            type: "buff",
-            target: -1,
-            value: 1.2
-        }
-    },{
-        name:"GEROR",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ikc",
-        hp: 46,
-        atk: 46,
-        skill: {
-            type: "mon",
-            target: -1,
-            value: 1.2
-        },
-        super: 71,
-    },
-    // SEASON HEROES - 33 34 35
-    {
-        name:"VEILDUR",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0k3v",
-        hp: 66,
-        atk: 44,
-        skill: {
-            type: "extra",
-            target: -1,
-            value: 3
-        }
-    },{
-        name:"BRYNHILDR",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0arb",
-        hp: 72,
-        atk: 48,
-        skill: {
-            type: "extra",
-            target: -1,
-            value: 4
-        }
-    },{
-        name:"GROTH",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "06w4",
-        hp: 78,
-        atk: 52,
-        skill: {
-            type: "extra",
-            target: -1,
-            value: 5
-        }
-    },
-    // PRIMORDIAL HEROES - 36 37 38
-    {
-        name:"OUREA",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "075h",
-        hp: 30,
-        atk: 16,
-        skill: {
-            type: "dmg",
-            target: 1,
-            value: 3
-        }
-    },{
-        name:"EREBUS",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0au9",
-        hp: 48,
-        atk: 20,
-        skill: {
-            type: "extra",
-            target: 2,
-            value: 2
-        }
-    },{
-        name:"PONTUS",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0csq",
-        hp: 62,
-        atk: 36,
-        skill: {
-            type: "purity",
-            target: 3,
-            value: 2
-        },
-        super: 81,
-    },
-    // 39 40 41 - PVE MAPA 9,10,11
-    {
-        name:"CHROMA",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "05vu",
-        hp: 52,
-        atk: 20,
-        skill: {
-            type: "def",
-            target: 0,
-            value: 4
-        }
-    },{
-        name:"PETRY",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0l6j",
-        hp: 26,
-        atk: 44,
-        skill: {
-            type: "def",
-            target: 1,
-            value: 4
-        }
-    },{
-        name:"ZAYTUS",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0max",
-        hp: 58,
-        atk: 22,
-        skill: {
-            type: "def",
-            target: 2,
-            value: 4
-        }
-    },
-    // GAIABYTE HEROES
-    {
-        name:"SPYKE",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "00y9",
-        hp: 75,
-        atk: 45,
-        skill: {
-            type: "turna",
-            target: -1,
-            value: 10
-        }
-    },{
-        name:"AOYUKI",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "03ij",
-        hp: 70,
-        atk: 55,
-        skill: {
-            type: "rainbow",
-            target: -1,
-            value: 100
-        }
-    },{
-        name:"GAIABYTE",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ej9",
-        hp: 75,
-        atk: 150,
-        skill: {
-            type: "ban",
-            target: -1,
-            value: 2
-        }
-    },
-    // SEER HEROES 45 - 46 - 47
-    {
-        name:"OYMOS",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "07ao",
-        hp: 36,
-        atk: 14,
-        skill: {
-            type: "dmg",
-            target: 0,
-            value: 4
-        }
-    },{
-        name:"XARTH",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "08gg",
-        hp: 32,
-        atk: 32,
-        skill: {
-            type: "extra",
-            target: 1,
-            value: 2
-        }
-    },{
-        name:"ATZAR",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0a87",
-        hp: 76,
-        atk: 32,
-        skill: {
-            type: "purity",
-            target: 2,
-            value: 2
-        },
-        super: 82,
-    },
-    // SEASON II HEROES REWARDS 48 - 49 - 50
-    {
-        name:"ZETH",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "073h",
-        hp: 70,
-        atk: 42,
-        skill: {
-            type: "boom",
-            target: -1,
-            value: 0.1
-        }
-    },{
-        name:"KOTH",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0ghe",
-        hp: 76,
-        atk: 46,
-        skill: {
-            type: "boom",
-            target: -1,
-            value: 0.15
-        }
-    },{
-        name:"GURTH",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0d6e",
-        hp: 82,
-        atk: 50,
-        skill: {
-            type: "boom",
-            target: -1,
-            value: 0.2
-        }
-    },
-    // HALLOWEEN HEROES 51 - 52 - 53
-    {
-        name:"WEREWOLF",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "05gv",
-        hp: 35,
-        atk: 25,
-        skill: {
-            type: "buffdef",
-            target: -1,
-            value: 0.1112
-        }
-    },{
-        name:"JACK'O KNIGHT",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "06a2",
-        hp: 55,
-        atk: 35,
-        skill: {
-            type: "buffatk",
-            target: -1,
-            value: 0.1112
-        }
-    },{
-        name:"DULLAHAN",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "061b",
-        hp: 75,
-        atk: 45,
-        skill: {
-            type: "buffboth",
-            target: -1,
-            value: 0.1112
-        }
-    },
-    // PVE HEROES 54 - 55 - 56 - 57 - 58
-    {
-        name:"LADY ODELITH",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "0lfy",
-        hp: 36,
-        atk: 36,
-        skill: {
-            type: "def",
-            target: 3,
-            value: 4
-        }
-    },{
-        name:"SHYGU",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "023t",
-        hp: 34,
-        atk: 54,
-        skill: {
-            type: "buffdef",
-            target: 0,
-            value: 0.1112
-        }
-    },{
-        name:"THERT",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0hia",
-        hp: 72,
-        atk: 28,
-        skill: {
-            type: "buffdef",
-            target: 1,
-            value: 0.1112
-        }
-    },{
-        name:"LORD KIRK",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0686",
-        hp: 32,
-        atk: 64,
-        skill: {
-            type: "buffdef",
-            target: 2,
-            value: 0.1112
-        }
-    },{
-        name:"NEPTUNIUS",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0b3i",
-        hp: 30,
-        atk: 70,
-        skill: {
-            type: "buffdef",
-            target: 3,
-            value: 0.1112
-        }
-    },
-    // SEASON 3 -> 59 - 60 - 61
-    {
-        name:"SIGRÚN",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "06eu",
-        hp: 65,
-        atk: 12,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.5
-        }
-    },{
-        name:"KOLDÍS",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0n6v",
-        hp: 70,
-        atk: 14,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.5
-        }
-    },{
-        name:"ALVITR",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0j0m",
-        hp: 75,
-        atk: 16,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.5
-        }
-    },
-    // GUARDIAN -> 62 - 63 - 64
-    {
-        name:"HAMA",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "08iu",
-        hp: 30,
-        atk: 18,
-        skill: {
-            type: "dmg",
-            target: 3,
-            value: 4
-        }
-    },{
-        name:"HALLINSKIDI",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "00m3",
-        hp: 34,
-        atk: 34,
-        skill: {
-            type: "extra",
-            target: 0,
-            value: 2
-        }
-    },{
-        name:"RIGR",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "0dsn",
-        hp: 60,
-        atk: 42,
-        skill: {
-            type: "purity",
-            target: 1,
-            value: 2
-        },
-        super: 86,
-    },
-    // SUPER LEGENDARIES -> 65 .. 71
-    {
-        name:"ASCENDED ALPHA",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "04ko",
-        hp: 174,
-        atk: 46,
-        skill: {
-            type: "buffaoe",
-            target: -1,
-            value: 0.304
-        }
-    },
-    {
-        name:"ASCENDED ATHOS",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "0c1j",
-        hp: 162,
-        atk: 60,
-        skill: {
-            type: "buffdef",
-            target: -1,
-            value: 0.304
-        }
-    },
-    {
-        name:"ASCENDED REI",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "0c3v",
-        hp: 120,
-        atk: 104,
-        skill: {
-            type: "buffatk",
-            target: -1,
-            value: 0.304
-        }
-    },
-    {
-        name:"ASCENDED AURI",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "08tr",
-        hp: 148,
-        atk: 78,
-        skill: {
-            type: "buffheal",
-            target: -1,
-            value: 0.152
-        }
-    },
-    {
-        name:"ASCENDED TR0N1X",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "0jvc",
-        hp: 190,
-        atk: 38,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.75
-        }
-    },
-    {
-        name:"ASCENDED GEUM",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "075o",
-        hp: 222,
-        atk: 8,
-        skill: {
-            type: "buff",
-            target: 0,
-            value: 2
-        }
-    },
-    {
-        name:"ASCENDED GEROR",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "0lj3",
-        hp: 116,
-        atk: 116,
-        skill: {
-            type: "mon",
-            target: -1,
-            value: 1.3
-        }
-    },
-    // 72: World Boss 0
-    {
-        name:"LORD OF CHAOS",
-        type:2,
-        rarity:5, //WORLD BOSS
-        img:"0nfc",
-        hp: 1e300,
-        atk: 112,
-        skill: {
-            type: "aoe",
-            target: -1,
-            value: 50
-        }
-    },
-    // 73,74,75 Christmas Heroes
-    {
-        name:"CHRISTMAS ELF",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "ivdn",
-        hp: 38,
-        atk: 24,
-        skill: {
-            type: "buffheal",
-            target: -1,
-            value: 0.1112
-        }
-    },
-    {
-        name:"REINDEER",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "e14u",
-        hp: 54,
-        atk: 36,
-        skill: {
-            type: "buffaoe",
-            target: -1,
-            value: 0.1112
-        }
-    },
-    {
-        name:"SANTA CLAUS",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "34ff",
-        hp: 72,
-        atk: 48,
-        skill: {
-            type: "buffahe",
-            target: -1,
-            value: 0.1112
-        }
-    },
-    // 76 Sexy Santa (Extra Advent Calendar)
-    {
-        name:"SEXY SANTA",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "ytur",
-        hp: 44,
-        atk: 44,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.66
-        }
-    },
-    // 77,78,79 : Mastermind Heroes
-    {
-        name:"TOTH",
-        type:2,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "do1j",
-        hp: 24,
-        atk: 24,
-        skill: {
-            type: "dmg",
-            target: 2,
-            value: 4
-        }
-    },
-    {
-        name:"GANAH",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "gd7s",
-        hp: 40,
-        atk: 30,
-        skill: {
-            type: "extra",
-            target: 3,
-            value: 2
-        }
-    },
-    {
-        name:"DAGDA",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "yzpf",
-        hp: 58,
-        atk: 46,
-        skill: {
-            type: "purity",
-            target: 0,
-            value: 2
-        },
-        super: 92
-    },
-    // 80 : One Time Purchase 4 (OTO4)
-    {
-        name:"BUBBLES",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "6a3u",
-        hp: 300,
-        atk: 110,
-        skill: {
-            type: "debuff",
-            target: -1,
-            value: 0.005
-        }
-    },
-    // 81,82 : SUPER LEGENDARIES
-    {
-        name:"ASCENDED PONTUS",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "sa0l",
-        hp: 150,
-        atk: 86,
-        skill: {
-            type: "purity",
-            target: 3,
-            value: 3
-        },
-    },
-    {
-        name:"ASCENDED ATZAR",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "h5ye",
-        hp: 162,
-        atk: 81,
-        skill: {
-            type: "purity",
-            target: 2,
-            value: 3
-        },
-    },
-    // 83,84,85 : SEASON 4
-    {
-        name:"ARSHEN",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "3ade",
-        hp: 74,
-        atk: 36,
-        skill: {
-            type: "rico",
-            target: 1,
-            value: 1
-        }
-    },{
-        name:"RUA",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "9sja",
-        hp: 78,
-        atk: 40,
-        skill: {
-            type: "rico",
-            target: 1,
-            value: 1
-        }
-    },{
-        name:"DORTH",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "wxkn",
-        hp: 82,
-        atk: 44,
-        skill: {
-            type: "rico",
-            target: 1,
-            value: 1
-        }
-    },
-    // 86 : ASCENDED GUARDIAN
-    {
-        name:"ASCENDED RIGR",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "k4iy",
-        hp: 141,
-        atk: 99,
-        skill: {
-            type: "purity",
-            target: 1,
-            value: 3
-        },
-    },
-    // 87: World Boss 1
-    {
-        name:"MOTHER OF ALL KODAMAS",
-        type:1,
-        rarity:5, //WORLD BOSS
-        img:"uf59",
-        hp: 1e300,
-        atk: 190,
-        skill: {
-            type: "debuff",
-            target: -1,
-            value: 0.5
-        }
-    },
-    // 88,89,90,91 -> PVE HEROES
-    {
-        name:"HOSOKAWA",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "hu9w",
-        hp: 42,
-        atk: 50,
-        skill: {
-            type: "buffatk",
-            target: 0,
-            value: 0.1112
-        }
-    },{
-        name:"TAKEDA",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "qkx4",
-        hp: 32,
-        atk: 66,
-        skill: {
-            type: "buffatk",
-            target: 1,
-            value: 0.1112
-        }
-    },{
-        name:"HIRATE",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "29l6",
-        hp: 38,
-        atk: 56,
-        skill: {
-            type: "buffatk",
-            target: 2,
-            value: 0.1112
-        }
-    },{
-        name:"HATTORI",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "ikae",
-        hp: 44,
-        atk: 48,
-        skill: {
-            type: "buffatk",
-            target: 3,
-            value: 0.1112
-        }
-    },
-    // 92: ASCENDED GUARDIAN
-    {
-        name:"ASCENDED DAGDA",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "bdoh",
-        hp: 135,
-        atk: 107,
-        skill: {
-            type: "purity",
-            target: 0,
-            value: 3
-        },
-    },
-    // 93,94,95 : Mastermind Heroes
-    {
-        name:"BYLAR",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "tgzk",
-        hp: 30,
-        atk: 20,
-        skill: {
-            type: "dmg",
-            target: 1,
-            value: 4
-        }
-    },
-    {
-        name:"BOÖR",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "a1gu",
-        hp: 36,
-        atk: 36,
-        skill: {
-            type: "turna",
-            target: -1,
-            value: 3
-        }
-    },
-    {
-        name:"BAVAH",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "3lza",
-        hp: 52,
-        atk: 52,
-        skill: {
-            type: "extra",
-            target: -1,
-            value: 2
-        },
-        super: 100
-    },
-    // 96: ST.PATRICK HERO
-    {
-        name:"LEPRECHAUN",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "tvhw",
-        hp: 75,
-        atk: 25,
-        skill: {
-            type: "ratio",
-            target: -1,
-            value: 0
-        },
-    },
-    // 97,98,99: EASTER HEROES
-    {
-        name:"SPARKS",
-        type:2,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "hwe9",
-        hp: 30,
-        atk: 30,
-        skill: {
-            type: "evo",
-            target: -1,
-            value: 2,
-        }
-    },
-    {
-        name:"LEAF",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "f0pg",
-        hp: 48,
-        atk: 42,
-        skill: {
-            type: "evo",
-            target: -1,
-            value: 2
-        }
-    },
-    {
-        name:"FLYNN",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "msba",
-        hp: 70,
-        atk: 48,
-        skill: {
-            type: "evo",
-            target: -1,
-            value: 2
-        },
-    },
-    // 100: ASCENDED CREATOR
-    {
-        name:"ASCENDED BAVAH",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "w1qv",
-        hp: 122,
-        atk: 122,
-        skill: {
-            type: "buffboth",
-            target: -1,
-            value: 0.152
-        }
-    },
-    // 101: STEPHEN HAWKING TRIBUTE HERO
-    {
-        name:"DR.HAWKING",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "pasc",
-        hp: 66,
-        atk: 60,
-        skill: {
-            type: "paoe",
-            target: -1,
-            value: 1
-        },
-    },
-    // 102: ASCENDED SEASON PASS 01
-    {
-        name:"MASTER LEE",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "h7sj",
-        hp: 150,
-        atk: 90,
-        skill: {
-            type: "counter",
-            target: -1,
-            value: 0.5
-        },
-    },
-    // 103,104,105: SEASON V HEROES
-    {
-        name:"KUMU-SAN",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "xplz",
-        hp: 70,
-        atk: 38,
-        skill: {
-            type: "counter",
-            target: -1,
-            value: 0.2
-        }
-    },{
-        name:"LIU CHENG",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "1wm3",
-        hp: 78,
-        atk: 42,
-        skill: {
-            type: "counter",
-            target: -1,
-            value: 0.25
-        }
-    },{
-        name:"HIDOKA",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "a10r",
-        hp: 86,
-        atk: 44,
-        skill: {
-            type: "counter",
-            target: -1,
-            value: 0.3
-        }
-    },
-    // 106: World Boss 2
-    {
-        name:"KRYTON",
-        type:0,
-        rarity:5, //WORLD BOSS
-        img:"wdwa",
-        hp: 1e300,
-        atk: 10,
-        skill: {
-            type: "turna",
-            target: -1,
-            value: 10
-        }
-    },
-    // 107,108,109 : AH HEROES
-    {
-        name:"DICEMASTER",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "8127",
-        hp: 25,
-        atk: 26,
-        skill: {
-            type: "ratk",
-            target: -1,
-            value: 20,
-        }
-    },
-    {
-        name:"LUXURIUS MAXIMUS",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "u67e",
-        hp: 28,
-        atk: 60,
-        skill: {
-            type: "rtrg",
-            target: -1,
-            value: 0
-        }
-    },
-    {
-        name:"POKERFACE",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "balp",
-        hp: 70,
-        atk: 70,
-        skill: {
-            type: "rcrit",
-            target: 2,
-            value: 3
-        },
-    },
-    //110,111,112 Corruptor Heroes
-    {
-        name:"TAINT",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "769k",
-        hp: 25,
-        atk: 25,
-        skill: {
-            type: "rico",
-            target: 5,
-            value: 0.5,
-        }
-    },
-    {
-        name:"PUTRID",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "9gst",
-        hp: 48,
-        atk: 50,
-        skill: {
-            type: "turna",
-            target: -1,
-            value: -3
-        }
-    },
-    {
-        name:"DEFILE",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "g5um",
-        hp: 52,
-        atk: 48,
-        skill: {
-            type: "moob",
-            target: -1,
-            value: 50
-        },
-        super: 131
-    },
-    // 113 : LTO HEROE
-    {
-        name:"NEIL",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "3j8x",
-        hp: 150,
-        atk: 15,
-        skill: {
-            type: "tank",
-            target: -1,
-            value: 0.3
-        },
-    },
-    // 114, 115, 116, 117 : PVE DJIN HEROES
-    {
-        name:"MAHATMA",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "wpph",
-        hp: 78,
-        atk: 26,
-        skill: {
-            type: "elem",
-            target: 3,
-            value: 0.75,
-        }
-    },
-    
-    {
-        name:"JADE",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "jc5b",
-        hp: 76,
-        atk: 30,
-        skill: {
-            type: "elem",
-            target: 0,
-            value: 0.75
-        }
-    },
-    {
-        name:"EDANA",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "gids",
-        hp: 72,
-        atk: 36,
-        skill: {
-            type: "elem",
-            target: 1,
-            value: 0.75
-        },
-    },
-    {
-        name:"DYBBUK",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "98p6",
-        hp: 80,
-        atk: 30,
-        skill: {
-            type: "elem",
-            target: 2,
-            value: 0.75
-        },
-    },
-    // 118,119,120,121: ASCENDED PVE
-    {
-        name:"ASCENDED SHYGU",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "023t",
-        hp: 85,
-        atk: 135,
-        skill: {
-            type: "buffdef",
-            target: 0,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED THERT",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "0hia",
-        hp: 180,
-        atk: 70,
-        skill: {
-            type: "buffdef",
-            target: 1,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED LORD KIRK",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "0686",
-        hp: 80,
-        atk: 160,
-        skill: {
-            type: "buffdef",
-            target: 2,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED NEPTUNIUS",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "0b3i",
-        hp: 75,
-        atk: 175,
-        skill: {
-            type: "buffdef",
-            target: 3,
-            value: 0.1819
-        },
-        pve: true,
-    },// ASCENDED PVE vs 122,123,124,125
-    {
-        name:"ASCENDED HOSOKAWA",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "hu9w", //FIX THE IMG
-        hp: 106,
-        atk: 124,
-        skill: {
-            type: "buffatk",
-            target: 0,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED TAKEDA",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "qkx4", //FIX THE IMG
-        hp: 82,
-        atk: 164,
-        skill: {
-            type: "buffatk",
-            target: 1,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED HIRATE",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "29l6", //FIX THE IMG
-        hp: 96,
-        atk: 144,
-        skill: {
-            type: "buffatk",
-            target: 2,
-            value: 0.1819
-        },
-        pve: true,
-    },{
-        name:"ASCENDED HATTORI",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "ikae", //FIX THE IMG
-        hp: 114,
-        atk: 126,
-        skill: {
-            type: "buffatk",
-            target: 3,
-            value: 0.1819
-        },
-        pve: true,
-    },{ // new WORLD boss: 126
-        name:"DOYENNE",
-        type:3,
-        rarity:5, //WORLD BOSS
-        img:"pm0s",
-        hp: 1e300,
-        atk: 174,
-        skill: {
-            type: "dampen",
-            target: -1,
-            value: 15000
-        },
-    },
-    // Halloween Heroes 2018 : 127,128,129
-    {
-        name:"BILLY",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary
-        img: "sm4l",
-        hp: 30,
-        atk: 40,
-        skill: {
-            type: "explosion",
-            target: 1,
-            value: 100
-        }
-    },{
-        name:"SANQUEEN",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "ite9",
-        hp: 88,
-        atk: 22,
-        skill: {
-            type: "leech",
-            target: -1,
-            value: 0.8
-        }
-    },{
-        name:"CLIODHNA",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "649s",
-        hp: 150,
-        atk: 60,
-        skill: {
-            type: "evolve",
-            target: -1,
-            value: 1
-        }
-    },
-    // GUY FAWKES : 130
-    {
-        name:"GUY",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "2wiw",
-        hp: 340,
-        atk: 64,
-        skill: {
-            type: "anarchy",
-            target: -1,
-            value: 1
-        }
-    },{
-        name:"ASCENDED DEFILE",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "g5um",
-        hp: 126,
-        atk: 114,
-        skill: {
-            type: "amoob",
-            target: -1,
-            value: 7
-        },
-        pve: true
-    },
-    // 132: ASCENDED SEASON PASS 02
-    {
-        name:"RAIDER ROSE",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "n7hx",
-        hp: 186,
-        atk: 62,
-        skill: {
-            type: "otk",
-            target: -1,
-            value: 0.6
-        },
-    },
-    // 133,134,135: SEASON VI HEROES
-    {
-        name:"BUCCANEER BEATRICE",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "o6ks",
-        hp: 96,
-        atk: 30,
-        skill: {
-            type: "otk",
-            target: -1,
-            value: 0.3
-        }
-    },{
-        name:"CORSAIR CHARLES",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "w2v1",
-        hp: 100,
-        atk: 32,
-        skill: {
-            type: "otk",
-            target: -1,
-            value: 0.35
-        }
-    },{
-        name:"MARAUDER MAGNUS",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "kyps",
-        hp: 105,
-        atk: 34,
-        skill: {
-            type: "otk",
-            target: -1,
-            value: 0.4
-        }
-    },
-    // 136: ADVENT XMAS HEROE
-    {
-        name:"FROSTY",
-        type:3,
-        rarity:1, // 0 common, 1 rare, 2 legendary
-        img: "5ivj",
-        hp: 46,
-        atk: 52,
-        skill: {
-            type: "armor",
-            target: 9,
-            value: 0.03
-        }
-    },
-    // 137,138,139: CHRISTMAS HEROES 2018
-    {
-        name:"FIR",
-        type:1,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "rj98",
-        hp: 50,
-        atk: 18,
-        skill: {
-            type: "reflect",
-            target: 3,
-            value: 0.004
-        }
-    },
-    {
-        name:"5-12-6",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "6lcu",
-        hp: 78,
-        atk: 34,
-        skill: {
-            type: "amplify",
-            target: 9,
-            value: 0.03
-        }
-    },
-    {
-        name:"KEDARI",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "3ljh",
-        hp: 170,
-        atk: 18,
-        skill: {
-            type: "guardian",
-            target: 9,
-            value: 2
-        }
-    },
-    // 140,141,142,143: DESTRUCTOR HEROES
-    {
-        name:"RAZE",
-        type:3,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "kdvz",
-        hp: 18,
-        atk: 26,
-        skill: {
-            type: "rico",
-            target: 1,
-            value: 0.7
-        }
-    },
-    {
-        name:"RUIN",
-        type:0,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "i9tb",
-        hp: 44,
-        atk: 48,
-        skill: {
-            type: "boom",
-            target: -1,
-            value: 0.1
-        }
-    },
-    {
-        name:"SEETHE",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "d3c6",
-        hp: 48,
-        atk: 54,
-        skill: {
-            type: "posbonus",
-            target: -1,
-            value: 15
-        },
-        super: 143,
-    },{
-        name:"ASCENDED SEETHE",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "d3c6",
-        hp: 117,
-        atk: 131,
-        skill: {
-            type: "aposbonus",
-            target: -1,
-            value: 0.45
-        },
-        pve: true,
-    },
-    // 144, 145, 146: Season VII Heroes
-    {
-        name:"BLOSSOM",
-        type:1,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "tc3q",
-        hp: 54,
-        atk: 54,
-        skill: {
-            type: "friend",
-            target: -1,
-            value: 0.10,
-            hid: 144
-        }
-    },{
-        name:"FLINT",
-        type:2,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "6bid",
-        hp: 56,
-        atk: 56,
-        skill: {
-            type: "friend",
-            target: -1,
-            value: 0.11,
-            hid: 145
-        }
-    },{
-        name:"ORIN",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "iu25",
-        hp: 58,
-        atk: 58,
-        skill: {
-            type: "friend",
-            target: -1,
-            value: 0.12,
-            hid: 146
-        }
-    },
-    // 147: ASCENDED SEASON PASS 03
-    {
-        name:"AURORA",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "122p",
-        hp: 130,
-        atk: 130,
-        skill: {
-            type: "friend",
-            target: -1,
-            value: 0.15,
-            hid: 147
-        },
-    },
-    // 148: ST.VALENTINE LTO
-    {
-        name:"CUPID",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary
-        img: "siua",
-        hp: 220,
-        atk: 20,
-        skill: {
-            type: "rico",
-            target: 1,
-            value: 3.0,
-        },
-    },
-    // 149, 150, 151: DRIFTER HEROES
-    {
-        name:"TRANSIENT",
-        type:4,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "2aoh",
-        hp: 22,
-        atk: 22,
-        skill: {
-            type: "void",
-            target: -1,
-            value: 0.5
-        }
-    },
-    {
-        name:"MAUNDER",
-        type:4,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "91jo",
-        hp: 34,
-        atk: 34,
-        skill: {
-            type: "void",
-            target: -1,
-            value: 0.5
-        }
-    },
-    {
-        name:"THE WANDERER",
-        type:4,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "wy4e",
-        hp: 50,
-        atk: 50,
-        skill: {
-            type: "void",
-            target: -1,
-            value: 0.5
-        },
-    },// 152 BDAY
-    {
-        name:"B-DAY",
-        type:0,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "jz8c",
-        hp: 100,
-        atk: 40,
-        skill: {
-            type: "bday",
-            target: -1,
-            value: 0.1,
-            hid: 152
-        },
-    }, // 153,154,155,156 DRAGONS
-    {
-        name:"CLOUD",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "62s2",
-        hp: 44,
-        atk: 22,
-        skill: {
-            type: "infiltred",
-            target: -1,
-            value: 0.95
-        },
-    },{
-        name:"EMBER",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "v82q",
-        hp: 64,
-        atk: 32,
-        skill: {
-            type: "infiltred",
-            target: -1,
-            value: 0.95
-        },
-    },{
-        name:"RIPTIDE",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "n9na",
-        hp: 84,
-        atk: 42,
-        skill: {
-            type: "infiltred",
-            target: -1,
-            value: 0.95
-        },
-    },{
-        name:"SPIKE",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "adkj",
-        hp: 180,
-        atk: 90,
-        skill: {
-            type: "infiltred",
-            target: -1,
-            value: 0.95
-        },
-    },
-    // 157, 158, 159, 160: PVE DJINN 
-    {
-        name:"ASCENDED MAHATMA",
-        type:0,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "wpph",
-        hp: 180,
-        atk: 60,
-        skill: {
-            type: "elem",
-            target: 3,
-            value: 1.7
-        },
-        pve: true,
-    },{
-        name:"ASCENDED JADE",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "jc5b",
-        hp: 172,
-        atk: 68,
-        skill: {
-            type: "elem",
-            target: 0,
-            value: 1.7
-        },
-        pve: true,
-    },{
-        name:"ASCENDED EDANA",
-        type:2,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "gids",
-        hp: 160,
-        atk: 80,
-        skill: {
-            type: "elem",
-            target: 1,
-            value: 1.7
-        },
-        pve: true,
-    },{
-        name:"ASCENDED DYBBUK",
-        type:3,
-        rarity:3, // 0 common, 1 rare, 2 legendary
-        img: "98p6",
-        hp: 176,
-        atk: 66,
-        skill: {
-            type: "elem",
-            target: 2,
-            value: 1.7
-        },
-        pve: true,
-    },
-    // 161, 162 ,163 ,164: EASTER HEROES 2019
-    {
-        name:"WILLOW",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "jqr2",
-        hp: 30,
-        atk: 38,
-        skill: {
-            type: "backlash",
-            target: -1,
-            value: 0.2,
-        }
-    },
-    {
-        name:"GIZMO",
-        type:2,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "6oe8",
-        hp: 70,
-        atk: 40,
-        skill: {
-            type: "mbonus",
-            target: -1,
-            value: 3
-        }
-    },
-    {
-        name:"DAISY",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "7itt",
-        hp: 84,
-        atk: 50,
-        skill: {
-            type: "easter",
-            target: -1,
-            value: 2.5
-        },
-    },
-    {
-        name:"THUMPER",
-        type:1,
-        rarity:3, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "2fyz",
-        hp: 120,
-        atk: 200,
-        skill: {
-            type: "mshield",
-            target: -1,
-            value: 0.6
-        },
-    },
-    // 165, 166 ,167 AQUATIC HEROES
-    {
-        name:"BORTLES",
-        type:0,
-        rarity:0, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "tx6e",
-        hp: 40,
-        atk: 24,
-        skill: {
-            type: "mon2",
-            target: -1,
-            value: 3
-        }
-    },
-    {
-        name:"MURPHY",
-        type:1,
-        rarity:1, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "i8gx",
-        hp: 40,
-        atk: 28,
-        skill: {
-            type: "fixreflect",
-            target: -1,
-            value: 60
-        }
-    },
-    {
-        name:"NERISSA",
-        type:3,
-        rarity:2, // 0 common, 1 rare, 2 legendary, 3 super
-        img: "ckwv",
-        hp: 24,
-        atk: 82,
-        skill: {
-            type: "fixarmor",
-            target: -1,
-            value: 0.45
-        },
-    },
+  {
+    name: "LADY OF TWILIGHT",
+    type: 0,
+    rarity: 0,
+    img: "0fmg",
+    hp: 45,
+    atk: 20,
+    skill: {
+      type: "extra",
+      target: -1,
+      value: 3,
+      hid: 0
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "TINY",
+    type: 1,
+    rarity: 1,
+    img: "0kbl",
+    hp: 70,
+    atk: 30,
+    skill: {
+      type: "buffahe",
+      target: -1,
+      value: 0.041666666666666664,
+      hid: 1
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "NEBRA",
+    type: 2,
+    rarity: 2,
+    img: "0bhl",
+    hp: 110,
+    atk: 40,
+    skill: {
+      type: "dmg",
+      target: -1,
+      value: 20,
+      hid: 2
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "VALOR",
+    type: 0,
+    rarity: 0,
+    img: "0ctf",
+    hp: 20,
+    atk: 10,
+    skill: {
+      type: "def",
+      target: 0,
+      value: 2,
+      hid: 3
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "ROKKA",
+    type: 1,
+    rarity: 0,
+    img: "06ny",
+    hp: 30,
+    atk: 8,
+    skill: {
+      type: "def",
+      target: 1,
+      value: 2,
+      hid: 4
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "PYROMANCER",
+    type: 2,
+    rarity: 0,
+    img: "09nf",
+    hp: 24,
+    atk: 12,
+    skill: {
+      type: "def",
+      target: 2,
+      value: 2,
+      hid: 5
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "BEWAT",
+    type: 3,
+    rarity: 0,
+    img: "02hk",
+    hp: 50,
+    atk: 6,
+    skill: {
+      type: "def",
+      target: 3,
+      value: 2,
+      hid: 6
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "HUNTER",
+    type: 0,
+    rarity: 0,
+    img: "0ek2",
+    hp: 22,
+    atk: 14,
+    skill: {
+      type: "dmg",
+      target: 0,
+      value: 2,
+      hid: 7
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "SHAMAN",
+    type: 1,
+    rarity: 1,
+    img: "0kid",
+    hp: 40,
+    atk: 20,
+    skill: {
+      type: "def",
+      target: 1,
+      value: 3,
+      hid: 8
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ALPHA",
+    type: 2,
+    rarity: 2,
+    img: "0ezu",
+    hp: 82,
+    atk: 22,
+    skill: {
+      type: "aoe",
+      target: -1,
+      value: 2,
+      hid: 9
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 65
+  },
+  {
+    name: "CARL",
+    type: 3,
+    rarity: 0,
+    img: "0fy3",
+    hp: 28,
+    atk: 12,
+    skill: {
+      type: "dmg",
+      target: 3,
+      value: 2,
+      hid: 10
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "NIMUE",
+    type: 0,
+    rarity: 1,
+    img: "0egn",
+    hp: 38,
+    atk: 22,
+    skill: {
+      type: "def",
+      target: 0,
+      value: 3,
+      hid: 11
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ATHOS",
+    type: 1,
+    rarity: 2,
+    img: "03nd",
+    hp: 70,
+    atk: 26,
+    skill: {
+      type: "def",
+      target: -1,
+      value: 4,
+      hid: 12
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 66
+  },
+  {
+    name: "JET",
+    type: 2,
+    rarity: 0,
+    img: "0oai",
+    hp: 24,
+    atk: 16,
+    skill: {
+      type: "dmg",
+      target: 2,
+      value: 2,
+      hid: 13
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GERON",
+    type: 3,
+    rarity: 1,
+    img: "0c53",
+    hp: 36,
+    atk: 24,
+    skill: {
+      type: "def",
+      target: 3,
+      value: 3,
+      hid: 14
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "REI",
+    type: 0,
+    rarity: 2,
+    img: "0mq1",
+    hp: 46,
+    atk: 40,
+    skill: {
+      type: "dmg",
+      target: -1,
+      value: 5,
+      hid: 15
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 67
+  },
+  {
+    name: "AILEN",
+    type: 1,
+    rarity: 0,
+    img: "0cku",
+    hp: 19,
+    atk: 22,
+    skill: {
+      type: "dmg",
+      target: 1,
+      value: 2,
+      hid: 16
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "FAEFYR",
+    type: 2,
+    rarity: 1,
+    img: "0cav",
+    hp: 50,
+    atk: 18,
+    skill: {
+      type: "def",
+      target: 2,
+      value: 3,
+      hid: 17
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "AURI",
+    type: 3,
+    rarity: 2,
+    img: "0agh",
+    hp: 60,
+    atk: 32,
+    skill: {
+      type: "heal",
+      target: -1,
+      value: 4,
+      hid: 18
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 68
+  },
+  {
+    name: "NICTE",
+    type: 0,
+    rarity: 1,
+    img: "0aar",
+    hp: 22,
+    atk: 32,
+    skill: {
+      type: "dmg",
+      target: 0,
+      value: 4,
+      hid: 19
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "JAMES",
+    type: 1,
+    rarity: 2,
+    img: "0ef9",
+    hp: 50,
+    atk: 12,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.75,
+      hid: 20
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "K41RY",
+    type: 0,
+    rarity: 0,
+    img: "0m4j",
+    hp: 28,
+    atk: 16,
+    skill: {
+      type: "dmg",
+      target: 0,
+      value: 3,
+      hid: 21
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "T4URUS",
+    type: 1,
+    rarity: 1,
+    img: "0klv",
+    hp: 46,
+    atk: 20,
+    skill: {
+      type: "dmg",
+      target: -1,
+      value: 2,
+      hid: 22
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "TR0N1X",
+    type: 2,
+    rarity: 2,
+    img: "0ji6",
+    hp: 100,
+    atk: 20,
+    skill: {
+      type: "aoe",
+      target: -1,
+      value: 3,
+      hid: 23
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 69
+  },
+  {
+    name: "AQUORTIS",
+    type: 3,
+    rarity: 0,
+    img: "0k2w",
+    hp: 58,
+    atk: 8,
+    skill: {
+      type: "dmg",
+      target: 3,
+      value: 3,
+      hid: 24
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "AERIS",
+    type: 0,
+    rarity: 1,
+    img: "0lbm",
+    hp: 30,
+    atk: 32,
+    skill: {
+      type: "heal",
+      target: -1,
+      value: 2,
+      hid: 25
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GEUM",
+    type: 1,
+    rarity: 2,
+    img: "0k28",
+    hp: 75,
+    atk: 2,
+    skill: {
+      type: "buff",
+      target: 0,
+      value: 2,
+      hid: 26
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 70
+  },
+  {
+    name: "FOREST DRUID",
+    type: 1,
+    rarity: 1,
+    img: "0etn",
+    hp: 46,
+    atk: 16,
+    skill: {
+      type: "dmg",
+      target: 1,
+      value: 4,
+      hid: 27
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "IGNITOR",
+    type: 2,
+    rarity: 1,
+    img: "0awm",
+    hp: 32,
+    atk: 24,
+    skill: {
+      type: "dmg",
+      target: 2,
+      value: 4,
+      hid: 28
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "UNDINE",
+    type: 3,
+    rarity: 1,
+    img: "026t",
+    hp: 58,
+    atk: 14,
+    skill: {
+      type: "dmg",
+      target: 3,
+      value: 4,
+      hid: 29
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "RUDEAN",
+    type: 2,
+    rarity: 0,
+    img: "0ffu",
+    hp: 38,
+    atk: 12,
+    skill: {
+      type: "dmg",
+      target: 2,
+      value: 3,
+      hid: 30
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "AURAL",
+    type: 3,
+    rarity: 1,
+    img: "0lr6",
+    hp: 18,
+    atk: 50,
+    skill: {
+      type: "buff",
+      target: -1,
+      value: 1.2,
+      hid: 31
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GEROR",
+    type: 0,
+    rarity: 2,
+    img: "0ikc",
+    hp: 46,
+    atk: 46,
+    skill: {
+      type: "mon",
+      target: -1,
+      value: 1.2,
+      hid: 32
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 71
+  },
+  {
+    name: "VEILDUR",
+    type: 1,
+    rarity: 2,
+    img: "0k3v",
+    hp: 66,
+    atk: 44,
+    skill: {
+      type: "extra",
+      target: -1,
+      value: 3,
+      hid: 33
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "BRYNHILDR",
+    type: 0,
+    rarity: 2,
+    img: "0arb",
+    hp: 72,
+    atk: 48,
+    skill: {
+      type: "extra",
+      target: -1,
+      value: 4,
+      hid: 34
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GROTH",
+    type: 2,
+    rarity: 2,
+    img: "06w4",
+    hp: 78,
+    atk: 52,
+    skill: {
+      type: "extra",
+      target: -1,
+      value: 5,
+      hid: 35
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "OUREA",
+    type: 1,
+    rarity: 0,
+    img: "075h",
+    hp: 30,
+    atk: 16,
+    skill: {
+      type: "dmg",
+      target: 1,
+      value: 3,
+      hid: 36
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "EREBUS",
+    type: 2,
+    rarity: 1,
+    img: "0au9",
+    hp: 48,
+    atk: 20,
+    skill: {
+      type: "extra",
+      target: 2,
+      value: 2,
+      hid: 37
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "PONTUS",
+    type: 3,
+    rarity: 2,
+    img: "0csq",
+    hp: 62,
+    atk: 36,
+    skill: {
+      type: "purity",
+      target: 3,
+      value: 2,
+      hid: 38
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 81
+  },
+  {
+    name: "CHROMA",
+    type: 0,
+    rarity: 1,
+    img: "05vu",
+    hp: 52,
+    atk: 20,
+    skill: {
+      type: "def",
+      target: 0,
+      value: 4,
+      hid: 39
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "PETRY",
+    type: 1,
+    rarity: 1,
+    img: "0l6j",
+    hp: 26,
+    atk: 44,
+    skill: {
+      type: "def",
+      target: 1,
+      value: 4,
+      hid: 40
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "ZAYTUS",
+    type: 2,
+    rarity: 1,
+    img: "0max",
+    hp: 58,
+    atk: 22,
+    skill: {
+      type: "def",
+      target: 2,
+      value: 4,
+      hid: 41
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "SPYKE",
+    type: 0,
+    rarity: 2,
+    img: "00y9",
+    hp: 75,
+    atk: 45,
+    skill: {
+      type: "turna",
+      target: -1,
+      value: 10,
+      hid: 42
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "AOYUKI",
+    type: 3,
+    rarity: 2,
+    img: "03ij",
+    hp: 70,
+    atk: 55,
+    skill: {
+      type: "rainbow",
+      target: -1,
+      value: 100,
+      hid: 43
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "GAIABYTE",
+    type: 1,
+    rarity: 2,
+    img: "0ej9",
+    hp: 75,
+    atk: 150,
+    skill: {
+      type: "ban",
+      target: -1,
+      value: 2,
+      hid: 44
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "OYMOS",
+    type: 0,
+    rarity: 0,
+    img: "07ao",
+    hp: 36,
+    atk: 14,
+    skill: {
+      type: "dmg",
+      target: 0,
+      value: 4,
+      hid: 45
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "XARTH",
+    type: 1,
+    rarity: 1,
+    img: "08gg",
+    hp: 32,
+    atk: 32,
+    skill: {
+      type: "extra",
+      target: 1,
+      value: 2,
+      hid: 46
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ATZAR",
+    type: 2,
+    rarity: 2,
+    img: "0a87",
+    hp: 76,
+    atk: 32,
+    skill: {
+      type: "purity",
+      target: 2,
+      value: 2,
+      hid: 47
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 82
+  },
+  {
+    name: "ZETH",
+    type: 3,
+    rarity: 2,
+    img: "073h",
+    hp: 70,
+    atk: 42,
+    skill: {
+      type: "boom",
+      target: -1,
+      value: 0.1,
+      hid: 48
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "KOTH",
+    type: 1,
+    rarity: 2,
+    img: "0ghe",
+    hp: 76,
+    atk: 46,
+    skill: {
+      type: "boom",
+      target: -1,
+      value: 0.15,
+      hid: 49
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GURTH",
+    type: 0,
+    rarity: 2,
+    img: "0d6e",
+    hp: 82,
+    atk: 50,
+    skill: {
+      type: "boom",
+      target: -1,
+      value: 0.2,
+      hid: 50
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "WEREWOLF",
+    type: 1,
+    rarity: 0,
+    img: "05gv",
+    hp: 35,
+    atk: 25,
+    skill: {
+      type: "buffdef",
+      target: -1,
+      value: 0.1112,
+      hid: 51
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "JACK'O KNIGHT",
+    type: 0,
+    rarity: 1,
+    img: "06a2",
+    hp: 55,
+    atk: 35,
+    skill: {
+      type: "buffatk",
+      target: -1,
+      value: 0.1112,
+      hid: 52
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "DULLAHAN",
+    type: 2,
+    rarity: 2,
+    img: "061b",
+    hp: 75,
+    atk: 45,
+    skill: {
+      type: "buffboth",
+      target: -1,
+      value: 0.1112,
+      hid: 53
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "LADY ODELITH",
+    type: 3,
+    rarity: 1,
+    img: "0lfy",
+    hp: 36,
+    atk: 36,
+    skill: {
+      type: "def",
+      target: 3,
+      value: 4,
+      hid: 54
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "SHYGU",
+    type: 0,
+    rarity: 2,
+    img: "023t",
+    hp: 34,
+    atk: 54,
+    skill: {
+      type: "buffdef",
+      target: 0,
+      value: 0.1112,
+      hid: 55
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "THERT",
+    type: 1,
+    rarity: 2,
+    img: "0hia",
+    hp: 72,
+    atk: 28,
+    skill: {
+      type: "buffdef",
+      target: 1,
+      value: 0.1112,
+      hid: 56
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "LORD KIRK",
+    type: 2,
+    rarity: 2,
+    img: "0686",
+    hp: 32,
+    atk: 64,
+    skill: {
+      type: "buffdef",
+      target: 2,
+      value: 0.1112,
+      hid: 57
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "NEPTUNIUS",
+    type: 3,
+    rarity: 2,
+    img: "0b3i",
+    hp: 30,
+    atk: 70,
+    skill: {
+      type: "buffdef",
+      target: 3,
+      value: 0.1112,
+      hid: 58
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "SIGRÚN",
+    type: 2,
+    rarity: 2,
+    img: "06eu",
+    hp: 65,
+    atk: 12,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.5,
+      hid: 59
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "KOLDÍS",
+    type: 3,
+    rarity: 2,
+    img: "0n6v",
+    hp: 70,
+    atk: 14,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.5,
+      hid: 60
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ALVITR",
+    type: 1,
+    rarity: 2,
+    img: "0j0m",
+    hp: 75,
+    atk: 16,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.5,
+      hid: 61
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "HAMA",
+    type: 3,
+    rarity: 0,
+    img: "08iu",
+    hp: 30,
+    atk: 18,
+    skill: {
+      type: "dmg",
+      target: 3,
+      value: 4,
+      hid: 62
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "HALLINSKIDI",
+    type: 0,
+    rarity: 1,
+    img: "00m3",
+    hp: 34,
+    atk: 34,
+    skill: {
+      type: "extra",
+      target: 0,
+      value: 2,
+      hid: 63
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "RIGR",
+    type: 1,
+    rarity: 2,
+    img: "0dsn",
+    hp: 60,
+    atk: 42,
+    skill: {
+      type: "purity",
+      target: 1,
+      value: 2,
+      hid: 64
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 86
+  },
+  {
+    name: "ASCENDED ALPHA",
+    type: 2,
+    rarity: 3,
+    img: "04ko",
+    hp: 174,
+    atk: 46,
+    skill: {
+      type: "buffaoe",
+      target: -1,
+      value: 0.304,
+      hid: 65
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED ATHOS",
+    type: 1,
+    rarity: 3,
+    img: "0c1j",
+    hp: 162,
+    atk: 60,
+    skill: {
+      type: "buffdef",
+      target: -1,
+      value: 0.304,
+      hid: 66
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED REI",
+    type: 0,
+    rarity: 3,
+    img: "0c3v",
+    hp: 120,
+    atk: 104,
+    skill: {
+      type: "buffatk",
+      target: -1,
+      value: 0.304,
+      hid: 67
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED AURI",
+    type: 3,
+    rarity: 3,
+    img: "08tr",
+    hp: 148,
+    atk: 78,
+    skill: {
+      type: "buffheal",
+      target: -1,
+      value: 0.152,
+      hid: 68
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED TR0N1X",
+    type: 2,
+    rarity: 3,
+    img: "0jvc",
+    hp: 190,
+    atk: 38,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.75,
+      hid: 69
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED GEUM",
+    type: 1,
+    rarity: 3,
+    img: "075o",
+    hp: 222,
+    atk: 8,
+    skill: {
+      type: "buff",
+      target: 0,
+      value: 2,
+      hid: 70
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED GEROR",
+    type: 0,
+    rarity: 3,
+    img: "0lj3",
+    hp: 116,
+    atk: 116,
+    skill: {
+      type: "mon",
+      target: -1,
+      value: 1.3,
+      hid: 71
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "LORD OF CHAOS",
+    type: 2,
+    rarity: 5,
+    img: "0nfc",
+    hp: 1e+300,
+    atk: 112,
+    skill: {
+      type: "aoe",
+      target: -1,
+      value: 50,
+      hid: 72
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "CHRISTMAS ELF",
+    type: 3,
+    rarity: 0,
+    img: "ivdn",
+    hp: 38,
+    atk: 24,
+    skill: {
+      type: "buffheal",
+      target: -1,
+      value: 0.1112,
+      hid: 73
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "REINDEER",
+    type: 0,
+    rarity: 1,
+    img: "e14u",
+    hp: 54,
+    atk: 36,
+    skill: {
+      type: "buffaoe",
+      target: -1,
+      value: 0.1112,
+      hid: 74
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "SANTA CLAUS",
+    type: 2,
+    rarity: 2,
+    img: "34ff",
+    hp: 72,
+    atk: 48,
+    skill: {
+      type: "buffahe",
+      target: -1,
+      value: 0.1112,
+      hid: 75
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "SEXY SANTA",
+    type: 1,
+    rarity: 1,
+    img: "ytur",
+    hp: 44,
+    atk: 44,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.66,
+      hid: 76
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "TOTH",
+    type: 2,
+    rarity: 0,
+    img: "do1j",
+    hp: 24,
+    atk: 24,
+    skill: {
+      type: "dmg",
+      target: 2,
+      value: 4,
+      hid: 77
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "GANAH",
+    type: 3,
+    rarity: 1,
+    img: "gd7s",
+    hp: 40,
+    atk: 30,
+    skill: {
+      type: "extra",
+      target: 3,
+      value: 2,
+      hid: 78
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "DAGDA",
+    type: 0,
+    rarity: 2,
+    img: "yzpf",
+    hp: 58,
+    atk: 46,
+    skill: {
+      type: "purity",
+      target: 0,
+      value: 2,
+      hid: 79
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 92
+  },
+  {
+    name: "BUBBLES",
+    type: 3,
+    rarity: 3,
+    img: "6a3u",
+    hp: 300,
+    atk: 110,
+    skill: {
+      type: "debuff",
+      target: -1,
+      value: 0.005,
+      hid: 80
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED PONTUS",
+    type: 3,
+    rarity: 3,
+    img: "sa0l",
+    hp: 150,
+    atk: 86,
+    skill: {
+      type: "purity",
+      target: 3,
+      value: 3,
+      hid: 81
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED ATZAR",
+    type: 2,
+    rarity: 3,
+    img: "h5ye",
+    hp: 162,
+    atk: 81,
+    skill: {
+      type: "purity",
+      target: 2,
+      value: 3,
+      hid: 82
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ARSHEN",
+    type: 0,
+    rarity: 2,
+    img: "3ade",
+    hp: 74,
+    atk: 36,
+    skill: {
+      type: "rico",
+      target: 1,
+      value: 1,
+      hid: 83
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "RUA",
+    type: 2,
+    rarity: 2,
+    img: "9sja",
+    hp: 78,
+    atk: 40,
+    skill: {
+      type: "rico",
+      target: 1,
+      value: 1,
+      hid: 84
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "DORTH",
+    type: 3,
+    rarity: 2,
+    img: "wxkn",
+    hp: 82,
+    atk: 44,
+    skill: {
+      type: "rico",
+      target: 1,
+      value: 1,
+      hid: 85
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ASCENDED RIGR",
+    type: 1,
+    rarity: 3,
+    img: "k4iy",
+    hp: 141,
+    atk: 99,
+    skill: {
+      type: "purity",
+      target: 1,
+      value: 3,
+      hid: 86
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "MOTHER OF ALL KODAMAS",
+    type: 1,
+    rarity: 5,
+    img: "uf59",
+    hp: 1e+300,
+    atk: 190,
+    skill: {
+      type: "debuff",
+      target: -1,
+      value: 0.5,
+      hid: 87
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "HOSOKAWA",
+    type: 0,
+    rarity: 2,
+    img: "hu9w",
+    hp: 42,
+    atk: 50,
+    skill: {
+      type: "buffatk",
+      target: 0,
+      value: 0.1112,
+      hid: 88
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "TAKEDA",
+    type: 1,
+    rarity: 2,
+    img: "qkx4",
+    hp: 32,
+    atk: 66,
+    skill: {
+      type: "buffatk",
+      target: 1,
+      value: 0.1112,
+      hid: 89
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "HIRATE",
+    type: 2,
+    rarity: 2,
+    img: "29l6",
+    hp: 38,
+    atk: 56,
+    skill: {
+      type: "buffatk",
+      target: 2,
+      value: 0.1112,
+      hid: 90
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "HATTORI",
+    type: 3,
+    rarity: 2,
+    img: "ikae",
+    hp: 44,
+    atk: 48,
+    skill: {
+      type: "buffatk",
+      target: 3,
+      value: 0.1112,
+      hid: 91
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "ASCENDED DAGDA",
+    type: 0,
+    rarity: 3,
+    img: "bdoh",
+    hp: 135,
+    atk: 107,
+    skill: {
+      type: "purity",
+      target: 0,
+      value: 3,
+      hid: 92
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "BYLAR",
+    type: 1,
+    rarity: 0,
+    img: "tgzk",
+    hp: 30,
+    atk: 20,
+    skill: {
+      type: "dmg",
+      target: 1,
+      value: 4,
+      hid: 93
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "BOÖR",
+    type: 2,
+    rarity: 1,
+    img: "a1gu",
+    hp: 36,
+    atk: 36,
+    skill: {
+      type: "turna",
+      target: -1,
+      value: 3,
+      hid: 94
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "BAVAH",
+    type: 3,
+    rarity: 2,
+    img: "3lza",
+    hp: 52,
+    atk: 52,
+    skill: {
+      type: "extra",
+      target: -1,
+      value: 4,
+      hid: 95
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 100
+  },
+  {
+    name: "LEPRECHAUN",
+    type: 1,
+    rarity: 2,
+    img: "tvhw",
+    hp: 75,
+    atk: 25,
+    skill: {
+      type: "ratio",
+      target: -1,
+      value: 0,
+      hid: 96
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "SPARKS",
+    type: 2,
+    rarity: 0,
+    img: "hwe9",
+    hp: 30,
+    atk: 30,
+    skill: {
+      type: "evo",
+      target: -1,
+      value: 2,
+      hid: 97
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "LEAF",
+    type: 1,
+    rarity: 1,
+    img: "f0pg",
+    hp: 48,
+    atk: 42,
+    skill: {
+      type: "evo",
+      target: -1,
+      value: 2,
+      hid: 98
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "FLYNN",
+    type: 0,
+    rarity: 2,
+    img: "msba",
+    hp: 70,
+    atk: 48,
+    skill: {
+      type: "evo",
+      target: -1,
+      value: 2,
+      hid: 99
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "ASCENDED BAVAH",
+    type: 3,
+    rarity: 3,
+    img: "w1qv",
+    hp: 122,
+    atk: 122,
+    skill: {
+      type: "buffboth",
+      target: -1,
+      value: 0.152,
+      hid: 100
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "DR.HAWKING",
+    type: 0,
+    rarity: 2,
+    img: "pasc",
+    hp: 66,
+    atk: 60,
+    skill: {
+      type: "paoe",
+      target: -1,
+      value: 1,
+      hid: 101
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "MASTER LEE",
+    type: 0,
+    rarity: 3,
+    img: "h7sj",
+    hp: 150,
+    atk: 90,
+    skill: {
+      type: "counter",
+      target: -1,
+      value: 0.5,
+      hid: 102
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "KUMU-SAN",
+    type: 2,
+    rarity: 2,
+    img: "xplz",
+    hp: 70,
+    atk: 38,
+    skill: {
+      type: "counter",
+      target: -1,
+      value: 0.2,
+      hid: 103
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "LIU CHENG",
+    type: 3,
+    rarity: 2,
+    img: "1wm3",
+    hp: 78,
+    atk: 42,
+    skill: {
+      type: "counter",
+      target: -1,
+      value: 0.25,
+      hid: 104
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "HIDOKA",
+    type: 1,
+    rarity: 2,
+    img: "a10r",
+    hp: 86,
+    atk: 44,
+    skill: {
+      type: "counter",
+      target: -1,
+      value: 0.3,
+      hid: 105
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "KRYTON",
+    type: 0,
+    rarity: 5,
+    img: "wdwa",
+    hp: 1e+300,
+    atk: 10,
+    skill: {
+      type: "turna",
+      target: -1,
+      value: 10,
+      hid: 106
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "DICEMASTER",
+    type: 3,
+    rarity: 0,
+    img: "8127",
+    hp: 25,
+    atk: 26,
+    skill: {
+      type: "ratk",
+      target: -1,
+      value: 20,
+      hid: 107
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "LUXURIUS MAXIMUS",
+    type: 2,
+    rarity: 1,
+    img: "u67e",
+    hp: 28,
+    atk: 60,
+    skill: {
+      type: "rtrg",
+      target: -1,
+      value: 0,
+      hid: 108
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "POKERFACE",
+    type: 1,
+    rarity: 2,
+    img: "balp",
+    hp: 70,
+    atk: 70,
+    skill: {
+      type: "rcrit",
+      target: 2,
+      value: 3,
+      hid: 109
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "TAINT",
+    type: 0,
+    rarity: 0,
+    img: "769k",
+    hp: 25,
+    atk: 25,
+    skill: {
+      type: "rico",
+      target: 5,
+      value: 0.5,
+      hid: 110
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "PUTRID",
+    type: 1,
+    rarity: 1,
+    img: "9gst",
+    hp: 48,
+    atk: 50,
+    skill: {
+      type: "turna",
+      target: -1,
+      value: -3,
+      hid: 111
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "DEFILE",
+    type: 2,
+    rarity: 2,
+    img: "g5um",
+    hp: 52,
+    atk: 48,
+    skill: {
+      type: "moob",
+      target: -1,
+      value: 50,
+      hid: 112
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 131
+  },
+  {
+    name: "NEIL",
+    type: 3,
+    rarity: 2,
+    img: "3j8x",
+    hp: 150,
+    atk: 15,
+    skill: {
+      type: "tank",
+      target: -1,
+      value: 0.3,
+      hid: 113
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "MAHATMA",
+    type: 0,
+    rarity: 2,
+    img: "wpph",
+    hp: 78,
+    atk: 26,
+    skill: {
+      type: "elem",
+      target: 3,
+      value: 0.75,
+      hid: 114
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "JADE",
+    type: 1,
+    rarity: 2,
+    img: "jc5b",
+    hp: 76,
+    atk: 30,
+    skill: {
+      type: "elem",
+      target: 0,
+      value: 0.75,
+      hid: 115
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "EDANA",
+    type: 2,
+    rarity: 2,
+    img: "gids",
+    hp: 72,
+    atk: 36,
+    skill: {
+      type: "elem",
+      target: 1,
+      value: 0.75,
+      hid: 116
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "DYBBUK",
+    type: 3,
+    rarity: 2,
+    img: "98p6",
+    hp: 80,
+    atk: 30,
+    skill: {
+      type: "elem",
+      target: 2,
+      value: 0.75,
+      hid: 117
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "ASCENDED SHYGU",
+    type: 0,
+    rarity: 3,
+    img: "023t",
+    hp: 85,
+    atk: 135,
+    skill: {
+      type: "buffdef",
+      target: 0,
+      value: 0.1819,
+      hid: 118
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED THERT",
+    type: 1,
+    rarity: 3,
+    img: "0hia",
+    hp: 180,
+    atk: 70,
+    skill: {
+      type: "buffdef",
+      target: 1,
+      value: 0.1819,
+      hid: 119
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED LORD KIRK",
+    type: 2,
+    rarity: 3,
+    img: "0686",
+    hp: 80,
+    atk: 160,
+    skill: {
+      type: "buffdef",
+      target: 2,
+      value: 0.1819,
+      hid: 120
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED NEPTUNIUS",
+    type: 3,
+    rarity: 3,
+    img: "0b3i",
+    hp: 75,
+    atk: 175,
+    skill: {
+      type: "buffdef",
+      target: 3,
+      value: 0.1819,
+      hid: 121
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED HOSOKAWA",
+    type: 0,
+    rarity: 3,
+    img: "hu9w",
+    hp: 106,
+    atk: 124,
+    skill: {
+      type: "buffatk",
+      target: 0,
+      value: 0.1819,
+      hid: 122
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED TAKEDA",
+    type: 1,
+    rarity: 3,
+    img: "qkx4",
+    hp: 82,
+    atk: 164,
+    skill: {
+      type: "buffatk",
+      target: 1,
+      value: 0.1819,
+      hid: 123
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED HIRATE",
+    type: 2,
+    rarity: 3,
+    img: "29l6",
+    hp: 96,
+    atk: 144,
+    skill: {
+      type: "buffatk",
+      target: 2,
+      value: 0.1819,
+      hid: 124
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED HATTORI",
+    type: 3,
+    rarity: 3,
+    img: "ikae",
+    hp: 114,
+    atk: 126,
+    skill: {
+      type: "buffatk",
+      target: 3,
+      value: 0.1819,
+      hid: 125
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "DOYENNE",
+    type: 3,
+    rarity: 5,
+    img: "pm0s",
+    hp: 1e+300,
+    atk: 174,
+    skill: {
+      type: "dampen",
+      target: -1,
+      value: 15000,
+      hid: 126
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "BILLY",
+    type: 1,
+    rarity: 0,
+    img: "sm4l",
+    hp: 30,
+    atk: 40,
+    skill: {
+      type: "explosion",
+      target: 1,
+      value: 100,
+      hid: 127
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "SANQUEEN",
+    type: 3,
+    rarity: 1,
+    img: "ite9",
+    hp: 88,
+    atk: 22,
+    skill: {
+      type: "leech",
+      target: -1,
+      value: 0.8,
+      hid: 128
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "CLIODHNA",
+    type: 0,
+    rarity: 2,
+    img: "649s",
+    hp: 150,
+    atk: 60,
+    skill: {
+      type: "evolve",
+      target: -1,
+      value: 1,
+      hid: 129
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "GUY",
+    type: 2,
+    rarity: 3,
+    img: "2wiw",
+    hp: 340,
+    atk: 64,
+    skill: {
+      type: "anarchy",
+      target: -1,
+      value: 1,
+      hid: 130
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED DEFILE",
+    type: 2,
+    rarity: 3,
+    img: "g5um",
+    hp: 126,
+    atk: 114,
+    skill: {
+      type: "amoob",
+      target: -1,
+      value: 7,
+      hid: 131
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2,
+    pve: true
+  },
+  {
+    name: "RAIDER ROSE",
+    type: 1,
+    rarity: 3,
+    img: "n7hx",
+    hp: 186,
+    atk: 62,
+    skill: {
+      type: "otk",
+      target: -1,
+      value: 0.6,
+      hid: 132
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "BUCCANEER BEATRICE",
+    type: 3,
+    rarity: 2,
+    img: "o6ks",
+    hp: 96,
+    atk: 30,
+    skill: {
+      type: "otk",
+      target: -1,
+      value: 0.3,
+      hid: 133
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "CORSAIR CHARLES",
+    type: 0,
+    rarity: 2,
+    img: "w2v1",
+    hp: 100,
+    atk: 32,
+    skill: {
+      type: "otk",
+      target: -1,
+      value: 0.35,
+      hid: 134
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "MARAUDER MAGNUS",
+    type: 2,
+    rarity: 2,
+    img: "kyps",
+    hp: 105,
+    atk: 34,
+    skill: {
+      type: "otk",
+      target: -1,
+      value: 0.4,
+      hid: 135
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "FROSTY",
+    type: 3,
+    rarity: 1,
+    img: "5ivj",
+    hp: 46,
+    atk: 52,
+    skill: {
+      type: "armor",
+      target: 9,
+      value: 0.03,
+      hid: 136
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "FIR",
+    type: 1,
+    rarity: 0,
+    img: "rj98",
+    hp: 50,
+    atk: 18,
+    skill: {
+      type: "reflect",
+      target: 3,
+      value: 0.004,
+      hid: 137
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "5-12-6",
+    type: 0,
+    rarity: 1,
+    img: "6lcu",
+    hp: 78,
+    atk: 34,
+    skill: {
+      type: "amplify",
+      target: 9,
+      value: 0.03,
+      hid: 138
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "KEDARI",
+    type: 2,
+    rarity: 2,
+    img: "3ljh",
+    hp: 170,
+    atk: 18,
+    skill: {
+      type: "guardian",
+      target: 9,
+      value: 2,
+      hid: 139
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "RAZE",
+    type: 3,
+    rarity: 0,
+    img: "kdvz",
+    hp: 18,
+    atk: 26,
+    skill: {
+      type: "rico",
+      target: 1,
+      value: 0.7,
+      hid: 140
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "RUIN",
+    type: 0,
+    rarity: 1,
+    img: "i9tb",
+    hp: 44,
+    atk: 48,
+    skill: {
+      type: "boom",
+      target: -1,
+      value: 0.1,
+      hid: 141
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "SEETHE",
+    type: 1,
+    rarity: 2,
+    img: "d3c6",
+    hp: 48,
+    atk: 54,
+    skill: {
+      type: "posbonus",
+      target: -1,
+      value: 15,
+      hid: 142
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 143
+  },
+  {
+    name: "ASCENDED SEETHE",
+    type: 1,
+    rarity: 3,
+    img: "d3c6",
+    hp: 117,
+    atk: 131,
+    skill: {
+      type: "aposbonus",
+      target: -1,
+      value: 0.45,
+      hid: 143
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2,
+    pve: true
+  },
+  {
+    name: "BLOSSOM",
+    type: 1,
+    rarity: 2,
+    img: "tc3q",
+    hp: 54,
+    atk: 54,
+    skill: {
+      type: "friend",
+      target: -1,
+      value: 0.1,
+      hid: 144
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "FLINT",
+    type: 2,
+    rarity: 2,
+    img: "6bid",
+    hp: 56,
+    atk: 56,
+    skill: {
+      type: "friend",
+      target: -1,
+      value: 0.11,
+      hid: 145
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ORIN",
+    type: 0,
+    rarity: 2,
+    img: "iu25",
+    hp: 58,
+    atk: 58,
+    skill: {
+      type: "friend",
+      target: -1,
+      value: 0.12,
+      hid: 146
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "AURORA",
+    type: 3,
+    rarity: 3,
+    img: "122p",
+    hp: 130,
+    atk: 130,
+    skill: {
+      type: "friend",
+      target: -1,
+      value: 0.15,
+      hid: 147
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "CUPID",
+    type: 0,
+    rarity: 2,
+    img: "siua",
+    hp: 220,
+    atk: 20,
+    skill: {
+      type: "rico",
+      target: 1,
+      value: 3,
+      hid: 148
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "TRANSIENT",
+    type: 4,
+    rarity: 0,
+    img: "2aoh",
+    hp: 22,
+    atk: 22,
+    skill: {
+      type: "void",
+      target: -1,
+      value: 0.5,
+      hid: 149
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "MAUNDER",
+    type: 4,
+    rarity: 1,
+    img: "91jo",
+    hp: 34,
+    atk: 34,
+    skill: {
+      type: "void",
+      target: -1,
+      value: 0.5,
+      hid: 150
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "THE WANDERER",
+    type: 4,
+    rarity: 2,
+    img: "wy4e",
+    hp: 50,
+    atk: 50,
+    skill: {
+      type: "void",
+      target: -1,
+      value: 0.5,
+      hid: 151
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 174
+  },
+  {
+    name: "B-DAY",
+    type: 0,
+    rarity: 2,
+    img: "jz8c",
+    hp: 100,
+    atk: 40,
+    skill: {
+      type: "bday",
+      target: -1,
+      value: 0.1,
+      hid: 152
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "CLOUD",
+    type: 0,
+    rarity: 0,
+    img: "62s2",
+    hp: 44,
+    atk: 22,
+    skill: {
+      type: "infiltred",
+      target: -1,
+      value: 0.95,
+      hid: 153
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "EMBER",
+    type: 2,
+    rarity: 1,
+    img: "v82q",
+    hp: 64,
+    atk: 32,
+    skill: {
+      type: "infiltred",
+      target: -1,
+      value: 0.95,
+      hid: 154
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "RIPTIDE",
+    type: 3,
+    rarity: 2,
+    img: "n9na",
+    hp: 84,
+    atk: 42,
+    skill: {
+      type: "infiltred",
+      target: -1,
+      value: 0.95,
+      hid: 155
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "SPIKE",
+    type: 1,
+    rarity: 3,
+    img: "adkj",
+    hp: 180,
+    atk: 90,
+    skill: {
+      type: "infiltred",
+      target: -1,
+      value: 0.95,
+      hid: 156
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 3
+  },
+  {
+    name: "ASCENDED MAHATMA",
+    type: 0,
+    rarity: 3,
+    img: "wpph",
+    hp: 180,
+    atk: 60,
+    skill: {
+      type: "elem",
+      target: 3,
+      value: 1.7,
+      hid: 157
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED JADE",
+    type: 1,
+    rarity: 3,
+    img: "jc5b",
+    hp: 172,
+    atk: 68,
+    skill: {
+      type: "elem",
+      target: 0,
+      value: 1.7,
+      hid: 158
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED EDANA",
+    type: 2,
+    rarity: 3,
+    img: "gids",
+    hp: 160,
+    atk: 80,
+    skill: {
+      type: "elem",
+      target: 1,
+      value: 1.7,
+      hid: 159
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "ASCENDED DYBBUK",
+    type: 3,
+    rarity: 3,
+    img: "98p6",
+    hp: 176,
+    atk: 66,
+    skill: {
+      type: "elem",
+      target: 2,
+      value: 1.7,
+      hid: 160
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1,
+    pve: true
+  },
+  {
+    name: "WILLOW",
+    type: 0,
+    rarity: 0,
+    img: "jqr2",
+    hp: 30,
+    atk: 38,
+    skill: {
+      type: "backlash",
+      target: -1,
+      value: 0.2,
+      hid: 161
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "GIZMO",
+    type: 2,
+    rarity: 1,
+    img: "6oe8",
+    hp: 70,
+    atk: 40,
+    skill: {
+      type: "mbonus",
+      target: -1,
+      value: 3,
+      hid: 162
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "DAISY",
+    type: 3,
+    rarity: 2,
+    img: "7itt",
+    hp: 84,
+    atk: 50,
+    skill: {
+      type: "easter",
+      target: -1,
+      value: 2.5,
+      hid: 163
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "THUMPER",
+    type: 1,
+    rarity: 3,
+    img: "2fyz",
+    hp: 120,
+    atk: 200,
+    skill: {
+      type: "mshield",
+      target: -1,
+      value: 0.6,
+      hid: 164
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 1
+  },
+  {
+    name: "BORTLES",
+    type: 0,
+    rarity: 0,
+    img: "tx6e",
+    hp: 40,
+    atk: 24,
+    skill: {
+      type: "mon2",
+      target: -1,
+      value: 3,
+      hid: 165
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "MURPHY",
+    type: 1,
+    rarity: 1,
+    img: "i8gx",
+    hp: 40,
+    atk: 28,
+    skill: {
+      type: "fixreflect",
+      target: -1,
+      value: 60,
+      hid: 166
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "NERISSA",
+    type: 3,
+    rarity: 2,
+    img: "ckwv",
+    hp: 24,
+    atk: 82,
+    skill: {
+      type: "fixarmor",
+      target: -1,
+      value: 0.45,
+      hid: 167
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 169
+  },
+  {
+    name: "MOTHER",
+    type: 3,
+    rarity: 2,
+    img: "defy",
+    hp: 112,
+    atk: 55,
+    skill: {
+      type: "healfirst",
+      target: -1,
+      value: 25,
+      hid: 168
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "ASCENDED NERISSA",
+    type: 3,
+    rarity: 3,
+    img: "ckwv",
+    hp: 48,
+    atk: 164,
+    skill: {
+      type: "armor",
+      target: 9,
+      value: 0.06,
+      hid: 169
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2,
+    pve: true
+  },
+  {
+    name: "AGATHA",
+    type: 0,
+    rarity: 2,
+    img: "b97v",
+    hp: 51,
+    atk: 59,
+    skill: {
+      type: "buffpatk",
+      target: -1,
+      value: 0.1,
+      hid: 170
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "OPHELIA",
+    type: 1,
+    rarity: 2,
+    img: "jvfc",
+    hp: 52,
+    atk: 60,
+    skill: {
+      type: "buffpatk",
+      target: -1,
+      value: 0.15,
+      hid: 171
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "HELGA",
+    type: 3,
+    rarity: 2,
+    img: "wt8s",
+    hp: 53,
+    atk: 61,
+    skill: {
+      type: "buffpatk",
+      target: -1,
+      value: 0.2,
+      hid: 172
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "MINERVA",
+    type: 2,
+    rarity: 3,
+    img: "ghf1",
+    hp: 108,
+    atk: 124,
+    skill: {
+      type: "buffpatk",
+      target: -1,
+      value: 0.25,
+      hid: 173
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  },
+  {
+    name: "ASCENDED WANDERER",
+    type: 4,
+    rarity: 3,
+    img: "wy4e",
+    hp: 126,
+    atk: 126,
+    skill: {
+      type: "void",
+      target: -1,
+      value: 0.75,
+      hid: 174
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2
+  }
 ];
 
 var promoData = [
-    {
-      "hp": 28,
-      "atk": 25,
-      "both": 15,
-      "skill": 3,
-      "quest": 17,
-      "name": "LADY OF TWILIGHT"
-    },
-    {
-      "hp": 40,
-      "atk": 28,
-      "both": 17,
-      "skill": 0.0404,
-      "quest": 52,
-      "name": "TINY"
-    },
-    {
-      "hp": 140,
-      "atk": 100,
-      "both": 20,
-      "skill": 20,
-      "quest": 81,
-      "name": "NEBRA"
-    },
-    {
-      "hp": 7,
-      "atk": 3,
-      "both": 9,
-      "skill": 1,
-      "quest": 3,
-      "name": "VALOR"
-    },
-    {
-      "hp": 40,
-      "atk": 7,
-      "both": 5,
-      "skill": 1,
-      "quest": 2,
-      "name": "ROKKA"
-    },
-    {
-      "hp": 16,
-      "atk": 2,
-      "both": 8,
-      "skill": 1,
-      "quest": 5,
-      "name": "PYROMANCER"
-    },
-    {
-      "hp": 31,
-      "atk": 10,
-      "both": 8,
-      "skill": 1,
-      "quest": 0,
-      "name": "BEWAT"
-    },
-    {
-      "hp": 14,
-      "atk": 12,
-      "both": 4,
-      "skill": 2,
-      "quest": 6,
-      "name": "HUNTER"
-    },
-    {
-      "hp": 36,
-      "atk": 16,
-      "both": 25,
-      "skill": 2,
-      "quest": 39,
-      "name": "SHAMAN"
-    },
-    {
-      "hp": 115,
-      "atk": 37,
-      "both": 25*3,
-      "skill": 1+3,
-      "quest": 73,
-      "name": "ALPHA"
-    },
-    {
-      "hp": 18,
-      "atk": 5,
-      "both": 5,
-      "skill": 2,
-      "quest": 4,
-      "name": "CARL"
-    },
-    {
-      "hp": 49,
-      "atk": 19,
-      "both": 12,
-      "skill": 2,
-      "quest": 38,
-      "name": "NIMUE"
-    },
-    {
-      "hp": 70,
-      "atk": 32,
-      "both": 32*3,
-      "skill": 2+4,
-      "quest": 76,
-      "name": "ATHOS"
-    },
-    {
-      "hp": 11,
-      "atk": 9,
-      "both": 6,
-      "skill": 2,
-      "quest": 11,
-      "name": "JET"
-    },
-    {
-      "hp": 27,
-      "atk": 11,
-      "both": 18,
-      "skill": 2,
-      "quest": 37,
-      "name": "GERON"
-    },
-    {
-      "hp": 79,
-      "atk": 67,
-      "both": 52,
-      "skill": 2+6,
-      "quest": 96,
-      "name": "REI"
-    },
-    {
-      "hp": 21,
-      "atk": 17,
-      "both": 7,
-      "skill": 2,
-      "quest": 13,
-      "name": "AILEN"
-    },
-    {
-      "hp": 53,
-      "atk": 17,
-      "both": 19,
-      "skill": 2,
-      "quest": 33,
-      "name": "FAEFYR"
-    },
-    {
-      "hp": 70,
-      "atk": 41,
-      "both": 23,
-      "skill": 2,
-      "quest": 84,
-      "name": "AURI"
-    },
-    {
-      "hp": 21,
-      "atk": 43,
-      "both": 24,
-      "skill": 4,
-      "quest": 35,
-      "name": "NICTE"
-    },
-    {
-      "hp": 89,
-      "atk": 39,
-      "both": 29,
-      "skill": 0.1,
-      "quest": 68,
-      "name": "JAMES"
-    },
-    {
-      "hp": 19,
-      "atk": 14,
-      "both": 19,
-      "skill": 3,
-      "quest": 8,
-      "name": "K41RY"
-    },
-    {
-      "hp": 28,
-      "atk": 5*4,
-      "both": 10*3,
-      "skill": 1,
-      "quest": 36,
-      "name": "T4URUS"
-    },
-    {
-      "hp": 107,
-      "atk": 19,
-      "both": 35,
-      "skill": 3,
-      "quest": 72,
-      "name": "TR0N1X"
-    },
-    {
-      "hp": 28,
-      "atk": 6*3,
-      "both": 6*3,
-      "skill": 3,
-      "quest": 1,
-      "name": "AQUORTIS"
-    },
-    {
-      "hp": 10,
-      "atk": 36,
-      "both": 28,
-      "skill": 1,
-      "quest": 34,
-      "name": "AERIS"
-    },
-    {
-      "hp": 213,
-      "atk": 8,
-      "both": 22,
-      "skill": 0.2,
-      "quest": 66,
-      "name": "GEUM"
-    },
-    {
-      "hp": 38,
-      "atk": 6,
-      "both": 7,
-      "skill": 4,
-      "quest": 31,
-      "name": "FOREST DRUID"
-    },
-    {
-      "hp": 24,
-      "atk": 11,
-      "both": 9,
-      "skill": 4,
-      "quest": 46,
-      "name": "IGNITOR"
-    },
-    {
-      "hp": 25,
-      "atk": 7,
-      "both": 15,
-      "skill": 4,
-      "quest": 30,
-      "name": "UNDINE"
-    },
-    {
-      "hp": 19,
-      "atk": 7,
-      "both": 5,
-      "skill": 3,
-      "quest": 7,
-      "name": "RUDEAN"
-    },
-    {
-      "hp": 33,
-      "atk": 31,
-      "both": 28,
-      "skill": 0.12,
-      "quest": 43,
-      "name": "AURAL"
-    },
-    {
-      "hp": 95,
-      "atk": 125,
-      "both": 36,
-      "skill": 0.12,
-      "quest": 93,
-      "name": "GEROR"
-    },
-    {
-      "hp": 74,
-      "atk": 11,
-      "both": 51,
-      "skill": 3,
-      "quest": 101,
-      "name": "VEILDUR"
-    },
-    {
-      "hp": 84,
-      "atk": 23,
-      "both": 59,
-      "skill": 4,
-      "quest": 104,
-      "name": "BRYNHILDR"
-    },
-    {
-      "hp": 114,
-      "atk": 70,
-      "both": 62,
-      "skill": 5,
-      "quest": 108,
-      "name": "GROTH"
-    },
-    {
-      "hp": 17,
-      "atk": 3,
-      "both": 8,
-      "skill": 3,
-      "quest": 10,
-      "name": "OUREA"
-    },
-    {
-      "hp": 55,
-      "atk": 10,
-      "both": 20,
-      "skill": 2,
-      "quest": 41,
-      "name": "EREBUS"
-    },
-    {
-      "hp": 121,
-      "atk": 43,
-      "both": 39,
-      "skill": 0.2,
-      "quest": 100,
-      "name": "PONTUS"
-    },
-    {
-      "hp": 23,
-      "atk": 15,
-      "both": 15,
-      "skill": 4,
-      "quest": 32,
-      "name": "CHROMA"
-    },
-    {
-      "hp": 18,
-      "atk": 16,
-      "both": 28,
-      "skill": 4,
-      "quest": 48,
-      "name": "PETRY"
-    },
-    {
-      "hp": 57,
-      "atk": 5,
-      "both": 16,
-      "skill": 4,
-      "quest": 42,
-      "name": "ZAYTUS"
-    },
-    {
-      "hp": 112,
-      "atk": 22,
-      "both": 40,
-      "skill": 10,
-      "quest": 99,
-      "name": "SPYKE"
-    },
-    {
-      "hp": 75,
-      "atk": 121,
-      "both": 66,
-      "skill": 100,
-      "quest": 98,
-      "name": "AOYUKI"
-    },
-    {
-      "hp": 113,
-      "atk": 31,
-      "both": 52,
-      "skill": 2,
-      "quest": 113,
-      "name": "GAIABYTE"
-    },
-    {
-      "hp": 12*2,
-      "atk": 3*5,
-      "both": 7*3,
-      "skill": 4,
-      "quest": 9,
-      "name": "OYMOS"
-    },
-    {
-      "hp": 11,
-      "atk": 18,
-      "both": 19,
-      "skill": 2,
-      "quest": 40,
-      "name": "XARTH"
-    },
-    {
-      "hp": 85,
-      "atk": 28,
-      "both": 48,
-      "skill": 0.2,
-      "quest": 85,
-      "name": "ATZAR"
-    },
-    {
-      "hp": 127,
-      "atk": 16,
-      "both": 24,
-      "skill": 0.05,
-      "quest": 103,
-      "name": "ZETH"
-    },
-    {
-      "hp": 99,
-      "atk": 39,
-      "both": 70,
-      "skill": 0.05,
-      "quest": 106,
-      "name": "KOTH"
-    },
-    {
-      "hp": 108,
-      "atk": 43,
-      "both": 68,
-      "skill": 0.05,
-      "quest": 109,
-      "name": "GURTH"
-    },
-    {
-      "hp": 23,
-      "atk": 28,
-      "both": 19,
-      "skill": 0.01112,
-      "quest": 21,
-      "name": "WEREWOLF"
-    },
-    {
-      "hp": 50,
-      "atk": 13,
-      "both": 38,
-      "skill": 0.01112,
-      "quest": 54,
-      "name": "JACK'O KNIGHT"
-    },
-    {
-      "hp": 114,
-      "atk": 11,
-      "both": 48,
-      "skill": 0.0404,
-      "quest": 110,
-      "name": "DULLAHAN"
-    },
-    {
-      "hp": 19,
-      "atk": 17,
-      "both": 29,
-      "skill": 4,
-      "quest": 44,
-      "name": "LADY ODELITH"
-    },
-    {
-      "hp": 23,
-      "atk": 68,
-      "both": 71,
-      "skill": 0.01112,
-      "quest": 83,
-      "name": "SHYGU"
-    },
-    {
-      "hp": 61,
-      "atk": 44,
-      "both": 35,
-      "skill": 0.01112,
-      "quest": 77,
-      "name": "THERT"
-    },
-    {
-      "hp": 77,
-      "atk": 99,
-      "both": 83,
-      "skill": 0.01112,
-      "quest": 91,
-      "name": "LORD KIRK"
-    },
-    {
-      "hp": 92,
-      "atk": 73,
-      "both": 83,
-      "skill": 0.01112,
-      "quest": 97,
-      "name": "NEPTUNIUS"
-    },
-    {
-      "hp": 132,
-      "atk": 29,
-      "both": 45,
-      "skill": 0.15,
-      "quest": 67,
-      "name": "SIGRÚN"
-    },
-    {
-      "hp": 173,
-      "atk": 18,
-      "both": 26,
-      "skill": 0.15,
-      "quest": 71,
-      "name": "KOLDÍS"
-    },
-    {
-      "hp": 152,
-      "atk": 20+30,
-      "both": 14*4,
-      "skill": 0.15,
-      "quest": 69,
-      "name": "ALVITR"
-    },
-    {
-      "hp": 21,
-      "atk": 10,
-      "both": 7,
-      "skill": 4,
-      "quest": 14,
-      "name": "HAMA"
-    },
-    {
-      "hp": 17,
-      "atk": 54,
-      "both": 20,
-      "skill": 2,
-      "quest": 49,
-      "name": "HALLINSKIDI"
-    },
-    {
-      "hp": 68,
-      "atk": 21,
-      "both": 93,
-      "skill": 0.2,
-      "quest": 102,
-      "name": "RIGR"
-    },
-    {
-      "hp": 251,
-      "atk": 40,
-      "both": 92,
-      "skill": 0.0304,
-      "quest": 137,
-      "name": "ASCENDED ALPHA"
-    },
-    {
-      "hp": 281,
-      "atk": 57,
-      "both": 36,
-      "skill": 0.0304,
-      "quest": 139,
-      "name": "ASCENDED ATHOS"
-    },
-    {
-      "hp": 127,
-      "atk": 46,
-      "both": 176,
-      "skill": 0.1414,
-      "quest": 149,
-      "name": "ASCENDED REI"
-    },
-    {
-      "hp": 81,
-      "atk": 221,
-      "both": 59,
-      "skill": 0.0152,
-      "quest": 138,
-      "name": "ASCENDED AURI"
-    },
-    {
-      "hp": 383,
-      "atk": 56,
-      "both": 25,
-      "skill": 0.05,
-      "quest": 136,
-      "name": "ASCENDED TR0N1X"
-    },
-    {
-      "hp": 348,
-      "atk": 35,
-      "both": 16,
-      "skill": 0.2,
-      "quest": 135,
-      "name": "ASCENDED GEUM"
-    },
-    {
-      "hp": 173,
-      "atk": 22,
-      "both": 153,
-      "skill": 0.13,
-      "quest": 148,
-      "name": "ASCENDED GEROR"
-    },
-    {
-      "hp": 20,
-      "atk": 20,
-      "both": 30,
-      "skill": 0.1,
-      "quest": 10
-    },
-    {
-      "hp": 28,
-      "atk": 34,
-      "both": 22,
-      "skill": 0.01112,
-      "quest": 19,
-      "name": "CHRISTMAS ELF"
-    },
-    {
-      "hp": 53,
-      "atk": 18,
-      "both": 33,
-      "skill": 0.01112,
-      "quest": 55,
-      "name": "REINDEER"
-    },
-    {
-      "hp": 107,
-      "atk": 96,
-      "both": 78,
-      "skill": 0.0404,
-      "quest": 107,
-      "name": "SANTA CLAUS"
-    },
-    {
-      "hp": 27,
-      "atk": 41,
-      "both": 40,
-      "skill": 0.05,
-      "quest": 53,
-      "name": "SEXY SANTA"
-    },
-    {
-      "hp": 18,
-      "atk": 32,
-      "both": 16,
-      "skill": 4,
-      "quest": 15,
-      "name": "TOTH"
-    },
-    {
-      "hp": 29,
-      "atk": 26,
-      "both": 26+17,
-      "skill": 2,
-      "quest": 47,
-      "name": "GANAH"
-    },
-    {
-      "hp": 79,
-      "atk": 78,
-      "both": 123,
-      "skill": 0.2,
-      "quest": 111,
-      "name": "DAGDA"
-    },
-    {
-      "hp": 291,
-      "atk": 120,
-      "both": 58,
-      "skill": 0.0005,
-      "quest": 147,
-      "name": "BUBBLES"
-    },
-    {
-      "hp": 124,
-      "atk": 211,
-      "both": 190,
-      "skill": 0.30000000000000004,
-      "quest": 143,
-      "name": "ASCENDED PONTUS"
-    },
-    {
-      "hp": 333,
-      "atk": 27,
-      "both": 86,
-      "skill": 0.30000000000000004,
-      "quest": 155,
-      "name": "ASCENDED ATZAR"
-    },
-    {
-      "hp": 83,
-      "atk": 44,
-      "both": 19,
-      "skill": 0.05,
-      "quest": 80,
-      "name": "ARSHEN"
-    },
-    {
-      "hp": 88,
-      "atk": 44,
-      "both": 37,
-      "skill": 0.05,
-      "quest": 92,
-      "name": "RUA"
-    },
-    {
-      "hp": 90,
-      "atk": 38,
-      "both": 40,
-      "skill": 0.05,
-      "quest": 90,
-      "name": "DORTH"
-    },
-    {
-      "hp": 138,
-      "atk": 121,
-      "both": 93,
-      "skill": 0.30000000000000004,
-      "quest": 154,
-      "name": "ASCENDED RIGR"
-    },
-    {
-      "hp": 20,
-      "atk": 20,
-      "both": 30,
-      "skill": 0.1,
-      "quest": 10
-    },
-    {
-      "hp": 108,
-      "atk": 115,
-      "both": 74,
-      "skill": 0.01112,
-      "quest": 95,
-      "name": "HOSOKAWA"
-    },
-    {
-      "hp": 83,
-      "atk": 82,
-      "both": 32,
-      "skill": 0.01112,
-      "quest": 88,
-      "name": "TAKEDA"
-    },
-    {
-      "hp": 53,
-      "atk": 133,
-      "both": 44,
-      "skill": 0.01112,
-      "quest": 82,
-      "name": "HIRATE"
-    },
-    {
-      "hp": 65,
-      "atk": 74,
-      "both": 64,
-      "skill": 0.01112,
-      "quest": 87,
-      "name": "HATTORI"
-    },
-    {
-      "hp": 208,
-      "atk": 78,
-      "both": 322,
-      "skill": 0.30000000000000004,
-      "quest": 156,
-      "name": "ASCENDED DAGDA"
-    },
-    {
-      "hp": 18,
-      "atk": 6,
-      "both": 15,
-      "skill": 4,
-      "quest": 16,
-      "name": "BYLAR"
-    },
-    {
-      "hp": 19,
-      "atk": 49,
-      "both": 20,
-      "skill": 3,
-      "quest": 45,
-      "name": "BOÖR"
-    },
-    {
-      "hp": 84,
-      "atk": 92,
-      "both": 43,
-      "skill": 2+3,
-      "quest": 94,
-      "name": "BAVAH"
-    },
-    {
-      "hp": 59,
-      "atk": 13,
-      "both": 13,
-      "skill": 1,
-      "quest": 74,
-      "name": "LEPRECHAUN"
-    },
-    {
-      "hp": 29,
-      "atk": 29,
-      "both": 15,
-      "skill": 0.2,
-      "quest": 23,
-      "name": "SPARKS"
-    },
-    {
-      "hp": 35,
-      "atk": 57,
-      "both": 26,
-      "skill": 0.2,
-      "quest": 59,
-      "name": "LEAF"
-    },
-    {
-      "hp": 46,
-      "atk": 93,
-      "both": 69,
-      "skill": 0.2,
-      "quest": 121,
-      "name": "FLYNN"
-    },
-    {
-      "hp": 217,
-      "atk": 152,
-      "both": 145,
-      "skill": 0.0152,
-      "quest": 144,
-      "name": "ASCENDED BAVAH"
-    },
-    {
-      "hp": 94,
-      "atk": 136,
-      "both": 70,
-      "skill": 0.3,
-      "quest": 115,
-      "name": "DR.HAWKING"
-    },
-    {
-      "hp": 314,
-      "atk": 290,
-      "both": 225,
-      "skill": 0.05,
-      "quest": 157,
-      "name": "MASTER LEE"
-    },
-    {
-      "hp": 134,
-      "atk": 132,
-      "both": 135,
-      "skill": 0.020000000000000004,
-      "quest": 114,
-      "name": "KUMU-SAN"
-    },
-    {
-      "hp": 113,
-      "atk": 147,
-      "both": 80,
-      "skill": 0.025,
-      "quest": 117,
-      "name": "LIU CHENG"
-    },
-    {
-      "hp": 144,
-      "atk": 172,
-      "both": 45,
-      "skill": 0.03,
-      "quest": 118,
-      "name": "HIDOKA"
-    },
-    {
-      "hp": 20,
-      "atk": 20,
-      "both": 30,
-      "skill": 0.1,
-      "quest": 10
-    },
-    {
-      "hp": 19,
-      "atk": 36,
-      "both": 12,
-      "skill": 20,
-      "quest": 18,
-      "name": "DICEMASTER"
-    },
-    {
-      "hp": 44,
-      "atk": 47,
-      "both": 29,
-      "skill": 1,
-      "quest": 51,
-      "name": "LUXURIUS MAXIMUS"
-    },
-    {
-      "hp": 119,
-      "atk": 211,
-      "both": 111,
-      "skill": 0.30000000000000004,
-      "quest": 116,
-      "name": "POKERFACE"
-    },
-    {
-      "hp": 13,
-      "atk": 4,
-      "both": 21,
-      "skill": 0.05,
-      "quest": 12,
-      "name": "TAINT"
-    },
-    {
-      "hp": 51,
-      "atk": 93,
-      "both": 50,
-      "skill": 1,
-      "quest": 56,
-      "name": "PUTRID"
-    },
-    {
-      "hp": 60,
-      "atk": 138,
-      "both": 72,
-      "skill": 50,
-      "quest": 89,
-      "name": "DEFILE"
-    },
-    {
-      "hp": 244,
-      "atk": 20,
-      "both": 23,
-      "skill": 0.05,
-      "quest": 65,
-      "name": "NEIL"
-    },
-    {
-      "hp": 56,
-      "atk": 19,
-      "both": 25,
-      "skill": 0.07500000000000001,
-      "quest": 75,
-      "name": "MAHATMA"
-    },
-    {
-      "hp": 45,
-      "atk": 37,
-      "both": 25,
-      "skill": 0.07500000000000001,
-      "quest": 78,
-      "name": "JADE"
-    },
-    {
-      "hp": 91,
-      "atk": 46,
-      "both": 22*3,
-      "skill": 0.07500000000000001,
-      "quest": 86,
-      "name": "EDANA"
-    },
-    {
-      "hp": 65,
-      "atk": 43,
-      "both": 37,
-      "skill": 0.07500000000000001,
-      "quest": 79,
-      "name": "DYBBUK"
-    },
-    {
-      "hp": 148,
-      "atk": 113,
-      "both": 217,
-      "skill": 0.01819,
-      "quest": 146,
-      "name": "ASCENDED SHYGU"
-    },
-    {
-      "hp": 346,
-      "atk": 47,
-      "both": 46,
-      "skill": 0.01819,
-      "quest": 140,
-      "name": "ASCENDED THERT"
-    },
-    {
-      "hp": 215,
-      "atk": 255,
-      "both": 87,
-      "skill": 0.01819,
-      "quest": 152,
-      "name": "ASCENDED LORD KIRK"
-    },
-    {
-      "hp": 335,
-      "atk": 201,
-      "both": 241,
-      "skill": 0.01819,
-      "quest": 153,
-      "name": "ASCENDED NEPTUNIUS"
-    },
-    {
-      "hp": 229,
-      "atk": 423,
-      "both": 207,
-      "skill": 0.01819,
-      "quest": 150,
-      "name": "ASCENDED HOSOKAWA"
-    },
-    {
-      "hp": 252,
-      "atk": 425,
-      "both": 66,
-      "skill": 0.01819,
-      "quest": 151,
-      "name": "ASCENDED TAKEDA"
-    },
-    {
-      "hp": 139,
-      "atk": 23,
-      "both": 27,
-      "skill": 0.01819,
-      "quest": 142,
-      "name": "ASCENDED HIRATE"
-    },
-    {
-      "hp": 218,
-      "atk": 116,
-      "both": 117,
-      "skill": 0.01819,
-      "quest": 145,
-      "name": "ASCENDED HATTORI"
-    },
-    {
-      "hp": 20,
-      "atk": 20,
-      "both": 30,
-      "skill": 0.1,
-      "quest": 10
-    },
-    {
-      "hp": 43,
-      "atk": 30,
-      "both": 24,
-      "skill": 25,
-      "quest": 22,
-      "name": "BILLY"
-    },
-    {
-      "hp": 71,
-      "atk": 8,
-      "both": 16,
-      "skill": 0.08000000000000002,
-      "quest": 50,
-      "name": "SANQUEEN"
-    },
-    {
-      "hp": 193,
-      "atk": 240,
-      "both": 78,
-      "skill": 0.1,
-      "quest": 119,
-      "name": "CLIODHNA"
-    },
-    {
-      "hp": 160,
-      "atk": 51,
-      "both": 115,
-      "skill": 0.1,
-      "quest": 159,
-      "name": "GUY"
-    },
-    {
-      "hp": 126,
-      "atk": 102,
-      "both": 114,
-      "skill": 2,
-      "quest": 141,
-      "name": "ASCENDED DEFILE"
-    },
-    {
-      "hp": 353,
-      "atk": 32,
-      "both": 476,
-      "skill": 0.05,
-      "quest": 158,
-      "name": "RAIDER ROSE"
-    },
-    {
-      "hp": 66,
-      "atk": 32,
-      "both": 66,
-      "skill": 0.05,
-      "quest": 105,
-      "name": "BUCCANEER BEATRICE"
-    },
-    {
-      "hp": 87,
-      "atk": 21,
-      "both": 64,
-      "skill": 0.05,
-      "quest": 112,
-      "name": "CORSAIR CHARLES"
-    },
-    {
-      "hp": 175,
-      "atk": 67,
-      "both": 71,
-      "skill": 0.05,
-      "quest": 120,
-      "name": "MARAUDER MAGNUS"
-    },
-    {
-      "hp": 51,
-      "atk": 69,
-      "both": 16,
-      "skill": 0.003,
-      "quest": 58,
-      "name": "FROSTY"
-    },
-    {
-      "hp": 33,
-      "atk": 5,
-      "both": 11,
-      "skill": 0.0004,
-      "quest": 20,
-      "name": "FIR"
-    },
-    {
-      "hp": 42,
-      "atk": 37,
-      "both": 39,
-      "skill": 0.003,
-      "quest": 57,
-      "name": "5-12-6"
-    },
-    {
-      "hp": 133,
-      "atk": 19,
-      "both": 25,
-      "skill": 0.2,
-      "quest": 70,
-      "name": "KEDARI"
-    },
-    {
-        "skill": 0.05,
-        "hp": 8,
-        "atk": 3,
-        "both": 14,
-        "quest": 5,
-        "name": "RAZE"
-    },
-    {
-        "skill": 0.05,
-        "hp": 23,
-        "atk": 61,
-        "both": 23,
-        "quest": 56,
-        "name": "RUIN"
-    },
-    {
-        "skill": 15,
-        "hp": 57,
-        "atk": 178,
-        "both": 53,
-        "quest": 86,
-        "name": "SEETHE"
-    },
-    {
-        "skill": 0.11,
-        "hp": 90,
-        "atk": 117,
-        "both": 124,
-        "quest": 146,
-        "name": "ASCENDED SEETHE"
-    },
-    {
-        "skill": 0.01,
-        "hp": 99,
-        "atk": 99,
-        "both": 144,
-        "quest": 91,
-        "name": "BLOSSOM"
-    },
-    {
-        "skill": 0.01,
-        "hp": 100,
-        "atk": 100,
-        "both": 150,
-        "quest": 98,
-        "name": "FLINT"
-    },
-    {
-        "skill": 0.01,
-        "hp": 101,
-        "atk": 101,
-        "both": 156,
-        "quest": 104,
-        "name": "ORIN"
-    },
-    {
-        "skill": 0.01,
-        "hp": 221,
-        "atk": 221,
-        "both": 344,
-        "quest": 142,
-        "name": "AURORA"
-    },
-    {
-        "skill": 1.0,
-        "hp": 150,
-        "atk": 50,
-        "both": 110,
-        "quest": 118,
-        "name": "CUPID" 
-    },{
-        "skill": 0.1,
-        "hp": 11,
-        "atk": 11,
-        "both": 20,
-        "quest": 24,
-        "name": "TRANSIENT"
-    },
-    {
-        "skill": 0.1,
-        "hp": 22,
-        "atk": 22,
-        "both": 32,
-        "quest": 57,
-        "name": "MAUNDER"
-    },
-    {
-        "skill": 0.1,
-        "hp": 80,
-        "atk": 80,
-        "both": 120,
-        "quest": 126,
-        "name": "THE WANDERER"
-    },{
-        "skill": 0.05,
-        "hp": 61,
-        "atk": 51,
-        "both": 23,
-        "quest": 91,
-        "name": "B-DAY"
-    },
-    {
-        "skill": 0.05,
-        "hp": 36,
-        "atk": 32,
-        "both": 11,
-        "quest": 18,
-        "name": "CLOUD"
-    },
-    {
-        "skill": 0.05,
-        "hp": 34,
-        "atk": 14,
-        "both": 19,
-        "quest": 52,
-        "name": "EMBER"
-    },
-    {
-        "skill": 0.05,
-        "hp": 89,
-        "atk": 34,
-        "both": 22,
-        "quest": 87,
-        "name": "RIPTIDE"
-    },
-    {
-        "skill": 0.05,
-        "hp": 234,
-        "atk": 103,
-        "both": 136,
-        "quest": 143,
-        "name": "SPIKE"
-    },{
-        "skill": 0.3,
-        "hp": 241,
-        "atk": 50,
-        "both": 45,
-        "quest": 138,
-        "name": "ASCENDED MAHATMA"
-      },
-      {
-        "skill": 0.3,
-        "hp": 288,
-        "atk": 41,
-        "both": 33,
-        "quest": 146,
-        "name": "ASCENDED JADE"
-      },
-      {
-        "skill": 0.3,
-        "hp": 191,
-        "atk": 180,
-        "both": 74,
-        "quest": 145,
-        "name": "ASCENDED EDANA"
-      },
-      {
-        "skill": 0.3,
-        "hp": 272,
-        "atk": 55,
-        "both": 29,
-        "quest": 147,
-        "name": "ASCENDED DYBBUK"
-      },
-      {
-        "skill": 0.2,
-        "hp": 22,
-        "atk": 19,
-        "both": 24,
-        "quest": 19,
-        "name": "WILLOW"
-      },
-      {
-        "skill": 1,
-        "hp": 43,
-        "atk": 26,
-        "both": 52,
-        "quest": 58,
-        "name": "GIZMO"
-      },
-      {
-        "skill": 0.5,
-        "hp": 50,
-        "atk": 84,
-        "both": 70,
-        "quest": 88,
-        "name": "DAISY"
-      },
-      {
-        "skill": 0.1,
-        "hp": 230,
-        "atk": 320,
-        "both": 360,
-        "quest": 156,
-        "name": "THUMPER"
-      },
-      {
-        "skill": 3,
-        "hp": 10,
-        "atk": 13,
-        "both": 14,
-        "quest": 21,
-        "name": "BORTLES"
-      },
-      {
-        "skill": 30,
-        "hp": 24,
-        "atk": 18,
-        "both": 28,
-        "quest": 60,
-        "name": "MURPHY"
-      },
-      {
-        "skill": 0.05,
-        "hp": 22,
-        "atk": 45,
-        "both": 52,
-        "quest": 123,
-        "name": "NERISSA"
-      }
-]
+  {
+    name: "LADY OF TWILIGHT",
+    atk: 25,
+    hp: 28,
+    both: 15,
+    skill: 3,
+    quest: 17
+  },
+  {
+    name: "TINY",
+    atk: 28,
+    hp: 40,
+    both: 17,
+    skill: 0.0404,
+    quest: 52
+  },
+  {
+    name: "NEBRA",
+    atk: 100,
+    hp: 140,
+    both: 83,
+    skill: 20,
+    quest: 81
+  },
+  {
+    name: "VALOR",
+    atk: 7,
+    hp: 12,
+    both: 19,
+    skill: 2,
+    quest: 3
+  },
+  {
+    name: "ROKKA",
+    atk: 12,
+    hp: 40,
+    both: 5,
+    skill: 2,
+    quest: 2
+  },
+  {
+    name: "PYROMANCER",
+    atk: 8,
+    hp: 16,
+    both: 8,
+    skill: 2,
+    quest: 5
+  },
+  {
+    name: "BEWAT",
+    atk: 10,
+    hp: 31,
+    both: 16,
+    skill: 2,
+    quest: 0
+  },
+  {
+    name: "HUNTER",
+    atk: 12,
+    hp: 14,
+    both: 11,
+    skill: 2,
+    quest: 6
+  },
+  {
+    name: "SHAMAN",
+    atk: 16,
+    hp: 36,
+    both: 25,
+    skill: 3,
+    quest: 39
+  },
+  {
+    name: "ALPHA",
+    atk: 37,
+    hp: 115,
+    both: 75,
+    skill: 5,
+    quest: 73
+  },
+  {
+    name: "CARL",
+    atk: 5,
+    hp: 18,
+    both: 12,
+    skill: 2,
+    quest: 4
+  },
+  {
+    name: "NIMUE",
+    atk: 19,
+    hp: 49,
+    both: 12,
+    skill: 3,
+    quest: 38
+  },
+  {
+    name: "ATHOS",
+    atk: 32,
+    hp: 70,
+    both: 96,
+    skill: 6,
+    quest: 76
+  },
+  {
+    name: "JET",
+    atk: 9,
+    hp: 11,
+    both: 12,
+    skill: 2,
+    quest: 11
+  },
+  {
+    name: "GERON",
+    atk: 11,
+    hp: 27,
+    both: 28,
+    skill: 3,
+    quest: 37
+  },
+  {
+    name: "REI",
+    atk: 67,
+    hp: 79,
+    both: 89,
+    skill: 10,
+    quest: 96
+  },
+  {
+    name: "AILEN",
+    atk: 17,
+    hp: 21,
+    both: 12,
+    skill: 2,
+    quest: 13
+  },
+  {
+    name: "FAEFYR",
+    atk: 17,
+    hp: 53,
+    both: 19,
+    skill: 3,
+    quest: 33
+  },
+  {
+    name: "AURI",
+    atk: 74,
+    hp: 70,
+    both: 23,
+    skill: 4,
+    quest: 84
+  },
+  {
+    name: "NICTE",
+    atk: 43,
+    hp: 21,
+    both: 24,
+    skill: 4,
+    quest: 35
+  },
+  {
+    name: "JAMES",
+    atk: 111,
+    hp: 103,
+    both: 41,
+    skill: 0.1,
+    quest: 68
+  },
+  {
+    name: "K41RY",
+    atk: 14,
+    hp: 19,
+    both: 19,
+    skill: 3,
+    quest: 8
+  },
+  {
+    name: "T4URUS",
+    atk: 20,
+    hp: 28,
+    both: 30,
+    skill: 2,
+    quest: 36
+  },
+  {
+    name: "TR0N1X",
+    atk: 44,
+    hp: 107,
+    both: 35,
+    skill: 6,
+    quest: 72
+  },
+  {
+    name: "AQUORTIS",
+    atk: 18,
+    hp: 28,
+    both: 18,
+    skill: 3,
+    quest: 1
+  },
+  {
+    name: "AERIS",
+    atk: 36,
+    hp: 20,
+    both: 28,
+    skill: 2,
+    quest: 34
+  },
+  {
+    name: "GEUM",
+    atk: 8,
+    hp: 213,
+    both: 22,
+    skill: 0.2,
+    quest: 66
+  },
+  {
+    name: "FOREST DRUID",
+    atk: 16,
+    hp: 38,
+    both: 19,
+    skill: 4,
+    quest: 31
+  },
+  {
+    name: "IGNITOR",
+    atk: 22,
+    hp: 24,
+    both: 23,
+    skill: 4,
+    quest: 46
+  },
+  {
+    name: "UNDINE",
+    atk: 7,
+    hp: 25,
+    both: 15,
+    skill: 4,
+    quest: 30
+  },
+  {
+    name: "RUDEAN",
+    atk: 14,
+    hp: 19,
+    both: 10,
+    skill: 3,
+    quest: 7
+  },
+  {
+    name: "AURAL",
+    atk: 31,
+    hp: 33,
+    both: 28,
+    skill: 0.12,
+    quest: 43
+  },
+  {
+    name: "GEROR",
+    atk: 125,
+    hp: 95,
+    both: 36,
+    skill: 0.12,
+    quest: 93
+  },
+  {
+    name: "VEILDUR",
+    atk: 42,
+    hp: 98,
+    both: 51,
+    skill: 3,
+    quest: 101
+  },
+  {
+    name: "BRYNHILDR",
+    atk: 56,
+    hp: 84,
+    both: 59,
+    skill: 4,
+    quest: 104
+  },
+  {
+    name: "GROTH",
+    atk: 70,
+    hp: 114,
+    both: 62,
+    skill: 5,
+    quest: 108
+  },
+  {
+    name: "OUREA",
+    atk: 8,
+    hp: 17,
+    both: 8,
+    skill: 3,
+    quest: 10
+  },
+  {
+    name: "EREBUS",
+    atk: 18,
+    hp: 55,
+    both: 20,
+    skill: 2,
+    quest: 41
+  },
+  {
+    name: "PONTUS",
+    atk: 43,
+    hp: 121,
+    both: 79,
+    skill: 0.2,
+    quest: 100
+  },
+  {
+    name: "CHROMA",
+    atk: 15,
+    hp: 23,
+    both: 15,
+    skill: 4,
+    quest: 32
+  },
+  {
+    name: "PETRY",
+    atk: 16,
+    hp: 18,
+    both: 28,
+    skill: 4,
+    quest: 48
+  },
+  {
+    name: "ZAYTUS",
+    atk: 12,
+    hp: 57,
+    both: 16,
+    skill: 4,
+    quest: 42
+  },
+  {
+    name: "SPYKE",
+    atk: 43,
+    hp: 112,
+    both: 73,
+    skill: 10,
+    quest: 99
+  },
+  {
+    name: "AOYUKI",
+    atk: 121,
+    hp: 75,
+    both: 66,
+    skill: 100,
+    quest: 98
+  },
+  {
+    name: "GAIABYTE",
+    atk: 84,
+    hp: 151,
+    both: 52,
+    skill: 2,
+    quest: 113
+  },
+  {
+    name: "OYMOS",
+    atk: 15,
+    hp: 24,
+    both: 21,
+    skill: 4,
+    quest: 9
+  },
+  {
+    name: "XARTH",
+    atk: 25,
+    hp: 23,
+    both: 19,
+    skill: 2,
+    quest: 40
+  },
+  {
+    name: "ATZAR",
+    atk: 28,
+    hp: 85,
+    both: 48,
+    skill: 0.2,
+    quest: 85
+  },
+  {
+    name: "ZETH",
+    atk: 76,
+    hp: 127,
+    both: 24,
+    skill: 0.1,
+    quest: 103
+  },
+  {
+    name: "KOTH",
+    atk: 39,
+    hp: 99,
+    both: 70,
+    skill: 0.1,
+    quest: 106
+  },
+  {
+    name: "GURTH",
+    atk: 43,
+    hp: 108,
+    both: 68,
+    skill: 0.1,
+    quest: 109
+  },
+  {
+    name: "WEREWOLF",
+    atk: 28,
+    hp: 23,
+    both: 19,
+    skill: 0.0202,
+    quest: 21
+  },
+  {
+    name: "JACK'O KNIGHT",
+    atk: 13,
+    hp: 50,
+    both: 38,
+    skill: 0.0202,
+    quest: 54
+  },
+  {
+    name: "DULLAHAN",
+    atk: 45,
+    hp: 114,
+    both: 65,
+    skill: 0.0404,
+    quest: 110
+  },
+  {
+    name: "LADY ODELITH",
+    atk: 17,
+    hp: 19,
+    both: 29,
+    skill: 4,
+    quest: 44
+  },
+  {
+    name: "SHYGU",
+    atk: 68,
+    hp: 62,
+    both: 71,
+    skill: 0.0202,
+    quest: 83
+  },
+  {
+    name: "THERT",
+    atk: 44,
+    hp: 61,
+    both: 69,
+    skill: 0.0202,
+    quest: 77
+  },
+  {
+    name: "LORD KIRK",
+    atk: 99,
+    hp: 77,
+    both: 83,
+    skill: 0.0202,
+    quest: 91
+  },
+  {
+    name: "NEPTUNIUS",
+    atk: 73,
+    hp: 92,
+    both: 83,
+    skill: 0.0202,
+    quest: 97
+  },
+  {
+    name: "SIGRÚN",
+    atk: 29,
+    hp: 132,
+    both: 61,
+    skill: 0.15,
+    quest: 67
+  },
+  {
+    name: "KOLDÍS",
+    atk: 32,
+    hp: 173,
+    both: 46,
+    skill: 0.15,
+    quest: 71
+  },
+  {
+    name: "ALVITR",
+    atk: 50,
+    hp: 152,
+    both: 56,
+    skill: 0.15,
+    quest: 69
+  },
+  {
+    name: "HAMA",
+    atk: 10,
+    hp: 21,
+    both: 7,
+    skill: 4,
+    quest: 14
+  },
+  {
+    name: "HALLINSKIDI",
+    atk: 54,
+    hp: 17,
+    both: 20,
+    skill: 2,
+    quest: 49
+  },
+  {
+    name: "RIGR",
+    atk: 21,
+    hp: 68,
+    both: 93,
+    skill: 0.2,
+    quest: 102
+  },
+  {
+    name: "ASCENDED ALPHA",
+    atk: 98,
+    hp: 251,
+    both: 92,
+    skill: 0.0304,
+    quest: 137
+  },
+  {
+    name: "ASCENDED ATHOS",
+    atk: 57,
+    hp: 281,
+    both: 76,
+    skill: 0.0304,
+    quest: 139
+  },
+  {
+    name: "ASCENDED REI",
+    atk: 86,
+    hp: 167,
+    both: 176,
+    skill: 0.1414,
+    quest: 149
+  },
+  {
+    name: "ASCENDED AURI",
+    atk: 221,
+    hp: 151,
+    both: 59,
+    skill: 0.0152,
+    quest: 138
+  },
+  {
+    name: "ASCENDED TR0N1X",
+    atk: 56,
+    hp: 383,
+    both: 25,
+    skill: 0.05,
+    quest: 136
+  },
+  {
+    name: "ASCENDED GEUM",
+    atk: 35,
+    hp: 348,
+    both: 16,
+    skill: 0.2,
+    quest: 135
+  },
+  {
+    name: "ASCENDED GEROR",
+    atk: 22,
+    hp: 173,
+    both: 153,
+    skill: 0.13,
+    quest: 148
+  },
+  {
+    atk: 20,
+    hp: 20,
+    both: 30,
+    skill: 0.1,
+    quest: 10
+  },
+  {
+    name: "CHRISTMAS ELF",
+    atk: 34,
+    hp: 28,
+    both: 22,
+    skill: 0.0202,
+    quest: 19
+  },
+  {
+    name: "REINDEER",
+    atk: 18,
+    hp: 53,
+    both: 33,
+    skill: 0.0202,
+    quest: 55
+  },
+  {
+    name: "SANTA CLAUS",
+    atk: 96,
+    hp: 107,
+    both: 78,
+    skill: 0.0404,
+    quest: 107
+  },
+  {
+    name: "SEXY SANTA",
+    atk: 41,
+    hp: 27,
+    both: 40,
+    skill: 0.05,
+    quest: 53
+  },
+  {
+    name: "TOTH",
+    atk: 32,
+    hp: 18,
+    both: 16,
+    skill: 4,
+    quest: 15
+  },
+  {
+    name: "GANAH",
+    atk: 26,
+    hp: 29,
+    both: 43,
+    skill: 2,
+    quest: 47
+  },
+  {
+    name: "DAGDA",
+    atk: 78,
+    hp: 79,
+    both: 123,
+    skill: 0.2,
+    quest: 111
+  },
+  {
+    name: "BUBBLES",
+    atk: 120,
+    hp: 291,
+    both: 58,
+    skill: 0.0005,
+    quest: 147
+  },
+  {
+    name: "ASCENDED PONTUS",
+    atk: 211,
+    hp: 124,
+    both: 190,
+    skill: 0.30000000000000004,
+    quest: 143
+  },
+  {
+    name: "ASCENDED ATZAR",
+    atk: 76,
+    hp: 333,
+    both: 86,
+    skill: 0.30000000000000004,
+    quest: 155
+  },
+  {
+    name: "ARSHEN",
+    atk: 44,
+    hp: 83,
+    both: 28,
+    skill: 0.05,
+    quest: 80
+  },
+  {
+    name: "RUA",
+    atk: 44,
+    hp: 88,
+    both: 37,
+    skill: 0.05,
+    quest: 92
+  },
+  {
+    name: "DORTH",
+    atk: 38,
+    hp: 90,
+    both: 40,
+    skill: 0.05,
+    quest: 90
+  },
+  {
+    name: "ASCENDED RIGR",
+    atk: 121,
+    hp: 138,
+    both: 163,
+    skill: 0.30000000000000004,
+    quest: 154
+  },
+  {
+    atk: 20,
+    hp: 20,
+    both: 30,
+    skill: 0.1,
+    quest: 10
+  },
+  {
+    name: "HOSOKAWA",
+    atk: 115,
+    hp: 108,
+    both: 74,
+    skill: 0.0202,
+    quest: 95
+  },
+  {
+    name: "TAKEDA",
+    atk: 82,
+    hp: 83,
+    both: 45,
+    skill: 0.0202,
+    quest: 88
+  },
+  {
+    name: "HIRATE",
+    atk: 133,
+    hp: 53,
+    both: 44,
+    skill: 0.0202,
+    quest: 82
+  },
+  {
+    name: "HATTORI",
+    atk: 74,
+    hp: 65,
+    both: 64,
+    skill: 0.0202,
+    quest: 87
+  },
+  {
+    name: "ASCENDED DAGDA",
+    atk: 78,
+    hp: 208,
+    both: 322,
+    skill: 0.30000000000000004,
+    quest: 156
+  },
+  {
+    name: "BYLAR",
+    atk: 6,
+    hp: 18,
+    both: 15,
+    skill: 4,
+    quest: 16
+  },
+  {
+    name: "BOÖR",
+    atk: 49,
+    hp: 19,
+    both: 20,
+    skill: 3,
+    quest: 45
+  },
+  {
+    name: "BAVAH",
+    atk: 92,
+    hp: 84,
+    both: 43,
+    skill: 5,
+    quest: 94
+  },
+  {
+    name: "LEPRECHAUN",
+    atk: 13,
+    hp: 59,
+    both: 13,
+    skill: 1,
+    quest: 74
+  },
+  {
+    name: "SPARKS",
+    atk: 29,
+    hp: 29,
+    both: 15,
+    skill: 0.2,
+    quest: 23
+  },
+  {
+    name: "LEAF",
+    atk: 57,
+    hp: 35,
+    both: 26,
+    skill: 0.2,
+    quest: 59
+  },
+  {
+    name: "FLYNN",
+    atk: 93,
+    hp: 46,
+    both: 69,
+    skill: 0.2,
+    quest: 121
+  },
+  {
+    name: "ASCENDED BAVAH",
+    atk: 152,
+    hp: 217,
+    both: 145,
+    skill: 0.0152,
+    quest: 144
+  },
+  {
+    name: "DR.HAWKING",
+    atk: 136,
+    hp: 94,
+    both: 70,
+    skill: 0.3,
+    quest: 115
+  },
+  {
+    name: "MASTER LEE",
+    atk: 290,
+    hp: 314,
+    both: 225,
+    skill: 0.05,
+    quest: 157
+  },
+  {
+    name: "KUMU-SAN",
+    atk: 132,
+    hp: 134,
+    both: 135,
+    skill: 0.05,
+    quest: 114
+  },
+  {
+    name: "LIU CHENG",
+    atk: 111,
+    hp: 149,
+    both: 80,
+    skill: 0.05,
+    quest: 117
+  },
+  {
+    name: "HIDOKA",
+    atk: 172,
+    hp: 144,
+    both: 61,
+    skill: 0.05,
+    quest: 118
+  },
+  {
+    name: "KRYTON",
+    atk: 20,
+    hp: 20,
+    both: 30,
+    skill: 0.1,
+    quest: 10
+  },
+  {
+    name: "DICEMASTER",
+    atk: 36,
+    hp: 19,
+    both: 12,
+    skill: 20,
+    quest: 18
+  },
+  {
+    name: "LUXURIUS MAXIMUS",
+    atk: 47,
+    hp: 44,
+    both: 29,
+    skill: 1,
+    quest: 51
+  },
+  {
+    name: "POKERFACE",
+    atk: 211,
+    hp: 119,
+    both: 111,
+    skill: 0.30000000000000004,
+    quest: 116
+  },
+  {
+    name: "TAINT",
+    atk: 4,
+    hp: 13,
+    both: 21,
+    skill: 0.05,
+    quest: 12
+  },
+  {
+    name: "PUTRID",
+    atk: 93,
+    hp: 51,
+    both: 50,
+    skill: 1,
+    quest: 56
+  },
+  {
+    name: "DEFILE",
+    atk: 138,
+    hp: 60,
+    both: 72,
+    skill: 50,
+    quest: 89
+  },
+  {
+    name: "NEIL",
+    atk: 20,
+    hp: 244,
+    both: 23,
+    skill: 0.05,
+    quest: 65
+  },
+  {
+    name: "MAHATMA",
+    atk: 19,
+    hp: 56,
+    both: 85,
+    skill: 0.5,
+    quest: 75
+  },
+  {
+    name: "JADE",
+    atk: 37,
+    hp: 45,
+    both: 91,
+    skill: 0.5,
+    quest: 78
+  },
+  {
+    name: "EDANA",
+    atk: 46,
+    hp: 91,
+    both: 66,
+    skill: 0.5,
+    quest: 86
+  },
+  {
+    name: "DYBBUK",
+    atk: 43,
+    hp: 65,
+    both: 63,
+    skill: 0.5,
+    quest: 79
+  },
+  {
+    name: "ASCENDED SHYGU",
+    atk: 113,
+    hp: 148,
+    both: 217,
+    skill: 0.01819,
+    quest: 146
+  },
+  {
+    name: "ASCENDED THERT",
+    atk: 67,
+    hp: 346,
+    both: 76,
+    skill: 0.01819,
+    quest: 140
+  },
+  {
+    name: "ASCENDED LORD KIRK",
+    atk: 255,
+    hp: 215,
+    both: 87,
+    skill: 0.01819,
+    quest: 152
+  },
+  {
+    name: "ASCENDED NEPTUNIUS",
+    atk: 201,
+    hp: 335,
+    both: 241,
+    skill: 0.01819,
+    quest: 153
+  },
+  {
+    name: "ASCENDED HOSOKAWA",
+    atk: 423,
+    hp: 229,
+    both: 207,
+    skill: 0.01819,
+    quest: 150
+  },
+  {
+    name: "ASCENDED TAKEDA",
+    atk: 425,
+    hp: 252,
+    both: 66,
+    skill: 0.01819,
+    quest: 151
+  },
+  {
+    name: "ASCENDED HIRATE",
+    atk: 193,
+    hp: 199,
+    both: 119,
+    skill: 0.01819,
+    quest: 142
+  },
+  {
+    name: "ASCENDED HATTORI",
+    atk: 167,
+    hp: 218,
+    both: 138,
+    skill: 0.01819,
+    quest: 145
+  },
+  {
+    atk: 20,
+    hp: 20,
+    both: 30,
+    skill: 0.1,
+    quest: 10
+  },
+  {
+    name: "BILLY",
+    atk: 30,
+    hp: 43,
+    both: 24,
+    skill: 25,
+    quest: 22
+  },
+  {
+    name: "SANQUEEN",
+    atk: 8,
+    hp: 71,
+    both: 16,
+    skill: 0.08000000000000002,
+    quest: 50
+  },
+  {
+    name: "CLIODHNA",
+    atk: 240,
+    hp: 193,
+    both: 78,
+    skill: 0.1,
+    quest: 119
+  },
+  {
+    name: "GUY",
+    atk: 121,
+    hp: 160,
+    both: 115,
+    skill: 0.1,
+    quest: 159
+  },
+  {
+    name: "ASCENDED DEFILE",
+    atk: 122,
+    hp: 126,
+    both: 114,
+    skill: 2,
+    quest: 141
+  },
+  {
+    name: "RAIDER ROSE",
+    atk: 32,
+    hp: 353,
+    both: 476,
+    skill: 0.05,
+    quest: 158
+  },
+  {
+    name: "BUCCANEER BEATRICE",
+    atk: 32,
+    hp: 66,
+    both: 66,
+    skill: 0.05,
+    quest: 105
+  },
+  {
+    name: "CORSAIR CHARLES",
+    atk: 21,
+    hp: 87,
+    both: 64,
+    skill: 0.05,
+    quest: 112
+  },
+  {
+    name: "MARAUDER MAGNUS",
+    atk: 67,
+    hp: 175,
+    both: 71,
+    skill: 0.05,
+    quest: 120
+  },
+  {
+    name: "FROSTY",
+    atk: 69,
+    hp: 51,
+    both: 16,
+    skill: 0.003,
+    quest: 58
+  },
+  {
+    name: "FIR",
+    atk: 5,
+    hp: 33,
+    both: 11,
+    skill: 0.0004,
+    quest: 20
+  },
+  {
+    name: "5-12-6",
+    atk: 37,
+    hp: 42,
+    both: 39,
+    skill: 0.003,
+    quest: 57
+  },
+  {
+    name: "KEDARI",
+    atk: 19,
+    hp: 133,
+    both: 25,
+    skill: 0.2,
+    quest: 70
+  },
+  {
+    name: "RAZE",
+    atk: 9,
+    hp: 8,
+    both: 14,
+    skill: 0.05,
+    quest: 5
+  },
+  {
+    name: "RUIN",
+    atk: 61,
+    hp: 23,
+    both: 23,
+    skill: 0.05,
+    quest: 56
+  },
+  {
+    name: "SEETHE",
+    atk: 178,
+    hp: 57,
+    both: 53,
+    skill: 15,
+    quest: 86
+  },
+  {
+    name: "ASCENDED SEETHE",
+    atk: 117,
+    hp: 90,
+    both: 124,
+    skill: 0.11,
+    quest: 146
+  },
+  {
+    name: "BLOSSOM",
+    atk: 99,
+    hp: 99,
+    both: 144,
+    skill: 0.01,
+    quest: 91
+  },
+  {
+    name: "FLINT",
+    atk: 100,
+    hp: 100,
+    both: 150,
+    skill: 0.01,
+    quest: 98
+  },
+  {
+    name: "ORIN",
+    atk: 101,
+    hp: 101,
+    both: 156,
+    skill: 0.01,
+    quest: 104
+  },
+  {
+    name: "AURORA",
+    atk: 221,
+    hp: 221,
+    both: 344,
+    skill: 0.01,
+    quest: 142
+  },
+  {
+    name: "CUPID",
+    atk: 50,
+    hp: 150,
+    both: 110,
+    skill: 1,
+    quest: 118
+  },
+  {
+    name: "TRANSIENT",
+    atk: 11,
+    hp: 11,
+    both: 20,
+    skill: 0.1,
+    quest: 24
+  },
+  {
+    name: "MAUNDER",
+    atk: 22,
+    hp: 22,
+    both: 32,
+    skill: 0.1,
+    quest: 57
+  },
+  {
+    name: "THE WANDERER",
+    atk: 80,
+    hp: 80,
+    both: 120,
+    skill: 0.1,
+    quest: 126
+  },
+  {
+    name: "B-DAY",
+    atk: 51,
+    hp: 61,
+    both: 49,
+    skill: 0.05,
+    quest: 91
+  },
+  {
+    name: "CLOUD",
+    atk: 32,
+    hp: 36,
+    both: 11,
+    skill: 0.05,
+    quest: 18
+  },
+  {
+    name: "EMBER",
+    atk: 14,
+    hp: 34,
+    both: 19,
+    skill: 0.05,
+    quest: 52
+  },
+  {
+    name: "RIPTIDE",
+    atk: 34,
+    hp: 89,
+    both: 22,
+    skill: 0.05,
+    quest: 87
+  },
+  {
+    name: "SPIKE",
+    atk: 103,
+    hp: 234,
+    both: 136,
+    skill: 0.05,
+    quest: 143
+  },
+  {
+    name: "ASCENDED MAHATMA",
+    atk: 50,
+    hp: 241,
+    both: 195,
+    skill: 0.3,
+    quest: 138
+  },
+  {
+    name: "ASCENDED JADE",
+    atk: 41,
+    hp: 288,
+    both: 144,
+    skill: 0.3,
+    quest: 146
+  },
+  {
+    name: "ASCENDED EDANA",
+    atk: 180,
+    hp: 191,
+    both: 99,
+    skill: 0.3,
+    quest: 145
+  },
+  {
+    name: "ASCENDED DYBBUK",
+    atk: 55,
+    hp: 272,
+    both: 169,
+    skill: 0.3,
+    quest: 147
+  },
+  {
+    name: "WILLOW",
+    atk: 19,
+    hp: 22,
+    both: 24,
+    skill: 0.2,
+    quest: 19
+  },
+  {
+    name: "GIZMO",
+    atk: 26,
+    hp: 43,
+    both: 52,
+    skill: 1,
+    quest: 58
+  },
+  {
+    name: "DAISY",
+    atk: 84,
+    hp: 50,
+    both: 70,
+    skill: 0.5,
+    quest: 88
+  },
+  {
+    name: "THUMPER",
+    atk: 320,
+    hp: 230,
+    both: 360,
+    skill: 0.1,
+    quest: 156
+  },
+  {
+    name: "BORTLES",
+    atk: 13,
+    hp: 10,
+    both: 14,
+    skill: 3,
+    quest: 21
+  },
+  {
+    name: "MURPHY",
+    atk: 18,
+    hp: 24,
+    both: 28,
+    skill: 30,
+    quest: 60
+  },
+  {
+    name: "NERISSA",
+    atk: 45,
+    hp: 22,
+    both: 52,
+    skill: 0.05,
+    quest: 123
+  },
+  {
+    name: "MOTHER",
+    atk: 120,
+    hp: 200,
+    both: 140,
+    skill: 5,
+    quest: 123
+  },
+  {
+    name: "ASCENDED NERISSA",
+    atk: 112,
+    hp: 70,
+    both: 100,
+    skill: 0.006,
+    quest: 167
+  },
+  {
+    name: "AGATHA",
+    atk: 92,
+    hp: 76,
+    both: 74,
+    skill: 0.05,
+    quest: 121
+  },
+  {
+    name: "OPHELIA",
+    atk: 99,
+    hp: 78,
+    both: 75,
+    skill: 0.05,
+    quest: 110
+  },
+  {
+    name: "HELGA",
+    atk: 101,
+    hp: 84,
+    both: 82,
+    skill: 0.05,
+    quest: 119
+  },
+  {
+    name: "MINERVA",
+    atk: 241,
+    hp: 204,
+    both: 256,
+    skill: 0.05,
+    quest: 164
+  },
+  {
+    name: "ASCENDED WANDERER",
+    atk: 110,
+    hp: 110,
+    both: 110,
+    skill: 0.1,
+    quest: 166
+  }
+];
 
 
 /*var A = [-6,4,0,0,-1,-1];
@@ -4615,12 +6000,13 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 hp: MONSTERS[userData[i]].hp,
                 mhp: MONSTERS[userData[i]].hp,
                 tatk: 0,
+                tpatk: 1,
             }
             battleData.setup.push(unitData);
         } else if (userData[i]<-1) {
             var hpos = -2*1-userData[i];
             var promoValue = 0;
-            if (prom[hpos]===5) promoValue = promoData[hpos].skill;
+            if (prom[hpos]>=5) promoValue = promoData[hpos].skill;
             var skillVal = HERO[hpos].skill.value + promoValue;
             var stats = level2stats(hpos,hero[hpos],prom[hpos],HERO[hpos].skill.type=="evo"?skillVal:((HERO[hpos].skill.type=="easter"&&easter)?skillVal:1));
             if (HERO[hpos].skill.type=="ratk") {
@@ -4648,11 +6034,13 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 atk: stats.atk,
                 matk: stats.atk,
                 tatk: 0,
+                tpatk: 1,
                 hp: stats.hp,
                 mhp: stats.hp,
                 lvl: hero[hpos],
                 prom: prom[hpos],
                 skill: HERO[hpos].skill,
+                passive: HERO[hpos].passive
             }
             battleData.setup.push(unitData);
             if (HERO[hpos].rarity==5) {
@@ -4729,7 +6117,7 @@ function calcTurn0 (A,B,seed,side) {
             var skill = A.setup[i].skill;
             var lvlVal = Math.min(99,A.setup[i].lvl);
             var promoValue = 0;
-            if (A.setup[i].prom===5) promoValue = promoData[-2*1-A.setup[i].id].skill;
+            if (A.setup[i].prom>=5) promoValue = promoData[-2*1-A.setup[i].id].skill;
             var skillVal = skill.value + promoValue;
             if (skill.type=="paoe") {
                 turn.atk.flatAoe.fill(Math.round(skillVal*lvlVal));
@@ -4792,6 +6180,13 @@ function calcTurn0 (A,B,seed,side) {
                     target:side?"other":"you",
                     origin: i,
                     val: doMask(skill.target,Math.floor(lvlVal*skillVal),A.setup),
+                });
+            } else if (skill.type=="buffpatk") {
+                gBattle.steps.push({
+                    action:"DMG",
+                    target:side?"other":"you",
+                    origin: i,
+                    val: doMask((skill.target*100)+"%",Math.floor(lvlVal*skillVal),A.setup),
                 });
             } else if (skill.type=="buffdef") {
                 gBattle.steps.push({
@@ -4895,7 +6290,7 @@ function calcTurn (A,B,seed) {
         if (A.setup[i].skill!==undefined) {
             var skill = A.setup[i].skill;
             var promoValue = 0;
-            if (A.setup[i].prom===5) promoValue = promoData[-2*1-A.setup[i].id].skill;
+            if (A.setup[i].prom>=5) promoValue = promoData[-2*1-A.setup[i].id].skill;
             var skillVal = skill.value + promoValue;
             var lvlVal = Math.min(99,A.setup[i].lvl);
             // fist unit
@@ -4986,18 +6381,34 @@ function calcTurn (A,B,seed) {
                 turn.buff.defPerc[i]+=skillVal;
             } else if (skill.type=="bday") {
                 turn.atk.flatAoe[B.setup.length-1]+=skillVal*A.setup[i].matk;
+            } else if (skill.type=="healfirst") {
+                turn.buff.heal[0]+=skillVal;
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
                 var typeMatches = skill.target==-1 || skill.target==A.setup[j].type;
                 if (typeMatches) {
-                    if (skill.type=="def" || skill.type=="extra") turn.buff.def[j]+=skillVal;
+                    if (skill.type=="def" || skill.type=="extra") {
+                        if (A.setup[j].prom>=6 && A.setup[j].passive.type=="armor") turn.buff.def[j]+=(skillVal*A.setup[j].passive.value);
+                        else turn.buff.def[j]+=skillVal;
+                    }
                     if (skill.type=="dmg" || skill.type=="extra") A.setup[j].tatk+=skillVal;
+                    if (skill.type=="buffpatk") A.setup[j].tpatk+=skillVal;
                     if (skill.type=="buffatk" || skill.type=="buffboth") A.setup[j].tatk+=Math.floor(lvlVal*skillVal);
-                    if (skill.type=="buffdef" || skill.type=="buffboth") turn.buff.def[j]+=Math.floor(lvlVal*skillVal);
-                    else if (skill.type=="heal") turn.buff.heal[j]+=skillVal;
-                    else if (skill.type=="buffheal") turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
-                    else if (skill.type=="buffahe") turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
+                    if (skill.type=="buffdef" || skill.type=="buffboth") {
+                        if (A.setup[j].prom>=6 && A.setup[j].passive.type=="armor") turn.buff.def[j]+=(Math.floor(lvlVal*skillVal)*A.setup[j].passive.value);
+                        else turn.buff.def[j]+=Math.floor(lvlVal*skillVal);
+                    }
+                    else if (skill.type=="heal") {
+                        if (A.setup[j].prom>=6 && A.setup[j].passive.type=="heal") turn.buff.heal[j]+=(skillVal*A.setup[j].passive.value);
+                        else turn.buff.heal[j]+=skillVal;
+                    } else if (skill.type=="buffheal") {
+                        if (A.setup[j].prom>=6 && A.setup[j].passive.type=="heal") turn.buff.heal[j]+=(Math.floor(lvlVal*skillVal)*A.setup[j].passive.value);
+                        else turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
+                    } else if (skill.type=="buffahe") {
+                        if (A.setup[j].prom>=6 && A.setup[j].passive.type=="heal") turn.buff.heal[j]+=(Math.floor(lvlVal*skillVal)*A.setup[j].passive.value);
+                        else turn.buff.heal[j]+=Math.floor(lvlVal*skillVal);
+                    }
                 }
                 if (skill.type=="guardian" && j!=i) turn.buff.heal[j]+=Math.floor(skillVal*lvlVal/skill.target);
             }
@@ -5016,7 +6427,7 @@ function calcTurn (A,B,seed) {
 
         }
     }
-    turn.atk.damage = A.setup[0].atk + A.setup[0].tatk*turn.buff.tAtkMul[0];
+    turn.atk.damage = (A.setup[0].atk + A.setup[0].tatk*turn.buff.tAtkMul[0])*A.setup[0].tpatk;
     return turn;
 }
 // A = Attacker, D = Defender
@@ -5161,7 +6572,7 @@ function doTurn (A,D,turnA,turnD,side) {
             if (D.setup[i].skill!==undefined) {
                 var skill = D.setup[i].skill;
                 var promoValue = 0;
-                if (D.setup[i].prom===5) promoValue = promoData[-2*1-D.setup[i].id].skill;
+                if (D.setup[i].prom>=5) promoValue = promoData[-2*1-D.setup[i].id].skill;
                 var skillVal = skill.value + promoValue;
                 if (D.setup[i].skill.type=="explosion") {
                     if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
@@ -5225,6 +6636,7 @@ function doTurn (A,D,turnA,turnD,side) {
 function endTurn (A) {
     for (var i=A.setup.length-1;i>=0;--i) {
         A.setup[i].tatk = 0;
+        A.setup[i].tpatk = 1;
     }
 }
 
