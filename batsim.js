@@ -1,845 +1,1444 @@
 var MONSTERS = [
-    {
-        name:"KODAMA",
-        type:0,
-        img: "0mlg",
-        hp: 20,
-        atk: 8,
-        cost: 1000,
-    },{
-        name:"SAPLING",
-        type:1,
-        img: "038r",
-        hp: 44,
-        atk: 4,
-        cost: 1300,
-    },{
-        name:"WILL-O'-THE-WHISP",
-        type:2,
-        img: "0nj0",
-        hp: 16,
-        atk: 10,
-        cost: 1000,
-    },{
-        name:"NAVI",
-        type:3,
-        img: "0f71",
-        hp: 30,
-        atk: 6,
-        cost: 1400,
-    },{
-        name:"HARPY",
-        type:0,
-        img: "086x",
-        hp: 48,
-        atk: 6,
-        cost: 3900,
-    },{
-        name:"ALUX",
-        type:1,
-        img: "0cur",
-        hp: 30,
-        atk: 8,
-        cost: 2700,
-    },{
-        name:"FOX SPIRIT",
-        type:2,
-        img: "02ys",
-        hp: 18,
-        atk: 16,
-        cost: 3900,
-    },{
-        name:"DAKUWAQA",
-        type:3,
-        img: "0owq",
-        hp: 24,
-        atk: 12,
-        cost: 3900,
-    },{
-        name:"GRIFFIN",
-        type:0,
-        img: "0gpm",
-        hp: 36,
-        atk: 12,
-        cost: 8000,
-    },{
-        name:"CENTAUR",
-        type:1,
-        img: "0j0o",
-        hp: 26,
-        atk: 16,
-        cost: 7500,
-    },{
-        name:"HELLHOUND",
-        type:2,
-        img: "0n11",
-        hp: 54,
-        atk: 8,
-        cost: 8000,
-    },{
-        name:"MERMAID",
-        type:3,
-        img: "0lgi",
-        hp: 18,
-        atk: 24,
-        cost: 8000,
-    },{
-        name:"QUETZALCOATL",
-        type:0,
-        img: "0dao",
-        hp: 24,
-        atk: 26,
-        cost: 15000,
-    },{
-        name:"ENT",
-        type:1,
-        img: "098a",
-        hp: 72,
-        atk: 10,
-        cost: 18000,
-    },{
-        name:"WYVERN",
-        type:2,
-        img: "0ojf",
-        hp: 52,
-        atk: 16,
-        cost: 23000,
-    },{
-        name:"YETI",
-        type:3,
-        img: "05fn",
-        hp: 36,
-        atk: 20,
-        cost: 18000,
-    },{
-        name:"BAILONG",
-        type:0,
-        img: "0i6u",
-        hp: 60,
-        atk: 20,
-        cost: 41000,
-    },{
-        name:"SPHINX",
-        type:1,
-        img: "01z2",
-        hp: 36,
-        atk: 40,
-        cost: 54000,
-    },{
-        name:"CHERUFE",
-        type:2,
-        img: "041v",
-        hp: 42,
-        atk: 24,
-        cost: 31000,
-    },{
-        name:"HIPPOCAMPUS",
-        type:3,
-        img: "004t",
-        hp: 78,
-        atk: 18,
-        cost: 52000,
-    },{
-        name:"MANTICORE",
-        type:0,
-        img: "03oq",
-        hp: 62,
-        atk: 34,
-        cost: 96000,
-    },{
-        name:"ALRAUNE",
-        type:1,
-        img: "038l",
-        hp: 72,
-        atk: 24,
-        cost: 71000,
-    },{
-        name:"GARGOYLE",
-        type:2,
-        img: "00uj",
-        hp: 104,
-        atk: 20,
-        cost: 94000,
-    },{
-        name:"HYDRA",
-        type:3,
-        img: "05eo",
-        hp: 44,
-        atk: 44,
-        cost: 84000,
-    },{
-        name:"ANKA",
-        type:0,
-        img: "07sp",
-        hp: 106,
-        atk: 26,
-        cost: 144000,
-    },{
-        name:"CHIMERA",
-        type:1,
-        img: "0ibi",
-        hp: 66,
-        atk: 36,
-        cost: 115000,
-    },{
-        name:"IFRIT",
-        type:2,
-        img: "01vq",
-        hp: 54,
-        atk: 44,
-        cost: 115000,
-    },{
-        name:"KRAKEN",
-        type:3,
-        img: "03dr",
-        hp: 92,
-        atk: 32,
-        cost: 159000,
-    },{
-        name:"TYPHON",
-        type:0,
-        img: "0luj",
-        hp: 78,
-        atk: 52,
-        cost: 257000,
-    },{
-        name:"AMMIT",
-        type:1,
-        img: "0lf0",
-        hp: 60,
-        atk: 60,
-        cost: 215000,
-    },{
-        name:"PHOENIX",
-        type:2,
-        img: "0lal",
-        hp: 94,
-        atk: 50,
-        cost: 321000,
-    },{
-        name:"LEVIATHAN",
-        type:3,
-        img: "0nob",
-        hp: 108,
-        atk: 36,
-        cost: 241000,
-    },{
-        name:"HECATONCHEIRES",
-        type:0,
-        img: "0md6",
-        hp: 116,
-        atk: 54,
-        cost: 495000,
-    },{
-        name:"MOAI GOLEM",
-        type:1,
-        img: "072e",
-        hp: 120,
-        atk: 48,
-        cost: 436000,
-    },{
-        name:"BALROG",
-        type:2,
-        img: "0cxp",
-        hp: 102,
-        atk: 58,
-        cost: 454000,
-    },{
-        name:"POSEIDON",
-        type:3,
-        img: "0cf4",
-        hp: 80,
-        atk: 70,
-        cost: 418000,
-    },{
-        name:"OPHION",
-        type:0,
-        img: "0865",
-        hp: 142,
-        atk: 60,
-        cost: 785000,
-    },{
-        name:"AKUPARA",
-        type:1,
-        img: "0al5",
-        hp: 122,
-        atk: 64,
-        cost: 689000,
-    },{
-        name:"BEELZEBUB",
-        type:2,
-        img: "06vm",
-        hp: 104,
-        atk: 82,
-        cost: 787000,
-    },{
-        name:"CTHULHU",
-        type:3,
-        img: "0gjj",
-        hp: 110,
-        atk: 70,
-        cost: 675000,
-    },{
-        name:"THE NORNS",
-        type:0,
-        img: "0l22",
-        hp: 114,
-        atk: 110,
-        cost: 1403000,
-    },{
-        name:"FENRIR",
-        type:1,
-        img: "0hly",
-        hp: 134,
-        atk: 81,
-        cost: 1130000,
-    },{
-        name:"HUITZILOPOCHTLI",
-        type:2,
-        img: "0gds",
-        hp: 164,
-        atk: 70,
-        cost: 1229000,
-    },{
-        name:"JÖRMUNGANDR",
-        type:3,
-        img: "06eh",
-        hp: 152,
-        atk: 79,
-        cost: 1315000,
-    },{
-        name:"WORLD EGG",
-        type:0,
-        img: "09jv",
-        hp: 164,
-        atk: 88,
-        cost: 1733000,
-    },{
-        name:"LICHE",
-        type:1,
-        img: "0p6g",
-        hp: 128,
-        atk: 120,
-        cost: 1903000,
-    },{
-        name:"SURTUR",
-        type:2,
-        img: "006w",
-        hp: 156,
-        atk: 92,
-        cost: 1718000,
-    },{
-        name:"CAILLEACH",
-        type:3,
-        img: "0oa6",
-        hp: 188,
-        atk: 78,
-        cost: 1775000,
-    },{
-        name:"CHRONOS",
-        type:0,
-        img: "089d",
-        hp: 210,
-        atk: 94,
-        cost: 2772000,
-    },{
-        name:"GEA",
-        type:1,
-        img: "0bc7",
-        hp: 190,
-        atk: 132,
-        cost: 3971000,
-    },{
-        name:"BAHAMUT",
-        type:2,
-        img: "018x",
-        hp: 166,
-        atk: 130,
-        cost: 3169000,
-    },{
-        name:"ŌGENOS",
-        type:3,
-        img: "0khj",
-        hp: 140,
-        atk: 128,
-        cost: 2398000,
-    },{
-        name:"BRAHMA",
-        type:0,
-        img: "04ot",
-        hp: 200,
-        atk: 142,
-        cost: 4785000,
-    },{
-        name:"YGGDRASIL",
-        type:1,
-        img: "0p8r",
-        hp: 244,
-        atk: 136,
-        cost: 6044000,
-    },{
-        name:"RA",
-        type:2,
-        img: "09r6",
-        hp: 168,
-        atk: 168,
-        cost: 4741000,
-    },{
-        name:"NIFLHEIM",
-        type:3,
-        img: "05d0",
-        hp: 212,
-        atk: 122,
-        cost: 4159000,
-    },{
-        name:"GINNUN",
-        type:0,
-        img: "0jaq",
-        hp: 226,
-        atk: 190,
-        cost: 8897000,
-    },{
-        name:"KAILAS",
-        type:1,
-        img: "03qr",
-        hp: 200,
-        atk: 186,
-        cost: 7173000,
-    },{
-        name:"CHAOS",
-        type:2,
-        img: "08qe",
-        hp: 234,
-        atk: 136,
-        cost: 5676000,
-    },{
-        name:"NŪN",
-        type:3,
-        img: "0njr",
-        hp: 276,
-        atk: 142,
-        cost: 7758000,
-    },{
-        name:"FURIOUS KODAMA",
-        type:0,
-        img: "0mlg",
-        hp: 280,
-        atk: 196,
-        cost: 12855000,
-    },{
-        name:"FURIOUS SAPLING",
-        type:1,
-        img: "038r",
-        hp: 284,
-        atk: 190,
-        cost: 12534000,
-    },{
-        name:"FURIOUS WILL-O'-THE-WHISP",
-        type:2,
-        img: "0nj0",
-        hp: 288,
-        atk: 192,
-        cost: 13001000,
-    },{
-        name:"FURIOUS NAVI",
-        type:3,
-        img: "0f71",
-        hp: 286,
-        atk: 198,
-        cost: 13475000,
-    },{
-        name:"FURIOUS HARPY",
-        type:0,
-        img: "086x",
-        hp: 318,
-        atk: 206,
-        cost: 16765000,
-    },{
-        name:"FURIOUS ALUX",
-        type:1,
-        img: "0cur",
-        hp: 338,
-        atk: 192,
-        cost: 16531000,
-    },{
-        name:"FURIOUS FOX SPIRIT",
-        type:2,
-        img: "02ys",
-        hp: 236,
-        atk: 292,
-        cost: 18090000,
-    },{
-        name:"FURIOUS DAKUWAQA",
-        type:3,
-        img: "0owq",
-        hp: 262,
-        atk: 258,
-        cost: 17573000,
-    },{
-        name:"FURIOUS GRIFFIN",
-        type:0,
-        img: "0gpm",
-        hp: 280,
-        atk: 280,
-        cost: 21951000,
-    },{
-        name:"FURIOUS CENTAUR",
-        type:1,
-        img: "0j0o",
-        hp: 330,
-        atk: 242,
-        cost: 22567000,
-    },{
-        name:"FURIOUS HELLHOUND",
-        type:2,
-        img: "0n11",
-        hp: 392,
-        atk: 200,
-        cost: 21951000,
-    },{
-        name:"FURIOUS MERMAID",
-        type:3,
-        img: "0lgi",
-        hp: 330,
-        atk: 230,
-        cost: 20909000,
-    },{
-        name:"FURIOUS QUETZALCOATL",
-        type:0,
-        img: "0dao",
-        hp: 440,
-        atk: 206,
-        cost: 27288000,
-    },{
-        name:"FURIOUS ENT",
-        type:1,
-        img: "098a",
-        hp: 320,
-        atk: 282,
-        cost: 27107000,
-    },{
-        name:"FURIOUS WYVERN",
-        type:2,
-        img: "0ojf",
-        hp: 352,
-        atk: 244,
-        cost: 25170000,
-    },{
-        name:"FURIOUS YETI",
-        type:3,
-        img: "05fn",
-        hp: 360,
-        atk: 238,
-        cost: 25079000,
-    },{
-        name:"FURIOUS BAILONG",
-        type:0,
-        img: "0i6u",
-        hp: 378,
-        atk: 268,
-        cost: 32242000,
-    },{
-        name:"FURIOUS SPHINX",
-        type:1,
-        img: "01z2",
-        hp: 382,
-        atk: 264,
-        cost: 32025000,
-    },{
-        name:"FURIOUS CHERUFE",
-        type:2,
-        img: "041v",
-        hp: 388,
-        atk: 266,
-        cost: 33155600,
-    },{
-        name:"FURIOUS HIPPOCAMPUS",
-        type:3,
-        img: "004t",
-        hp: 454,
-        atk: 232,
-        cost: 34182000,
-    },{
-        name:"FURIOUS MANTICORE",
-        type:0,
-        img: "03oq",
-        hp: 428,
-        atk: 286,
-        cost: 42826000,
-    },{
-        name:"FURIOUS ALRAUNE",
-        type:1,
-        img: "038l",
-        hp: 446,
-        atk: 272,
-        cost: 42252000,
-    },{
-        name:"FURIOUS GARGOYLE",
-        type:2,
-        img: "00uj",
-        hp: 362,
-        atk: 338,
-        cost: 42798000,
-    },{
-        name:"FURIOUS HYDRA",
-        type:3,
-        img: "05eo",
-        hp: 416,
-        atk: 290,
-        cost: 41901000,
-    },{
-        name:"FURIOUS ANKA",
-        type:0,
-        img: "07sp",
-        hp: 454,
-        atk: 320,
-        cost: 55373000,
-    },{
-        name:"FURIOUS CHIMERA",
-        type:1,
-        img: "0ibi",
-        hp: 450,
-        atk: 324,
-        cost: 55671000,
-    },{
-        name:"FURIOUS IFRIT",
-        type:2,
-        img: "01vq",
-        hp: 458,
-        atk: 318,
-        cost: 55582000,
-    },{
-        name:"FURIOUS KRAKEN",
-        type:3,
-        img: "03dr",
-        hp: 440,
-        atk: 340,
-        cost: 55877000,
-    },{
-        name:"FURIOUS TYPHON",
-        type:0,
-        img: "0luj",
-        hp: 500,
-        atk: 348,
-        cost: 72580000,
-    },{
-        name:"FURIOUS AMMIT",
-        type:1,
-        img: "0lf0",
-        hp: 516,
-        atk: 340,
-        cost: 73483000,
-    },{
-        name:"FURIOUS PHOENIX",
-        type:2,
-        img: "0lal",
-        hp: 424,
-        atk: 410,
-        cost: 72480000,
-    },{
-        name:"FURIOUS LEVIATHAN",
-        type:3,
-        img: "0nob",
-        hp: 490,
-        atk: 354,
-        cost: 72243000,
-    },{
-        name:"FURIOUS HECATONCHEIRES",
-        type:0,
-        img: "0md6",
-        hp: 554,
-        atk: 374,
-        cost: 94312000,
-    },{
-        name:"FURIOUS MOAI GOLEM",
-        type:1,
-        img: "072e",
-        hp: 458,
-        atk: 458,
-        cost: 96071000,
-    },{
-        name:"FURIOUS BALROG",
-        type:2,
-        img: "0cxp",
-        hp: 534,
-        atk: 392,
-        cost: 95772000,
-    },{
-        name:"FURIOUS POSEIDON",
-        type:3,
-        img: "0cf4",
-        hp: 540,
-        atk: 388,
-        cost: 95903000,
-    },{
-        name:"FURIOUS OPHION",
-        type:0,
-        img: "0865",
-        hp: 580,
-        atk: 430,
-        cost: 124549000,
-    },{
-        name:"FURIOUS AKUPARA",
-        type:1,
-        img: "0al5",
-        hp: 592,
-        atk: 418,
-        cost: 123096000,
-    },{
-        name:"FURIOUS BEELZEBUB",
-        type:2,
-        img: "06vm",
-        hp: 764,
-        atk: 328,
-        cost: 125443000,
-    },{
-        name:"FURIOUS CTHULHU",
-        type:3,
-        img: "0gjj",
-        hp: 500,
-        atk: 506,
-        cost: 127256000,
-    },{
-        name:"FURIOUS THE NORNS",
-        type:0,
-        img: "0l22",
-        hp: 496,
-        atk: 582,
-        cost: 155097000,
-    },{
-        name:"FURIOUS FENRIR",
-        type:1,
-        img: "0hly",
-        hp: 622,
-        atk: 468,
-        cost: 157055000,
-    },{
-        name:"FURIOUS HUITZILOPOCHTLI",
-        type:2,
-        img: "0gds",
-        hp: 638,
-        atk: 462,
-        cost: 160026000,
-    },{
-        name:"FURIOUS JÖRMUNGANDR",
-        type:3,
-        img: "06eh",
-        hp: 700,
-        atk: 416,
-        cost: 157140000,
-    },{
-        name:"FURIOUS WORLD EGG",
-        type:0,
-        img: "09jv",
-        hp: 712,
-        atk: 484,
-        cost: 202295000,
-    },{
-        name:"FURIOUS LICHE",
-        type:1,
-        img: "0p6g",
-        hp: 580,
-        atk: 602,
-        cost: 206317000,
-    },{
-        name:"FURIOUS SURTUR",
-        type:2,
-        img: "006w",
-        hp: 690,
-        atk: 498,
-        cost: 201426000,
-    },{
-        name:"FURIOUS CAILLEACH",
-        type:3,
-        img: "0oa6",
-        hp: 682,
-        atk: 500,
-        cost: 199344000,
-    },{
-        name:"FURIOUS CHRONOS",
-        type:0,
-        img: "089d",
-        hp: 644,
-        atk: 642,
-        cost: 265846000,
-    },{
-        name:"FURIOUS GEA",
-        type:1,
-        img: "0bc7",
-        hp: 770,
-        atk: 540,
-        cost: 268117000,
-    },{
-        name:"FURIOUS BAHAMUT",
-        type:2,
-        img: "018x",
-        hp: 746,
-        atk: 552,
-        cost: 264250000,
-    },{
-        name:"FURIOUS ŌGENOS",
-        type:3,
-        img: "0khj",
-        hp: 762,
-        atk: 536,
-        cost: 261023000,
-    },{
-        name:"FURIOUS BRAHMA",
-        type:0,
-        img: "04ot",
-        hp: 834,
-        atk: 616,
-        cost: 368230000,
-    },{
-        name:"FURIOUS YGGDRASIL",
-        type:1,
-        img: "0p8r",
-        hp: 830,
-        atk: 614,
-        cost: 363805000,
-    },{
-        name:"FURIOUS RA",
-        type:2,
-        img: "09r6",
-        hp: 746,
-        atk: 676,
-        cost: 358119000,
-    },{
-        name:"FURIOUS NIFLHEIM",
-        type:3,
-        img: "05d0",
-        hp: 1008,
-        atk: 512,
-        cost: 370761000,
-    },{
-        name:"FURIOUS GINNUN",
-        type:0,
-        img: "0jaq",
-        hp: 700,
-        atk: 906,
-        cost: 505055000,
-    },{
-        name:"FURIOUS KAILAS",
-        type:1,
-        img: "03qr",
-        hp: 1022,
-        atk: 614,
-        cost: 497082000,
-    },{
-        name:"FURIOUS CHAOS",
-        type:2,
-        img: "08qe",
-        hp: 930,
-        atk: 690,
-        cost: 514040000,
-    },{
-        name:"FURIOUS NŪN",
-        type:3,
-        img: "0njr",
-        hp: 802,
-        atk: 802,
-        cost: 515849000,
-    }
+  {
+    name: "KODAMA",
+    type: 0,
+    img: "0mlg",
+    hp: 20,
+    atk: 8,
+    cost: 500
+  },
+  {
+    name: "SAPLING",
+    type: 1,
+    img: "038r",
+    hp: 44,
+    atk: 4,
+    cost: 650
+  },
+  {
+    name: "WILL-O'-THE-WHISP",
+    type: 2,
+    img: "0nj0",
+    hp: 16,
+    atk: 10,
+    cost: 500
+  },
+  {
+    name: "NAVI",
+    type: 3,
+    img: "0f71",
+    hp: 30,
+    atk: 6,
+    cost: 700
+  },
+  {
+    name: "HARPY",
+    type: 0,
+    img: "086x",
+    hp: 48,
+    atk: 6,
+    cost: 1950
+  },
+  {
+    name: "ALUX",
+    type: 1,
+    img: "0cur",
+    hp: 30,
+    atk: 8,
+    cost: 1350
+  },
+  {
+    name: "FOX SPIRIT",
+    type: 2,
+    img: "02ys",
+    hp: 18,
+    atk: 16,
+    cost: 1950
+  },
+  {
+    name: "DAKUWAQA",
+    type: 3,
+    img: "0owq",
+    hp: 24,
+    atk: 12,
+    cost: 1950
+  },
+  {
+    name: "GRIFFIN",
+    type: 0,
+    img: "0gpm",
+    hp: 36,
+    atk: 12,
+    cost: 4000
+  },
+  {
+    name: "CENTAUR",
+    type: 1,
+    img: "0j0o",
+    hp: 26,
+    atk: 16,
+    cost: 3750
+  },
+  {
+    name: "HELLHOUND",
+    type: 2,
+    img: "0n11",
+    hp: 54,
+    atk: 8,
+    cost: 4000
+  },
+  {
+    name: "MERMAID",
+    type: 3,
+    img: "0lgi",
+    hp: 18,
+    atk: 24,
+    cost: 4000
+  },
+  {
+    name: "QUETZALCOATL",
+    type: 0,
+    img: "0dao",
+    hp: 24,
+    atk: 26,
+    cost: 7500
+  },
+  {
+    name: "ENT",
+    type: 1,
+    img: "098a",
+    hp: 72,
+    atk: 10,
+    cost: 9000
+  },
+  {
+    name: "WYVERN",
+    type: 2,
+    img: "0ojf",
+    hp: 52,
+    atk: 16,
+    cost: 11500
+  },
+  {
+    name: "YETI",
+    type: 3,
+    img: "05fn",
+    hp: 36,
+    atk: 20,
+    cost: 9000
+  },
+  {
+    name: "BAILONG",
+    type: 0,
+    img: "0i6u",
+    hp: 60,
+    atk: 20,
+    cost: 20500
+  },
+  {
+    name: "SPHINX",
+    type: 1,
+    img: "01z2",
+    hp: 36,
+    atk: 40,
+    cost: 27000
+  },
+  {
+    name: "CHERUFE",
+    type: 2,
+    img: "041v",
+    hp: 42,
+    atk: 24,
+    cost: 15500
+  },
+  {
+    name: "HIPPOCAMPUS",
+    type: 3,
+    img: "004t",
+    hp: 78,
+    atk: 18,
+    cost: 26000
+  },
+  {
+    name: "MANTICORE",
+    type: 0,
+    img: "03oq",
+    hp: 62,
+    atk: 34,
+    cost: 48000
+  },
+  {
+    name: "ALRAUNE",
+    type: 1,
+    img: "038l",
+    hp: 72,
+    atk: 24,
+    cost: 35500
+  },
+  {
+    name: "GARGOYLE",
+    type: 2,
+    img: "00uj",
+    hp: 104,
+    atk: 20,
+    cost: 47000
+  },
+  {
+    name: "HYDRA",
+    type: 3,
+    img: "05eo",
+    hp: 44,
+    atk: 44,
+    cost: 42000
+  },
+  {
+    name: "ANKA",
+    type: 0,
+    img: "07sp",
+    hp: 106,
+    atk: 26,
+    cost: 72000
+  },
+  {
+    name: "CHIMERA",
+    type: 1,
+    img: "0ibi",
+    hp: 66,
+    atk: 36,
+    cost: 57500
+  },
+  {
+    name: "IFRIT",
+    type: 2,
+    img: "01vq",
+    hp: 54,
+    atk: 44,
+    cost: 57500
+  },
+  {
+    name: "KRAKEN",
+    type: 3,
+    img: "03dr",
+    hp: 92,
+    atk: 32,
+    cost: 79500
+  },
+  {
+    name: "TYPHON",
+    type: 0,
+    img: "0luj",
+    hp: 78,
+    atk: 52,
+    cost: 128500
+  },
+  {
+    name: "AMMIT",
+    type: 1,
+    img: "0lf0",
+    hp: 60,
+    atk: 60,
+    cost: 107500
+  },
+  {
+    name: "PHOENIX",
+    type: 2,
+    img: "0lal",
+    hp: 94,
+    atk: 50,
+    cost: 160500
+  },
+  {
+    name: "LEVIATHAN",
+    type: 3,
+    img: "0nob",
+    hp: 108,
+    atk: 36,
+    cost: 120500
+  },
+  {
+    name: "HECATONCHEIRES",
+    type: 0,
+    img: "0md6",
+    hp: 116,
+    atk: 54,
+    cost: 247500
+  },
+  {
+    name: "MOAI GOLEM",
+    type: 1,
+    img: "072e",
+    hp: 120,
+    atk: 48,
+    cost: 218000
+  },
+  {
+    name: "BALROG",
+    type: 2,
+    img: "0cxp",
+    hp: 102,
+    atk: 58,
+    cost: 227000
+  },
+  {
+    name: "POSEIDON",
+    type: 3,
+    img: "0cf4",
+    hp: 80,
+    atk: 70,
+    cost: 209000
+  },
+  {
+    name: "OPHION",
+    type: 0,
+    img: "0865",
+    hp: 142,
+    atk: 60,
+    cost: 392500
+  },
+  {
+    name: "AKUPARA",
+    type: 1,
+    img: "0al5",
+    hp: 122,
+    atk: 64,
+    cost: 344500
+  },
+  {
+    name: "BEELZEBUB",
+    type: 2,
+    img: "06vm",
+    hp: 104,
+    atk: 82,
+    cost: 393500
+  },
+  {
+    name: "CTHULHU",
+    type: 3,
+    img: "0gjj",
+    hp: 110,
+    atk: 70,
+    cost: 337500
+  },
+  {
+    name: "THE NORNS",
+    type: 0,
+    img: "0l22",
+    hp: 114,
+    atk: 110,
+    cost: 701500
+  },
+  {
+    name: "FENRIR",
+    type: 1,
+    img: "0hly",
+    hp: 134,
+    atk: 81,
+    cost: 565000
+  },
+  {
+    name: "HUITZILOPOCHTLI",
+    type: 2,
+    img: "0gds",
+    hp: 164,
+    atk: 70,
+    cost: 614500
+  },
+  {
+    name: "JÖRMUNGANDR",
+    type: 3,
+    img: "06eh",
+    hp: 152,
+    atk: 79,
+    cost: 657500
+  },
+  {
+    name: "WORLD EGG",
+    type: 0,
+    img: "09jv",
+    hp: 164,
+    atk: 88,
+    cost: 866500
+  },
+  {
+    name: "LICHE",
+    type: 1,
+    img: "0p6g",
+    hp: 128,
+    atk: 120,
+    cost: 951500
+  },
+  {
+    name: "SURTUR",
+    type: 2,
+    img: "006w",
+    hp: 156,
+    atk: 92,
+    cost: 859000
+  },
+  {
+    name: "CAILLEACH",
+    type: 3,
+    img: "0oa6",
+    hp: 188,
+    atk: 78,
+    cost: 887500
+  },
+  {
+    name: "CHRONOS",
+    type: 0,
+    img: "089d",
+    hp: 210,
+    atk: 94,
+    cost: 1386000
+  },
+  {
+    name: "GEA",
+    type: 1,
+    img: "0bc7",
+    hp: 190,
+    atk: 132,
+    cost: 1985500
+  },
+  {
+    name: "BAHAMUT",
+    type: 2,
+    img: "018x",
+    hp: 166,
+    atk: 130,
+    cost: 1584500
+  },
+  {
+    name: "ŌGENOS",
+    type: 3,
+    img: "0khj",
+    hp: 140,
+    atk: 128,
+    cost: 1199000
+  },
+  {
+    name: "BRAHMA",
+    type: 0,
+    img: "04ot",
+    hp: 200,
+    atk: 142,
+    cost: 2392500
+  },
+  {
+    name: "YGGDRASIL",
+    type: 1,
+    img: "0p8r",
+    hp: 244,
+    atk: 136,
+    cost: 3022000
+  },
+  {
+    name: "RA",
+    type: 2,
+    img: "09r6",
+    hp: 168,
+    atk: 168,
+    cost: 2370500
+  },
+  {
+    name: "NIFLHEIM",
+    type: 3,
+    img: "05d0",
+    hp: 212,
+    atk: 122,
+    cost: 2079500
+  },
+  {
+    name: "GINNUN",
+    type: 0,
+    img: "0jaq",
+    hp: 226,
+    atk: 190,
+    cost: 4448500
+  },
+  {
+    name: "KAILAS",
+    type: 1,
+    img: "03qr",
+    hp: 200,
+    atk: 186,
+    cost: 3586500
+  },
+  {
+    name: "CHAOS",
+    type: 2,
+    img: "08qe",
+    hp: 234,
+    atk: 136,
+    cost: 2838000
+  },
+  {
+    name: "NŪN",
+    type: 3,
+    img: "0njr",
+    hp: 276,
+    atk: 142,
+    cost: 3879000
+  },
+  {
+    name: "FURIOUS KODAMA",
+    type: 0,
+    img: "0mlg",
+    hp: 280,
+    atk: 196,
+    cost: 6427500
+  },
+  {
+    name: "FURIOUS SAPLING",
+    type: 1,
+    img: "038r",
+    hp: 284,
+    atk: 190,
+    cost: 6267000
+  },
+  {
+    name: "FURIOUS WILL-O'-THE-WHISP",
+    type: 2,
+    img: "0nj0",
+    hp: 288,
+    atk: 192,
+    cost: 6500500
+  },
+  {
+    name: "FURIOUS NAVI",
+    type: 3,
+    img: "0f71",
+    hp: 286,
+    atk: 198,
+    cost: 6737500
+  },
+  {
+    name: "FURIOUS HARPY",
+    type: 0,
+    img: "086x",
+    hp: 318,
+    atk: 206,
+    cost: 8382500
+  },
+  {
+    name: "FURIOUS ALUX",
+    type: 1,
+    img: "0cur",
+    hp: 338,
+    atk: 192,
+    cost: 8265500
+  },
+  {
+    name: "FURIOUS FOX SPIRIT",
+    type: 2,
+    img: "02ys",
+    hp: 236,
+    atk: 292,
+    cost: 9045000
+  },
+  {
+    name: "FURIOUS DAKUWAQA",
+    type: 3,
+    img: "0owq",
+    hp: 262,
+    atk: 258,
+    cost: 8786500
+  },
+  {
+    name: "FURIOUS GRIFFIN",
+    type: 0,
+    img: "0gpm",
+    hp: 280,
+    atk: 280,
+    cost: 10975500
+  },
+  {
+    name: "FURIOUS CENTAUR",
+    type: 1,
+    img: "0j0o",
+    hp: 330,
+    atk: 242,
+    cost: 11283500
+  },
+  {
+    name: "FURIOUS HELLHOUND",
+    type: 2,
+    img: "0n11",
+    hp: 392,
+    atk: 200,
+    cost: 10975500
+  },
+  {
+    name: "FURIOUS MERMAID",
+    type: 3,
+    img: "0lgi",
+    hp: 330,
+    atk: 230,
+    cost: 10454500
+  },
+  {
+    name: "FURIOUS QUETZALCOATL",
+    type: 0,
+    img: "0dao",
+    hp: 440,
+    atk: 206,
+    cost: 13644000
+  },
+  {
+    name: "FURIOUS ENT",
+    type: 1,
+    img: "098a",
+    hp: 320,
+    atk: 282,
+    cost: 13553500
+  },
+  {
+    name: "FURIOUS WYVERN",
+    type: 2,
+    img: "0ojf",
+    hp: 352,
+    atk: 244,
+    cost: 12585000
+  },
+  {
+    name: "FURIOUS YETI",
+    type: 3,
+    img: "05fn",
+    hp: 360,
+    atk: 238,
+    cost: 12539500
+  },
+  {
+    name: "FURIOUS BAILONG",
+    type: 0,
+    img: "0i6u",
+    hp: 378,
+    atk: 268,
+    cost: 16121000
+  },
+  {
+    name: "FURIOUS SPHINX",
+    type: 1,
+    img: "01z2",
+    hp: 382,
+    atk: 264,
+    cost: 16012500
+  },
+  {
+    name: "FURIOUS CHERUFE",
+    type: 2,
+    img: "041v",
+    hp: 388,
+    atk: 266,
+    cost: 16577800
+  },
+  {
+    name: "FURIOUS HIPPOCAMPUS",
+    type: 3,
+    img: "004t",
+    hp: 454,
+    atk: 232,
+    cost: 17091000
+  },
+  {
+    name: "FURIOUS MANTICORE",
+    type: 0,
+    img: "03oq",
+    hp: 428,
+    atk: 286,
+    cost: 21413000
+  },
+  {
+    name: "FURIOUS ALRAUNE",
+    type: 1,
+    img: "038l",
+    hp: 446,
+    atk: 272,
+    cost: 21126000
+  },
+  {
+    name: "FURIOUS GARGOYLE",
+    type: 2,
+    img: "00uj",
+    hp: 362,
+    atk: 338,
+    cost: 21399000
+  },
+  {
+    name: "FURIOUS HYDRA",
+    type: 3,
+    img: "05eo",
+    hp: 416,
+    atk: 290,
+    cost: 20950500
+  },
+  {
+    name: "FURIOUS ANKA",
+    type: 0,
+    img: "07sp",
+    hp: 454,
+    atk: 320,
+    cost: 27686500
+  },
+  {
+    name: "FURIOUS CHIMERA",
+    type: 1,
+    img: "0ibi",
+    hp: 450,
+    atk: 324,
+    cost: 27835500
+  },
+  {
+    name: "FURIOUS IFRIT",
+    type: 2,
+    img: "01vq",
+    hp: 458,
+    atk: 318,
+    cost: 27791000
+  },
+  {
+    name: "FURIOUS KRAKEN",
+    type: 3,
+    img: "03dr",
+    hp: 440,
+    atk: 340,
+    cost: 27938500
+  },
+  {
+    name: "FURIOUS TYPHON",
+    type: 0,
+    img: "0luj",
+    hp: 500,
+    atk: 348,
+    cost: 36290000
+  },
+  {
+    name: "FURIOUS AMMIT",
+    type: 1,
+    img: "0lf0",
+    hp: 516,
+    atk: 340,
+    cost: 36741500
+  },
+  {
+    name: "FURIOUS PHOENIX",
+    type: 2,
+    img: "0lal",
+    hp: 424,
+    atk: 410,
+    cost: 36240000
+  },
+  {
+    name: "FURIOUS LEVIATHAN",
+    type: 3,
+    img: "0nob",
+    hp: 490,
+    atk: 354,
+    cost: 36121500
+  },
+  {
+    name: "FURIOUS HECATONCHEIRES",
+    type: 0,
+    img: "0md6",
+    hp: 554,
+    atk: 374,
+    cost: 47156000
+  },
+  {
+    name: "FURIOUS MOAI GOLEM",
+    type: 1,
+    img: "072e",
+    hp: 458,
+    atk: 458,
+    cost: 48035500
+  },
+  {
+    name: "FURIOUS BALROG",
+    type: 2,
+    img: "0cxp",
+    hp: 534,
+    atk: 392,
+    cost: 47886000
+  },
+  {
+    name: "FURIOUS POSEIDON",
+    type: 3,
+    img: "0cf4",
+    hp: 540,
+    atk: 388,
+    cost: 47951500
+  },
+  {
+    name: "FURIOUS OPHION",
+    type: 0,
+    img: "0865",
+    hp: 580,
+    atk: 430,
+    cost: 62274500
+  },
+  {
+    name: "FURIOUS AKUPARA",
+    type: 1,
+    img: "0al5",
+    hp: 592,
+    atk: 418,
+    cost: 61548000
+  },
+  {
+    name: "FURIOUS BEELZEBUB",
+    type: 2,
+    img: "06vm",
+    hp: 764,
+    atk: 328,
+    cost: 62721500
+  },
+  {
+    name: "FURIOUS CTHULHU",
+    type: 3,
+    img: "0gjj",
+    hp: 500,
+    atk: 506,
+    cost: 63628000
+  },
+  {
+    name: "FURIOUS THE NORNS",
+    type: 0,
+    img: "0l22",
+    hp: 496,
+    atk: 582,
+    cost: 77548500
+  },
+  {
+    name: "FURIOUS FENRIR",
+    type: 1,
+    img: "0hly",
+    hp: 622,
+    atk: 468,
+    cost: 78527500
+  },
+  {
+    name: "FURIOUS HUITZILOPOCHTLI",
+    type: 2,
+    img: "0gds",
+    hp: 638,
+    atk: 462,
+    cost: 80013000
+  },
+  {
+    name: "FURIOUS JÖRMUNGANDR",
+    type: 3,
+    img: "06eh",
+    hp: 700,
+    atk: 416,
+    cost: 78570000
+  },
+  {
+    name: "FURIOUS WORLD EGG",
+    type: 0,
+    img: "09jv",
+    hp: 712,
+    atk: 484,
+    cost: 101147500
+  },
+  {
+    name: "FURIOUS LICHE",
+    type: 1,
+    img: "0p6g",
+    hp: 580,
+    atk: 602,
+    cost: 103158500
+  },
+  {
+    name: "FURIOUS SURTUR",
+    type: 2,
+    img: "006w",
+    hp: 690,
+    atk: 498,
+    cost: 100713000
+  },
+  {
+    name: "FURIOUS CAILLEACH",
+    type: 3,
+    img: "0oa6",
+    hp: 682,
+    atk: 500,
+    cost: 99672000
+  },
+  {
+    name: "FURIOUS CHRONOS",
+    type: 0,
+    img: "089d",
+    hp: 644,
+    atk: 642,
+    cost: 132923000
+  },
+  {
+    name: "FURIOUS GEA",
+    type: 1,
+    img: "0bc7",
+    hp: 770,
+    atk: 540,
+    cost: 134058500
+  },
+  {
+    name: "FURIOUS BAHAMUT",
+    type: 2,
+    img: "018x",
+    hp: 746,
+    atk: 552,
+    cost: 132125000
+  },
+  {
+    name: "FURIOUS ŌGENOS",
+    type: 3,
+    img: "0khj",
+    hp: 762,
+    atk: 536,
+    cost: 130511500
+  },
+  {
+    name: "FURIOUS BRAHMA",
+    type: 0,
+    img: "04ot",
+    hp: 834,
+    atk: 616,
+    cost: 184115000
+  },
+  {
+    name: "FURIOUS YGGDRASIL",
+    type: 1,
+    img: "0p8r",
+    hp: 830,
+    atk: 614,
+    cost: 181902500
+  },
+  {
+    name: "FURIOUS RA",
+    type: 2,
+    img: "09r6",
+    hp: 746,
+    atk: 676,
+    cost: 179059500
+  },
+  {
+    name: "FURIOUS NIFLHEIM",
+    type: 3,
+    img: "05d0",
+    hp: 1008,
+    atk: 512,
+    cost: 185380500
+  },
+  {
+    name: "FURIOUS GINNUN",
+    type: 0,
+    img: "0jaq",
+    hp: 700,
+    atk: 906,
+    cost: 252527500
+  },
+  {
+    name: "FURIOUS KAILAS",
+    type: 1,
+    img: "03qr",
+    hp: 1022,
+    atk: 614,
+    cost: 248541000
+  },
+  {
+    name: "FURIOUS CHAOS",
+    type: 2,
+    img: "08qe",
+    hp: 930,
+    atk: 690,
+    cost: 257020000
+  },
+  {
+    name: "FURIOUS NŪN",
+    type: 3,
+    img: "0njr",
+    hp: 802,
+    atk: 802,
+    cost: 257924500
+  },
+  {
+    name: "RAGING KODAMA",
+    type: 0,
+    img: "0mlg",
+    hp: 973,
+    atk: 950,
+    cost: 444349500
+  },
+  {
+    name: "RAGING SAPLING",
+    type: 1,
+    img: "038r",
+    hp: 1187,
+    atk: 739,
+    cost: 410783500
+  },
+  {
+    name: "RAGING WILL-O'-THE-WHISP",
+    type: 2,
+    img: "0nj0",
+    hp: 815,
+    atk: 1139,
+    cost: 447190000
+  },
+  {
+    name: "RAGING NAVI",
+    type: 3,
+    img: "0f71",
+    hp: 995,
+    atk: 995,
+    cost: 492537500
+  },
+  {
+    name: "RAGING HARPY",
+    type: 0,
+    img: "086x",
+    hp: 1089,
+    atk: 1138,
+    cost: 689803000
+  },
+  {
+    name: "RAGING ALUX",
+    type: 1,
+    img: "0cur",
+    hp: 1110,
+    atk: 1116,
+    cost: 689367500
+  },
+  {
+    name: "RAGING FOX SPIRIT",
+    type: 2,
+    img: "02ys",
+    hp: 1230,
+    atk: 1028,
+    cost: 710914500
+  },
+  {
+    name: "RAGING DAKUWAQA",
+    type: 3,
+    img: "0owq",
+    hp: 754,
+    atk: 1512,
+    cost: 608632000
+  },
+  {
+    name: "RAGING GRIFFIN",
+    type: 0,
+    img: "0gpm",
+    hp: 1105,
+    atk: 1457,
+    cost: 1021416000
+  },
+  {
+    name: "RAGING CENTAUR",
+    type: 1,
+    img: "0j0o",
+    hp: 1545,
+    atk: 1029,
+    cost: 1002272500
+  },
+  {
+    name: "RAGING HELLHOUND",
+    type: 2,
+    img: "0n11",
+    hp: 1257,
+    atk: 1257,
+    cost: 993061000
+  },
+  {
+    name: "RAGING MERMAID",
+    type: 3,
+    img: "0lgi",
+    hp: 1620,
+    atk: 939,
+    cost: 938082000
+  },
+  {
+    name: "RAGING QUETZALCOATL",
+    type: 0,
+    img: "0dao",
+    hp: 1715,
+    atk: 1183,
+    cost: 1444918500
+  },
+  {
+    name: "RAGING ENT",
+    type: 1,
+    img: "098a",
+    hp: 1152,
+    atk: 1772,
+    cost: 1458291500
+  },
+  {
+    name: "RAGING WYVERN",
+    type: 2,
+    img: "0ojf",
+    hp: 1224,
+    atk: 1664,
+    cost: 1453356500
+  },
+  {
+    name: "RAGING YETI",
+    type: 3,
+    img: "05fn",
+    hp: 1438,
+    atk: 1434,
+    cost: 1480580500
+  },
+  {
+    name: "RAGING BAILONG",
+    type: 0,
+    img: "0i6u",
+    hp: 1609,
+    atk: 1594,
+    cost: 2053698000
+  },
+  {
+    name: "RAGING SPHINX",
+    type: 1,
+    img: "01z2",
+    hp: 1639,
+    atk: 1639,
+    cost: 2201440000
+  },
+  {
+    name: "RAGING CHERUFE",
+    type: 2,
+    img: "041v",
+    hp: 2119,
+    atk: 1121,
+    cost: 1830521500
+  },
+  {
+    name: "RAGING HIPPOCAMPUS",
+    type: 3,
+    img: "004t",
+    hp: 1419,
+    atk: 1929,
+    cost: 2264341500
+  },
+  {
+    name: "RAGING MANTICORE",
+    type: 0,
+    img: "03oq",
+    hp: 1994,
+    atk: 1709,
+    cost: 6290727000
+  },
+  {
+    name: "RAGING ALRAUNE",
+    type: 1,
+    img: "038l",
+    hp: 1842,
+    atk: 1902,
+    cost: 6557680000
+  },
+  {
+    name: "RAGING GARGOYLE",
+    type: 2,
+    img: "00uj",
+    hp: 1634,
+    atk: 2028,
+    cost: 6032259000
+  },
+  {
+    name: "RAGING HYDRA",
+    type: 3,
+    img: "05eo",
+    hp: 2018,
+    atk: 1808,
+    cost: 6969143000
+  },
+  {
+    name: "RAGING ANKA",
+    type: 0,
+    img: "07sp",
+    hp: 2919,
+    atk: 1566,
+    cost: 9773245000
+  },
+  {
+    name: "RAGING CHIMERA",
+    type: 1,
+    img: "0ibi",
+    hp: 2012,
+    atk: 2311,
+    cost: 10026327000
+  },
+  {
+    name: "RAGING IFRIT",
+    type: 2,
+    img: "01vq",
+    hp: 1989,
+    atk: 2111,
+    cost: 8603685000
+  },
+  {
+    name: "RAGING KRAKEN",
+    type: 3,
+    img: "03dr",
+    hp: 2069,
+    atk: 2529,
+    cost: 11969168000
+  },
+  {
+    name: "RAGING TYPHON",
+    type: 0,
+    img: "0luj",
+    hp: 2082,
+    atk: 3174,
+    cost: 16987578000
+  },
+  {
+    name: "RAGING AMMIT",
+    type: 1,
+    img: "0lf0",
+    hp: 2279,
+    atk: 2842,
+    cost: 16483620000
+  },
+  {
+    name: "RAGING PHOENIX",
+    type: 2,
+    img: "0lal",
+    hp: 2578,
+    atk: 2388,
+    cost: 15274811000
+  },
+  {
+    name: "RAGING LEVIATHAN",
+    type: 3,
+    img: "0nob",
+    hp: 2525,
+    atk: 2525,
+    cost: 16098453000
+  },
+  {
+    name: "RAGING HECATONCHEIRES",
+    type: 0,
+    img: "0md6",
+    hp: 2540,
+    atk: 3487,
+    cost: 26358974000
+  },
+  {
+    name: "RAGING MOAI GOLEM",
+    type: 1,
+    img: "072e",
+    hp: 2888,
+    atk: 2888,
+    cost: 24087491000
+  },
+  {
+    name: "RAGING BALROG",
+    type: 2,
+    img: "0cxp",
+    hp: 3089,
+    atk: 2657,
+    cost: 23513333000
+  },
+  {
+    name: "RAGING POSEIDON",
+    type: 3,
+    img: "0cf4",
+    hp: 2973,
+    atk: 2837,
+    cost: 24495221000
+  },
+  {
+    name: "RAGING OPHION",
+    type: 0,
+    img: "0865",
+    hp: 3363,
+    atk: 3430,
+    cost: 39177027000
+  },
+  {
+    name: "RAGING AKUPARA",
+    type: 1,
+    img: "0al5",
+    hp: 3496,
+    atk: 3038,
+    cost: 34612964000
+  },
+  {
+    name: "RAGING BEELZEBUB",
+    type: 2,
+    img: "06vm",
+    hp: 2989,
+    atk: 3621,
+    cost: 35606695000
+  },
+  {
+    name: "RAGING CTHULHU",
+    type: 3,
+    img: "0gjj",
+    hp: 3053,
+    atk: 3517,
+    cost: 35184287000
+  },
+  {
+    name: "RAGING THE NORNS",
+    type: 0,
+    img: "0l22",
+    hp: 4484,
+    atk: 3273,
+    cost: 56223440000
+  },
+  {
+    name: "RAGING FENRIR",
+    type: 1,
+    img: "0hly",
+    hp: 3413,
+    atk: 4111,
+    cost: 52556405000
+  },
+  {
+    name: "RAGING HUITZILOPOCHTLI",
+    type: 2,
+    img: "0gds",
+    hp: 3814,
+    atk: 3814,
+    cost: 55480717000
+  },
+  {
+    name: "RAGING JÖRMUNGANDR",
+    type: 3,
+    img: "06eh",
+    hp: 3791,
+    atk: 3791,
+    cost: 54483043000
+  },
+  {
+    name: "RAGING WORLD EGG",
+    type: 0,
+    img: "09jv",
+    hp: 3797,
+    atk: 4931,
+    cost: 81014620000
+  },
+  {
+    name: "RAGING LICHE",
+    type: 1,
+    img: "0p6g",
+    hp: 4264,
+    atk: 4264,
+    cost: 77526752000
+  },
+  {
+    name: "RAGING SURTUR",
+    type: 2,
+    img: "006w",
+    hp: 4527,
+    atk: 4112,
+    cost: 80314766000
+  },
+  {
+    name: "RAGING CAILLEACH",
+    type: 3,
+    img: "0oa6",
+    hp: 4012,
+    atk: 4571,
+    cost: 78534090000
+  },
+  {
+    name: "RAGING CHRONOS",
+    type: 0,
+    img: "089d",
+    hp: 4834,
+    atk: 4834,
+    cost: 112958766000
+  },
+  {
+    name: "RAGING GEA",
+    type: 1,
+    img: "0bc7",
+    hp: 4209,
+    atk: 5318,
+    cost: 105898763000
+  },
+  {
+    name: "RAGING BAHAMUT",
+    type: 2,
+    img: "018x",
+    hp: 4831,
+    atk: 4831,
+    cost: 112748588000
+  },
+  {
+    name: "RAGING ŌGENOS",
+    type: 3,
+    img: "0khj",
+    hp: 5014,
+    atk: 4574,
+    cost: 109829937000
+  },
+  {
+    name: "RAGING BRAHMA",
+    type: 0,
+    img: "04ot",
+    hp: 5789,
+    atk: 4917,
+    cost: 151864280000
+  },
+  {
+    name: "RAGING YGGDRASIL",
+    type: 1,
+    img: "0p8r",
+    hp: 5569,
+    atk: 4948,
+    cost: 144647311000
+  },
+  {
+    name: "RAGING RA",
+    type: 2,
+    img: "09r6",
+    hp: 4559,
+    atk: 6112,
+    cost: 147088733000
+  },
+  {
+    name: "RAGING NIFLHEIM",
+    type: 3,
+    img: "05d0",
+    hp: 5299,
+    atk: 5299,
+    cost: 148792746000
+  },
+  {
+    name: "RAGING GINNUN",
+    type: 0,
+    img: "0jaq",
+    hp: 5277,
+    atk: 6419,
+    cost: 197143156000
+  },
+  {
+    name: "RAGING KAILAS",
+    type: 1,
+    img: "03qr",
+    hp: 5079,
+    atk: 6421,
+    cost: 186239297000
+  },
+  {
+    name: "RAGING CHAOS",
+    type: 2,
+    img: "08qe",
+    hp: 5871,
+    atk: 5871,
+    cost: 202365391000
+  },
+  {
+    name: "RAGING NŪN",
+    type: 3,
+    img: "0njr",
+    hp: 6357,
+    atk: 5231,
+    cost: 191758841000
+  }
 ];
 
 var HERO = [
@@ -4251,7 +4850,7 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    upgrade: 1
   },
   {
     name: "ASCENDED NERISSA",
@@ -4373,6 +4972,108 @@ var HERO = [
       value: null
     },
     upgrade: 2
+  },
+  {
+    name: "TETRA",
+    type: 2,
+    rarity: 2,
+    img: "30d8",
+    hp: 76,
+    atk: 50,
+    skill: {
+      type: "tetris",
+      target: -1,
+      value: 1,
+      hid: 175
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "4TH05",
+    type: 1,
+    rarity: 0,
+    img: "8mhw",
+    hp: 16,
+    atk: 28,
+    skill: {
+      type: "cubearmor",
+      target: -1,
+      value: 2,
+      hid: 176
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "4TZ4R",
+    type: 2,
+    rarity: 1,
+    img: "avhs",
+    hp: 42,
+    atk: 28,
+    skill: {
+      type: "cubeexecutor",
+      target: -1,
+      value: 4,
+      hid: 177
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0
+  },
+  {
+    name: "R31",
+    type: 0,
+    rarity: 2,
+    img: "acv8",
+    hp: 80,
+    atk: 8,
+    skill: {
+      type: "cubetarget",
+      target: -1,
+      value: 4,
+      hid: 178
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 0,
+    super: 179
+  },
+  {
+    name: "45C3ND3D R31",
+    type: 0,
+    rarity: 3,
+    img: "acv8",
+    hp: 210,
+    atk: 21,
+    skill: {
+      type: "cubetarget",
+      target: -1,
+      value: 5,
+      hid: 179
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    upgrade: 2,
+    pve: true,
   }
 ];
 
@@ -5773,6 +6474,46 @@ var promoData = [
     both: 110,
     skill: 0.1,
     quest: 166
+  },
+  {
+    name: "TETRA",
+    atk: 68,
+    hp: 154,
+    both: 68,
+    skill: 0.2,
+    quest: 134
+  },
+  {
+    name: "4TH05",
+    atk: 16,
+    hp: 8,
+    both: 14,
+    skill: 1,
+    quest: 19
+  },
+  {
+    name: "4TZ4R",
+    atk: 10,
+    hp: 28,
+    both: 36,
+    skill: 1,
+    quest: 59
+  },
+  {
+    name: "R31",
+    atk: 28,
+    hp: 112,
+    both: 26,
+    skill: 1,
+    quest: 72
+  },
+  {
+    name: "45C3ND3D R31",
+    atk: 34,
+    hp: 192,
+    both: 78,
+    skill: 1,
+    quest: 136
   }
 ];
 
@@ -6069,6 +6810,7 @@ function getTurnData (AL,BL) {
             ratio: 1,
             leech: 0,
             killIfUnder: 0,
+            killIfUnderFlat: 0,
             anarchy2: 0,
             moab: 0,
         },
@@ -6109,6 +6851,15 @@ function doMask(target,value,setup) {
     return ret;
 }
 
+
+function doSelfMask(target,value,setup) {
+  var ret = [];
+  for (var i=0; i<setup.length; ++i) {
+      ret.push(i==target?value:undefined);
+  }
+  return ret;
+}
+
 function calcTurn0 (A,B,seed,side) {
     turn = getTurnData(A.setup.length,B.setup.length);
     for (var i=0; i<A.setup.length; ++i) {
@@ -6133,7 +6884,14 @@ function calcTurn0 (A,B,seed,side) {
                     origin: i,
                     val: doMask(skill.target,skillVal,A.setup),
                 });
-            } else if (skill.type=="dmg") {
+            } else if (skill.type=="cubearmor") {
+              gBattle.steps.push({
+                  action:"DEF",
+                  target:side?"other":"you",
+                  origin: i,
+                  val: doSelfMask(i,Math.pow(skillVal,3),A.setup),
+              });
+          } else if (skill.type=="dmg") {
                 gBattle.steps.push({
                     action:"DMG",
                     target:side?"other":"you",
@@ -6332,9 +7090,9 @@ function calcTurn (A,B,seed) {
                     turn.buff.counterFlat+=skillVal;
                 } else if (skill.type=="moob") {
                     turn.onkill.moob=skillVal;
-				} else if (skill.type=="amoob") {
+                } else if (skill.type=="amoob") {
                     turn.onkill.moob=skillVal*Math.floor(lvlVal/3);
-				} else if (skill.type=="leech") {
+                } else if (skill.type=="leech") {
                     turn.atk.leech=skillVal;
                 } else if (skill.type=="backlash") {
                     turn.buff.rleech=skillVal;
@@ -6344,6 +7102,8 @@ function calcTurn (A,B,seed) {
                     turn.buff.anarchy=skillVal;
                 } else if (skill.type=="otk") {
                     turn.atk.killIfUnder=skillVal;
+                } else if (skill.type=="cubeexecutor") {
+                    turn.atk.killIfUnderFlat=Math.pow(skillVal,3);
                 } else if (skill.type=="amplify") {
                     turn.atk.damagePerc=skillVal*lvlVal/skill.target;
                 } else if (skill.type=="infiltred") {
@@ -6356,6 +7116,30 @@ function calcTurn (A,B,seed) {
                     }
                 } else if (skill.type=="mbonus") {
                     turn.buff.tAtkMul[i]*=skillVal;
+                } else if (skill.type=="cubetarget") {
+                    turn.atk.flatAoe[0]+=Math.pow(skillVal,3);
+                } else if (skill.type=="tetris") {
+                    if (seed%6==0) {
+                        turn.atk.damageFactor[0]+=1*skillVal;
+                    } else if (seed%6==1) {
+                        turn.atk.damageFactor[0]+=0.25*skillVal;
+                        turn.atk.damageFactor[1]+=0.25*skillVal;
+                        turn.atk.damageFactor[2]+=0.25*skillVal;
+                        turn.atk.damageFactor[3]+=0.25*skillVal;
+                    } else if (seed%6==2) {
+                        turn.atk.damageFactor[0]+=0.75*skillVal;
+                        turn.atk.damageFactor[1]+=0.25*skillVal;
+                    } else if (seed%6==3) {
+                        turn.atk.damageFactor[0]+=0.25*skillVal;
+                        turn.atk.damageFactor[1]+=0.75*skillVal;
+                    } else if (seed%6==4) {
+                        turn.atk.damageFactor[0]+=0.25*skillVal;
+                        turn.atk.damageFactor[1]+=0.5*skillVal;
+                        turn.atk.damageFactor[2]+=0.25*skillVal;
+                    } else if (seed%6==5) {
+                        turn.atk.damageFactor[0]+=0.5*skillVal;
+                        turn.atk.damageFactor[1]+=0.5*skillVal;
+                    }
                 }
             } else {
                 if (skill.type=="tank") {
@@ -6383,6 +7167,8 @@ function calcTurn (A,B,seed) {
                 turn.atk.flatAoe[B.setup.length-1]+=skillVal*A.setup[i].matk;
             } else if (skill.type=="healfirst") {
                 turn.buff.heal[0]+=skillVal;
+            } else if (skill.type=="cubearmor") {
+                turn.buff.def[i]+=Math.pow(skillVal,3);
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
@@ -6472,6 +7258,11 @@ function doTurn (A,D,turnA,turnD,side) {
         var finalDamage = Math.round(dmgAfterDefense);
         var forcesuper=false;
         if (i==0 && (D.setup[i].hp - finalDamage) / D.setup[i].mhp <= atk.killIfUnder*buff.sdefPerc[i] && atk.killIfUnder!==0) {
+            finalDamage=Math.max(finalDamage,D.setup[i].hp+1);
+            forcesuper=true;
+        }
+
+        if (i==0 && (D.setup[i].hp - finalDamage) <= atk.killIfUnderFlat*buff.sdefPerc[i] && atk.killIfUnderFlat!==0) {
             finalDamage=Math.max(finalDamage,D.setup[i].hp+1);
             forcesuper=true;
         }
