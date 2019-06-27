@@ -1460,7 +1460,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TINY",
@@ -1480,7 +1487,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "NEBRA",
@@ -1500,7 +1514,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "VALOR",
@@ -1520,7 +1541,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ROKKA",
@@ -1540,7 +1568,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "PYROMANCER",
@@ -1560,7 +1595,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BEWAT",
@@ -1580,7 +1622,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HUNTER",
@@ -1600,7 +1649,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SHAMAN",
@@ -1620,7 +1676,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ALPHA",
@@ -1640,7 +1703,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 65
   },
   {
@@ -1661,7 +1731,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "NIMUE",
@@ -1681,7 +1758,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ATHOS",
@@ -1701,7 +1785,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 66
   },
   {
@@ -1722,7 +1813,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GERON",
@@ -1742,7 +1840,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "REI",
@@ -1762,7 +1867,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 67
   },
   {
@@ -1783,7 +1895,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "FAEFYR",
@@ -1803,7 +1922,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "AURI",
@@ -1823,7 +1949,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 68
   },
   {
@@ -1844,7 +1977,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "JAMES",
@@ -1864,7 +2004,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "K41RY",
@@ -1884,7 +2031,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "T4URUS",
@@ -1904,7 +2058,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TR0N1X",
@@ -1924,7 +2085,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 69
   },
   {
@@ -1945,7 +2113,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "AERIS",
@@ -1965,7 +2140,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GEUM",
@@ -1985,7 +2167,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 70
   },
   {
@@ -2006,7 +2195,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "IGNITOR",
@@ -2026,7 +2222,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "UNDINE",
@@ -2046,7 +2249,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "RUDEAN",
@@ -2066,7 +2276,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "AURAL",
@@ -2086,7 +2303,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GEROR",
@@ -2106,7 +2330,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 71
   },
   {
@@ -2127,7 +2358,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BRYNHILDR",
@@ -2147,7 +2385,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GROTH",
@@ -2167,7 +2412,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "OUREA",
@@ -2187,7 +2439,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "EREBUS",
@@ -2207,7 +2466,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "PONTUS",
@@ -2227,7 +2493,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 81
   },
   {
@@ -2248,7 +2521,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "PETRY",
@@ -2268,7 +2548,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ZAYTUS",
@@ -2288,7 +2575,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SPYKE",
@@ -2308,7 +2602,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 1,
+      none: 0
+    }
   },
   {
     name: "AOYUKI",
@@ -2328,7 +2629,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 1,
+      none: 0
+    }
   },
   {
     name: "GAIABYTE",
@@ -2348,7 +2656,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 1,
+      none: 0
+    }
   },
   {
     name: "OYMOS",
@@ -2368,7 +2683,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "XARTH",
@@ -2388,7 +2710,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ATZAR",
@@ -2408,7 +2737,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 82
   },
   {
@@ -2429,7 +2765,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "KOTH",
@@ -2449,7 +2792,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GURTH",
@@ -2469,7 +2819,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "WEREWOLF",
@@ -2489,7 +2846,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "JACK'O KNIGHT",
@@ -2509,7 +2873,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DULLAHAN",
@@ -2529,7 +2900,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "LADY ODELITH",
@@ -2549,7 +2927,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SHYGU",
@@ -2569,7 +2954,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "THERT",
@@ -2589,7 +2981,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "LORD KIRK",
@@ -2609,7 +3008,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "NEPTUNIUS",
@@ -2629,7 +3035,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SIGRÚN",
@@ -2649,7 +3062,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "KOLDÍS",
@@ -2669,7 +3089,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ALVITR",
@@ -2689,7 +3116,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HAMA",
@@ -2709,7 +3143,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HALLINSKIDI",
@@ -2729,7 +3170,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "RIGR",
@@ -2749,7 +3197,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 86
   },
   {
@@ -2770,7 +3225,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED ATHOS",
@@ -2790,7 +3252,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED REI",
@@ -2810,7 +3279,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED AURI",
@@ -2830,7 +3306,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED TR0N1X",
@@ -2850,7 +3333,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED GEUM",
@@ -2870,7 +3360,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED GEROR",
@@ -2890,7 +3387,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "LORD OF CHAOS",
@@ -2910,7 +3414,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "CHRISTMAS ELF",
@@ -2930,7 +3441,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "REINDEER",
@@ -2950,7 +3468,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "SANTA CLAUS",
@@ -2970,7 +3495,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "SEXY SANTA",
@@ -2990,7 +3522,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TOTH",
@@ -3010,7 +3549,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GANAH",
@@ -3030,7 +3576,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DAGDA",
@@ -3050,7 +3603,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 92
   },
   {
@@ -3071,7 +3631,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED PONTUS",
@@ -3091,7 +3658,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED ATZAR",
@@ -3111,7 +3685,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ARSHEN",
@@ -3131,7 +3712,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "RUA",
@@ -3151,7 +3739,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DORTH",
@@ -3171,7 +3766,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED RIGR",
@@ -3191,7 +3793,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MOTHER OF ALL KODAMAS",
@@ -3211,7 +3820,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HOSOKAWA",
@@ -3231,7 +3847,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TAKEDA",
@@ -3251,7 +3874,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HIRATE",
@@ -3271,7 +3901,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HATTORI",
@@ -3291,7 +3928,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED DAGDA",
@@ -3311,7 +3955,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BYLAR",
@@ -3331,7 +3982,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BOÖR",
@@ -3351,7 +4009,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BAVAH",
@@ -3371,7 +4036,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 100
   },
   {
@@ -3392,7 +4064,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SPARKS",
@@ -3412,7 +4091,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "LEAF",
@@ -3432,7 +4118,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "FLYNN",
@@ -3452,7 +4145,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "ASCENDED BAVAH",
@@ -3472,7 +4172,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DR.HAWKING",
@@ -3492,7 +4199,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MASTER LEE",
@@ -3512,7 +4226,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "KUMU-SAN",
@@ -3532,7 +4253,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "LIU CHENG",
@@ -3552,7 +4280,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HIDOKA",
@@ -3572,7 +4307,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "KRYTON",
@@ -3592,7 +4334,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DICEMASTER",
@@ -3612,7 +4361,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "LUXURIUS MAXIMUS",
@@ -3632,7 +4388,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "POKERFACE",
@@ -3652,7 +4415,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TAINT",
@@ -3672,7 +4442,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "PUTRID",
@@ -3692,7 +4469,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DEFILE",
@@ -3712,7 +4496,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 131
   },
   {
@@ -3733,7 +4524,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MAHATMA",
@@ -3753,7 +4551,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "JADE",
@@ -3773,7 +4578,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "EDANA",
@@ -3793,7 +4605,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DYBBUK",
@@ -3813,7 +4632,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED SHYGU",
@@ -3833,7 +4659,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3854,7 +4687,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3875,7 +4715,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3896,7 +4743,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3917,7 +4771,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3938,7 +4799,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3959,7 +4827,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -3980,7 +4855,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4001,7 +4883,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BILLY",
@@ -4021,7 +4910,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SANQUEEN",
@@ -4041,7 +4937,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "CLIODHNA",
@@ -4061,7 +4964,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GUY",
@@ -4081,7 +4991,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED DEFILE",
@@ -4101,7 +5018,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2,
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4122,7 +5046,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BUCCANEER BEATRICE",
@@ -4142,7 +5073,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "CORSAIR CHARLES",
@@ -4162,7 +5100,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MARAUDER MAGNUS",
@@ -4182,7 +5127,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "FROSTY",
@@ -4202,7 +5154,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "FIR",
@@ -4222,7 +5181,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "5-12-6",
@@ -4242,7 +5208,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "KEDARI",
@@ -4262,7 +5235,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "RAZE",
@@ -4282,7 +5262,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "RUIN",
@@ -4302,7 +5289,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "SEETHE",
@@ -4322,7 +5316,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 143
   },
   {
@@ -4343,7 +5344,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2,
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4364,7 +5372,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "FLINT",
@@ -4384,7 +5399,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ORIN",
@@ -4404,7 +5426,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "AURORA",
@@ -4424,7 +5453,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "CUPID",
@@ -4444,7 +5480,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TRANSIENT",
@@ -4464,7 +5507,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MAUNDER",
@@ -4484,7 +5534,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "THE WANDERER",
@@ -4504,7 +5561,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 174
   },
   {
@@ -4525,7 +5589,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "CLOUD",
@@ -4545,7 +5616,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "EMBER",
@@ -4565,7 +5643,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "RIPTIDE",
@@ -4585,7 +5670,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "SPIKE",
@@ -4605,7 +5697,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 3
+    filter: 3,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
   },
   {
     name: "ASCENDED MAHATMA",
@@ -4625,7 +5724,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4646,7 +5752,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4667,7 +5780,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4688,7 +5808,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1,
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4709,7 +5836,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "GIZMO",
@@ -4729,7 +5863,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "DAISY",
@@ -4749,7 +5890,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "THUMPER",
@@ -4769,7 +5917,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 0,
+      cc: 1,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "BORTLES",
@@ -4789,7 +5944,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MURPHY",
@@ -4809,7 +5971,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "NERISSA",
@@ -4829,7 +5998,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 169
   },
   {
@@ -4850,7 +6026,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 1
+    filter: 1,
+    upgrade: {
+      pg: 1,
+      cc: 1,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED NERISSA",
@@ -4870,7 +6053,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2,
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    },
     pve: true
   },
   {
@@ -4891,7 +6081,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "OPHELIA",
@@ -4911,7 +6108,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "HELGA",
@@ -4931,7 +6135,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "MINERVA",
@@ -4951,7 +6162,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "ASCENDED WANDERER",
@@ -4971,7 +6189,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "TETRA",
@@ -4991,7 +6216,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "4TH05",
@@ -5011,7 +6243,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "4TZ4R",
@@ -5031,7 +6270,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
   },
   {
     name: "R31",
@@ -5051,7 +6297,14 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 0,
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
     super: 179
   },
   {
@@ -5072,8 +6325,15 @@ var HERO = [
       target: null,
       value: null
     },
-    upgrade: 2,
-    pve: true,
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    },
+    pve: true
   }
 ];
 
@@ -7116,8 +8376,6 @@ function calcTurn (A,B,seed) {
                     }
                 } else if (skill.type=="mbonus") {
                     turn.buff.tAtkMul[i]*=skillVal;
-                } else if (skill.type=="cubetarget") {
-                    turn.atk.flatAoe[0]+=Math.pow(skillVal,3);
                 } else if (skill.type=="tetris") {
                     if (seed%6==0) {
                         turn.atk.damageFactor[0]+=1*skillVal;
@@ -7169,6 +8427,8 @@ function calcTurn (A,B,seed) {
                 turn.buff.heal[0]+=skillVal;
             } else if (skill.type=="cubearmor") {
                 turn.buff.def[i]+=Math.pow(skillVal,3);
+            } else if (skill.type=="cubetarget") {
+                turn.atk.flatAoe[0]+=Math.pow(skillVal,3);
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
