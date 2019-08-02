@@ -6334,7 +6334,197 @@ var HERO = [
       none: 0
     },
     pve: true
-  }
+  },
+  {
+    name: "SMITH",
+    type: 1,
+    rarity: 2,
+    img: "8e1b",
+    hp: 75,
+    atk: 45,
+    skill: {
+      type: "rico",
+      target: 3,
+      value: 0.9,
+      hid: 180
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "MR. COTTON",
+    type: 2,
+    rarity: 0,
+    img: "nmwo",
+    hp: 32,
+    atk: 14,
+    skill: {
+      type: "freflect",
+      target: -1,
+      value: 10,
+      hid: 181
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "SHARKJELLYN",
+    type: 3,
+    rarity: 1,
+    img: "87d4",
+    hp: 54,
+    atk: 20,
+    skill: {
+      type: "fleech",
+      target: -1,
+      value: 30,
+      hid: 182
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "CHOCO KNIGHT",
+    type: 1,
+    rarity: 2,
+    img: "iodx",
+    hp: 50,
+    atk: 50,
+    skill: {
+      type: "hpdeal",
+      target: -1,
+      value: 0.4,
+      hid: 183
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
+    super: 184
+  },
+  {
+    name: "DARK CHOCO KNIGHT",
+    type: 1,
+    rarity: 3,
+    img: "qqzl",
+    hp: 124,
+    atk: 124,
+    skill: {
+      type: "hpdeal",
+      target: -1,
+      value: 0.55,
+      hid: 184
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    },
+  },
+  {
+    name: "LILI",
+    type: 2,
+    rarity: 3,
+    img: "e3gv",
+    hp: 92,
+    atk: 211,
+    skill: {
+      type: "custom",
+      target: 0.1,
+      value: 0.1,
+      hid: 185
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "BORNAG",
+    type: 4,
+    rarity: 5,
+    img: "n2bu",
+    hp: 1e+300,
+    atk: 150,
+    skill: {
+      type: "fixarmor",
+      target: -1,
+      value: 1,
+      hid: 186
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
 ];
 
 var promoData = [
@@ -7774,6 +7964,61 @@ var promoData = [
     both: 78,
     skill: 1,
     quest: 136
+  },
+  {
+    name: "SMITH",
+    atk: 47,
+    hp: 84,
+    both: 68,
+    skill: 0.1,
+    quest: 102
+  },
+  {
+    name: "MR. COTTON",
+    atk: 7,
+    hp: 28,
+    both: 12,
+    skill: 5,
+    quest: 15
+  },
+  {
+    name: "SHARKJELLYN",
+    atk: 13,
+    hp: 44,
+    both: 15,
+    skill: 15,
+    quest: 44
+  },
+  {
+    name: "CHOCO KNIGHT",
+    atk: 47,
+    hp: 72,
+    both: 82,
+    skill: 0.1,
+    quest: 132
+  },
+  {
+    name: "DARK CHOCO KNIGHT",
+    atk: 64,
+    hp: 98,
+    both: 104,
+    skill: 0.1,
+    quest: 168
+  },
+  {
+    name: "LILI",
+    atk: 535,
+    hp: 174,
+    both: 171,
+    skill: 0.01,
+    quest: 144
+  },
+  {
+    atk: 20,
+    hp: 20,
+    both: 30,
+    skill: 0.1,
+    quest: 10
   }
 ];
 
@@ -8021,6 +8266,13 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 var val = skillVal*behind;
                 stats.atk+=val;
                 stats.hp+=val;
+            }
+            if (HERO[hpos].skill.type=="custom") {
+                var base = HERO[hpos].skill.target*(6-i);
+                var factor = skillVal/HERO[hpos].skill.target;
+                var value = stats.atk*base;
+                stats.atk-=Math.round(value);
+                stats.hp+=Math.round(value*factor);
             }
 			if (HERO[hpos].skill.type=="aposbonus") {
                 var behind = 0;
@@ -8323,6 +8575,10 @@ function calcTurn (A,B,seed) {
                     for (var j=0; j<B.setup.length;++j) {
                         turn.atk.typeMul[j] += (A.setup[i].type !== B.setup[j].type)?skillVal:0;
                     }
+                } else if (skill.type=="freflect") {
+                    for (var j=0; j<B.setup.length;++j) {
+                        turn.atk.flatAoe[j] += skillVal;
+                    }
                 } else if (skill.type=="elem") {
                     for (var j=0; j<B.setup.length;++j) {
                         turn.atk.typeMul[j] += turn.atk.typeMul[j]!=1?skillVal:0;
@@ -8354,6 +8610,10 @@ function calcTurn (A,B,seed) {
                     turn.onkill.moob=skillVal*Math.floor(lvlVal/3);
                 } else if (skill.type=="leech") {
                     turn.atk.leech=skillVal;
+                } else if (skill.type=="fleech") {
+                    turn.buff.heal[i]+=skillVal;
+                } else if (skill.type=="hpdeal") {
+                    turn.atk.flatAoe[0]+=skillVal*A.setup[i].hp;
                 } else if (skill.type=="backlash") {
                     turn.buff.rleech=skillVal;
                 } else if (skill.type=="evolve") {
