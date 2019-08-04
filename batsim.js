@@ -8812,7 +8812,7 @@ function doTurn (A,D,turnA,turnD,side) {
             if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
             retturn.self.buff.heal[0]+=Math.round(finalDamage*atk.leech);
         }
-        if (buff.rleech>0 && totalDamage>0 && D.setup[0].hp>0) {
+        if (i == 0 && buff.rleech>0 && totalDamage>0 && D.setup[0].hp>0) {
             if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
             retturn.other.buff.heal[0]+=Math.round(finalDamage*buff.rleech);
         }
