@@ -8760,6 +8760,8 @@ function doTurn (A,D,turnA,turnD,side) {
             for (var j=i+1; j<D.setup.length; ++j) {
                 var tankDamage = Math.round(dmgAfterDefense*buff.tank[j]);
                 if (tankDamage) {
+	            turndmg+=tankDamage;
+	            dmgAfterDefense-=tankDamage;
                     D.setup[j].hp -= tankDamage;
                     gBattle.steps.push({
                         action:"HIT",
@@ -8772,8 +8774,6 @@ function doTurn (A,D,turnA,turnD,side) {
                     });
                 }
             }
-            dmgAfterDefense*=buff.tank[i];
-            turndmg+=tankDamage;
         }
         var finalDamage = Math.round(dmgAfterDefense);
         var forcesuper=false;
