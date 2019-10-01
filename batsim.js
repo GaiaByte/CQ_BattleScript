@@ -6469,7 +6469,7 @@ var HERO = [
       as: 1,
       um: 0,
       none: 0
-    },
+    }
   },
   {
     name: "LILI",
@@ -6516,15 +6516,232 @@ var HERO = [
       target: null,
       value: null
     },
-    filter: 0,
+    filter: 3,
     upgrade: {
       pg: 0,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 1
+    }
+  },
+  {
+    name: "THRACE",
+    type: 2,
+    rarity: 2,
+    img: "q9wl",
+    hp: 53,
+    atk: 61,
+    skill: {
+      type: "absorb",
+      target: -1,
+      value: 125,
+      hid: 187
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
       cc: 0,
       as: 0,
       um: 0,
       none: 0
     }
   },
+  {
+    name: "SCINDA",
+    type: 0,
+    rarity: 2,
+    img: "3z5s",
+    hp: 55,
+    atk: 63,
+    skill: {
+      type: "absorb",
+      target: -1,
+      value: 150,
+      hid: 188
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "MYRMILLO",
+    type: 1,
+    rarity: 2,
+    img: "gqge",
+    hp: 57,
+    atk: 65,
+    skill: {
+      type: "absorb",
+      target: -1,
+      value: 175,
+      hid: 189
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "RETIA",
+    type: 3,
+    rarity: 3,
+    img: "0sp9",
+    hp: 144,
+    atk: 126,
+    skill: {
+      type: "absorb",
+      target: -1,
+      value: 350,
+      hid: 190
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "NEWT",
+    type: 3,
+    rarity: 0,
+    img: "5ntr",
+    hp: 48,
+    atk: 4,
+    skill: {
+      type: "fury",
+      target: 5,
+      value: 2,
+      hid: 191
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "ELECTRA",
+    type: 0,
+    rarity: 1,
+    img: "pz4j",
+    hp: 58,
+    atk: 6,
+    skill: {
+      type: "fury",
+      target: 6,
+      value: 3,
+      hid: 192
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    }
+  },
+  {
+    name: "BOSON",
+    type: 2,
+    rarity: 2,
+    img: "i3h3",
+    hp: 72,
+    atk: 3,
+    skill: {
+      type: "fury",
+      target: 8,
+      value: 3,
+      hid: 193
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 0,
+    upgrade: {
+      pg: 1,
+      cc: 0,
+      as: 0,
+      um: 0,
+      none: 0
+    },
+    super: 194
+  },
+  {
+    name: "HIGGS",
+    type: 2,
+    rarity: 3,
+    img: "mfpq",
+    hp: 214,
+    atk: 7,
+    skill: {
+      type: "fury",
+      target: 9,
+      value: 4,
+      hid: 194
+    },
+    passive: {
+      type: "",
+      target: null,
+      value: null
+    },
+    filter: 2,
+    upgrade: {
+      pg: 0,
+      cc: 0,
+      as: 1,
+      um: 0,
+      none: 0
+    }
+  }
 ];
 
 var promoData = [
@@ -8014,11 +8231,76 @@ var promoData = [
     quest: 144
   },
   {
-    atk: 20,
-    hp: 20,
+    name: "BORNAG",
+    atk: null,
+    hp: null,
+    both: null,
+    skill: null,
+    quest: null
+  },
+  {
+    name: "THRACE",
+    atk: 131,
+    hp: 82,
+    both: 104,
+    skill: 25,
+    quest: 107
+  },
+  {
+    name: "SCINDA",
+    atk: 125,
+    hp: 78,
+    both: 116,
+    skill: 30,
+    quest: 121
+  },
+  {
+    name: "MYRMILLO",
+    atk: 141,
+    hp: 94,
+    both: 99,
+    skill: 35,
+    quest: 110
+  },
+  {
+    name: "RETIA",
+    atk: 318,
+    hp: 246,
+    both: 338,
+    skill: 100,
+    quest: 148
+  },
+  {
+    name: "NEWT",
+    atk: 1,
+    hp: 14,
+    both: 4,
+    skill: 0.5,
+    quest: 1
+  },
+  {
+    name: "ELECTRA",
+    atk: 4,
+    hp: 30,
+    both: 8,
+    skill: 1,
+    quest: 30
+  },
+  {
+    name: "BOSON",
+    atk: 19,
+    hp: 181,
+    both: 21,
+    skill: 1,
+    quest: 65
+  },
+  {
+    name: "HIGGS",
+    atk: 14,
+    hp: 301,
     both: 30,
-    skill: 0.1,
-    quest: 10
+    skill: 1,
+    quest: 135
   }
 ];
 
@@ -8058,7 +8340,7 @@ function setupCost (setup,hero,prom) {
     }
     return cost;
 }
-function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,promB) {
+function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,promB,grid,vals) {
     if (promA===undefined) promA = Array(HERO.length).fill(0);
     if (promB===undefined) promB = Array(HERO.length).fill(0);
     gBattle = {
@@ -8077,6 +8359,8 @@ function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,pro
         herob:heroB,
         proma:promA,
         promb:promB,
+        grid: grid,
+        vals: vals,
         costa:setupCost(A,heroA,promA),
         costb:setupCost(B,heroB,promB),
         tinfo: tinfo,
@@ -8085,8 +8369,8 @@ function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,pro
         bossDmg: 0
     }
     var left = {}, right = {};
-    seedA = createUnits(A,heroA,promA,left,calcSeed(B,100));
-    seedB = createUnits(B,heroB,promB,right,calcSeed(A,100));
+    seedA = createUnits(A,heroA,promA,left,calcSeed(B,100),grid,vals);
+    seedB = createUnits(B,heroB,promB,right,calcSeed(A,100),grid,vals);
     spawnUnits(left,right);
     leftTurn = calcTurn0(left,right,seedA,0);
     rightTurn = calcTurn0(right,left,seedB,1);
@@ -8109,8 +8393,8 @@ function beginBattle (date,namea,nameb,A,B,back,heroA,heroB,tinfo,next,promA,pro
     killUnits(left,0);
     var turns = 100;
     while (isAlive(left) && isAlive(right) && --turns) {
-        leftTurn = [calcTurn(left,right,calcSeed(B,turns))];
-        rightTurn = [calcTurn(right,left,calcSeed(A,turns))];
+        leftTurn = [calcTurn(left,right,calcSeed(B,turns),100-turns)];
+        rightTurn = [calcTurn(right,left,calcSeed(A,turns),100-turns)];
         var subturns=10;
         while ((leftTurn.length || rightTurn.length) && --subturns) {
             if (leftTurn.length==0) leftTurn=[getTurnData(left.setup.length,right.setup.length)];
@@ -8229,7 +8513,7 @@ function WBatk (lvl) {
     return dmg;
 }
 
-function createUnits (userData,hero,prom,battleData,seed) {
+function createUnits (userData,hero,prom,battleData,seed,grid,vals) {
     battleData.setup=[];
     var easter = false;
     for (var i=userData.length-1; i>=0; --i) {
@@ -8247,6 +8531,10 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 mhp: MONSTERS[userData[i]].hp,
                 tatk: 0,
                 tpatk: 1,
+                extra: {
+                  type: -1,
+                  val: 0,
+                }
             }
             battleData.setup.push(unitData);
         } else if (userData[i]<-1) {
@@ -8274,7 +8562,7 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 stats.atk-=Math.round(value);
                 stats.hp+=Math.round(value*factor);
             }
-			if (HERO[hpos].skill.type=="aposbonus") {
+			      if (HERO[hpos].skill.type=="aposbonus") {
                 var behind = 0;
                 for (var j=i-1; j>=0; --j) if (userData[j]!=-1) ++behind;
                 var val = Math.round(skillVal*hero[hpos]*behind);
@@ -8293,12 +8581,24 @@ function createUnits (userData,hero,prom,battleData,seed) {
                 lvl: hero[hpos],
                 prom: prom[hpos],
                 skill: HERO[hpos].skill,
-                passive: HERO[hpos].passive
+                passive: HERO[hpos].passive,
+                extra: {
+                  type: -1,
+                  val: 0,
+                }
             }
             battleData.setup.push(unitData);
             if (HERO[hpos].rarity==5) {
                 battleData.setup[battleData.setup.length-1].atk+=WBatk(battleData.setup[battleData.setup.length-1].lvl);
                 gBattle.isBossBattle = true;
+            }
+        }
+        if (grid!==undefined&&grid[i]!=-1) {
+            battleData.setup[battleData.setup.length-1].extra.type=grid[i];
+            battleData.setup[battleData.setup.length-1].extra.val=vals[i];
+            if (grid[i]==9) {
+                battleData.setup[battleData.setup.length-1].hp=Math.round((1+vals[i])*battleData.setup[battleData.setup.length-1].hp);
+                battleData.setup[battleData.setup.length-1].mhp=battleData.setup[battleData.setup.length-1].hp;
             }
         }
     }
@@ -8328,9 +8628,11 @@ function getTurnData (AL,BL) {
         },
         buff: {
             def: Array(AL).fill(0),
+            affinity: Array(AL).fill(0),
             sdefPerc: Array(AL).fill(1),
             defPerc: Array(AL).fill(0),
             heal: Array(AL).fill(0),
+            fheal: Array(AL).fill(0),
             healLost: Array(AL).fill(0),
             iAtk: Array(AL).fill(0),
             iAtkPerc: Array(AL).fill(1),
@@ -8346,9 +8648,12 @@ function getTurnData (AL,BL) {
             counterFlat: 0,
             evolve: 0,
             anarchy: 0,
+            angel: Array(AL).fill(0),
+            dpsmul: 1,
         },
         onkill: {
             moob: 0,
+            absorb: 0,
         }
     };
     return turn;
@@ -8530,9 +8835,43 @@ function calcTurn0 (A,B,seed,side) {
             } 
         } 
     }
+    applyExtra(A.setup,turn);
     return turn;
 }
 
+function applyExtra(arr,turn) {
+    /*
+    0: Affinity: Receives X% less damage from enemy element attacks --
+    1: Angel: After dying revives once at X% health --
+    2: Armor: Gains +X% from armor --
+    3: Damage: Gains +X% from damage increases --
+    4: Block: No units can be placed here --
+    5: DPS: Increases damage dealt by X% --
+    6: Heal: Gains +X% from heals --
+    7: Antimagic: Receives X% less damage from skills--
+    8: No heroes can be placed here --
+    9: Tank: Increases health by X% --
+    */
+    for (var i=0; i<arr.length; ++i) {
+        if (arr[i].extra!==undefined) {
+            if (arr[i].extra.type==0) {
+                turn.buff.affinity[i]=arr[i].extra.val;
+            } else if (arr[i].extra.type==1) {
+                turn.buff.angel[i]=arr[i].extra.val;
+            } else if (arr[i].extra.type==2) {
+                turn.buff.def[i]=Math.round(turn.buff.def[i]*arr[i].extra.val);
+            } else if (arr[i].extra.type==3 && i==0) {
+                A.setup[i].tatk=Math.round(A.setup[i].tatk*(1+arr[i].extra.val));
+            } else if (arr[i].extra.type==5 && i==0) {
+                turn.buff.dpsmul+=arr[i].extra.val;
+            } else if (arr[i].extra.type==6) {
+                turn.buff.heal[i]=Math.round(turn.buff.heal[i]*arr[i].extra.val);
+            } else if (arr[i].extra.type==7) {
+                turn.buff.sdefPerc[i]=Math.max(0,turn.buff.sdefPerc[i]-arr[i].extra.val);
+            } 
+        }
+    }
+}
 function shuffleBySeed(arr,seed,start) {
     var size = arr.length;
     var mapa = new Array(size);
@@ -8548,7 +8887,7 @@ function shuffleBySeed(arr,seed,start) {
     } 
 }
 
-function calcTurn (A,B,seed) {
+function calcTurn (A,B,seed,turnid) {
     turn = getTurnData(A.setup.length,B.setup.length);
     var TYPES = [3,0,1,2,-1];
     for (var i=0;i<B.setup.length;++i) {
@@ -8606,6 +8945,8 @@ function calcTurn (A,B,seed) {
                     turn.buff.counterFlat+=skillVal;
                 } else if (skill.type=="moob") {
                     turn.onkill.moob=skillVal;
+                } else if (skill.type=="absorb") {
+                  turn.onkill.absorb=skillVal;
                 } else if (skill.type=="amoob") {
                     turn.onkill.moob=skillVal*Math.floor(lvlVal/3);
                 } else if (skill.type=="leech") {
@@ -8689,6 +9030,8 @@ function calcTurn (A,B,seed) {
                 turn.buff.def[i]+=Math.pow(skillVal,3);
             } else if (skill.type=="cubetarget") {
                 turn.atk.flatAoe[0]+=Math.pow(skillVal,3);
+            } else if (skill.type=="fury") {
+                if ((turnid%skill.target)==0) turn.buff.iAtkPerc[i]*=skillVal;
             }
             // all own units
             for (var j=0; j<A.setup.length;++j) {
@@ -8733,7 +9076,8 @@ function calcTurn (A,B,seed) {
 
         }
     }
-    turn.atk.damage = (A.setup[0].atk + A.setup[0].tatk*turn.buff.tAtkMul[0])*A.setup[0].tpatk;
+    applyExtra(A.setup,turn);
+    turn.atk.damage = (A.setup[0].atk + A.setup[0].tatk*turn.buff.tAtkMul[0])*A.setup[0].tpatk*turn.buff.dpsmul;
     return turn;
 }
 // A = Attacker, D = Defender
@@ -8753,8 +9097,11 @@ function doTurn (A,D,turnA,turnD,side) {
     for (var i=0;i<D.setup.length;++i) {
         if (maxhp==i&&atk.anarchy2>0) atk.flatAoe[i]+=atk.anarchy2;
         // Damage
-        var attackDamage = atk.damageFactor[i]*Math.pow(buff.ratio,i)*atk.typeMul[i]*atk.damage
+        var attackDamage = atk.damageFactor[i]*Math.pow(buff.ratio,i)*atk.typeMul[i]*atk.damage;
         if (D.setup[i].id>=0||(D.setup[i].id<-1&&HERO[-(2+D.setup[i].id)].rarity!==5)) attackDamage+=atk.damagePerc*D.setup[i].mhp*atk.damageFactor[i];
+        if (buff.affinity[i]>0 && D.setup[i].type==A.setup[0].type) {
+            attackDamage=Math.round(attackDamage*(1-buff.affinity[i]));
+        } 
         var dmgAfterDefense = Math.max((attackDamage*(1-buff.defPerc[i]))-buff.def[i],0);
         if (i==0 && buff.tank[i]!=1) {
             for (var j=i+1; j<D.setup.length; ++j) {
@@ -8848,6 +9195,17 @@ function doTurn (A,D,turnA,turnD,side) {
             D.setup[i].hp+=Math.round(buff.heal[i]*atk.ratio);
             D.setup[i].hp = Math.min(D.setup[i].hp,D.setup[i].mhp);
             healArr[i]=D.setup[i].hp-tmphp;
+            if (buff.fheal[i]>0) {
+                D.setup[i].hp+=Math.round(buff.fheal[i]);
+                D.setup[i].mhp += Math.round(buff.fheal[i]);
+                var tmpArr = Array(D.setup.length).fill(0);
+                tmpArr[i]=Math.round(buff.fheal[i]);
+                gBattle.steps.push({
+                    action:"HEAL2",
+                    target:side?"you":"other",
+                    val:tmpArr,
+                });
+            }
         }
 
         if (buff.counter>0&&i==0&&finalDamage>0) {
@@ -8874,36 +9232,62 @@ function doTurn (A,D,turnA,turnD,side) {
         
         // new turns
         if (D.setup[i].hp<=0 && initHp>0) {
-            if (turnA.onkill.moob!==0&&i==0) {
-                if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
-                for (var j=0; j<retturn.self.atk.flatAoe.length; ++j) {
-                    retturn.self.atk.flatAoe[j]+=turnA.onkill.moob;
+            if (buff.angel>0) {
+                D.setup[i].hp = Math.round(D.setup[i].mhp * buff.angel);
+                D.setup[i].extra = undefined;
+                D.setup[i].tatk = 0;
+                D.setup[i].tpatk = 1;
+                var tmpArr = Array(D.setup.length).fill(0);
+                tmpArr[i]=D.setup[i].hp;
+                gBattle.steps.push({
+                    action:"HEAL",
+                    target:side?"you":"other",
+                    val:tmpArr,
+                });
+            } else {
+                if (turnA.onkill.moob!==0&&i==0) {
+                    if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
+                    for (var j=0; j<retturn.self.atk.flatAoe.length; ++j) {
+                        retturn.self.atk.flatAoe[j]+=turnA.onkill.moob;
+                    }
                 }
-            }
-            if (D.setup[i].skill!==undefined) {
-                var skill = D.setup[i].skill;
-                var promoValue = 0;
-                if (D.setup[i].prom>=5) promoValue = promoData[-2*1-D.setup[i].id].skill;
-                var skillVal = skill.value + promoValue;
-                if (D.setup[i].skill.type=="explosion") {
-                    if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
-                    for (var j=0; j<retturn.other.atk.flatAoe.length && j<1; ++j) {
-                        retturn.other.atk.flatAoe[j]+=skillVal;
-                    }
-                } else if (D.setup[i].skill.type=="boom") {
-                    if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
-                    for (var j=0; j<retturn.other.atk.flatAoe.length; ++j) {
-                        retturn.other.atk.flatAoe[j]+=Math.round(skillVal*D.setup[i].atk);
-                    }
-                } else if (D.setup[i].skill.type=="friend") {
-                    var hpval = Math.round(D.setup[i].mhp*skillVal);
-                    var atkval = Math.round(D.setup[i].matk*skillVal);
-                    for (var j=0; j<D.setup.length; ++j) {
-                        if (j!=i && D.setup[j].hp>0) {
-                            D.setup[j].mhp+=hpval;
-                            D.setup[j].hp+=hpval;
-                            D.setup[j].atk+=atkval;
-                            D.setup[j].matk+=atkval;
+                if (turnA.onkill.absorb!==0&&i==0) {
+                    if (retturn.self===undefined) retturn.self=getTurnData(A.setup.length,D.setup.length);
+                    retturn.self.buff.iAtk[0]+=turnA.onkill.absorb;
+                    retturn.self.buff.fheal[0]+=turnA.onkill.absorb;
+                }
+                if (D.setup[i].skill!==undefined) {
+                    var skill = D.setup[i].skill;
+                    var promoValue = 0;
+                    if (D.setup[i].prom>=5) promoValue = promoData[-2*1-D.setup[i].id].skill;
+                    var skillVal = skill.value + promoValue;
+                    if (D.setup[i].skill.type=="explosion") {
+                        if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
+                        for (var j=0; j<retturn.other.atk.flatAoe.length && j<1; ++j) {
+                            retturn.other.atk.flatAoe[j]+=skillVal;
+                        }
+                    } else if (D.setup[i].skill.type=="boom") {
+                        if (retturn.other===undefined) retturn.other=getTurnData(D.setup.length,A.setup.length);
+                        for (var j=0; j<retturn.other.atk.flatAoe.length; ++j) {
+                            retturn.other.atk.flatAoe[j]+=Math.round(skillVal*D.setup[i].atk);
+                        }
+                    } else if (D.setup[i].skill.type=="friend") {
+                        var hpval = Math.round(D.setup[i].mhp*skillVal);
+                        var atkval = Math.round(D.setup[i].matk*skillVal);
+                        for (var j=0; j<D.setup.length; ++j) {
+                            if (j!=i && D.setup[j].hp>0) {
+                                D.setup[j].mhp+=hpval;
+                                D.setup[j].hp+=hpval;
+                                D.setup[j].atk+=atkval;
+                                D.setup[j].matk+=atkval;
+                                var tmpArr = Array(D.setup.length).fill(0);
+                                tmpArr[j]=hpval;
+                                gBattle.steps.push({
+                                    action:"HEAL2",
+                                    target:side?"you":"other",
+                                    val:tmpArr,
+                                });
+                            }
                         }
                     }
                 }
